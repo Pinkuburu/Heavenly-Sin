@@ -591,7 +591,9 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: USE_CINEMACHINE;USE_TWINE;TMP_PRESENT;USE_NEW_INPUT
+    14: USE_CINEMACHINE;USE_TWINE;TMP_PRESENT;USE_NEW_INPUT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

@@ -38,6 +38,8 @@ namespace HeavenlySin.Player
         private Camera _camera;
         private Vector3 _direction;
         private Vector3 _moveDir = Vector3.zero;
+        private bool _isOverworld = true;
+        private bool _isJumping;
         private float _targetAngle;
         private Vector3 _velocity = Vector3.zero;
         
@@ -53,6 +55,21 @@ namespace HeavenlySin.Player
         private void Update()
         {
             MovePlayer();
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                if (!playerScript.playerInput.inputManager.InputActions.Combat.enabled)
+                {
+                    playerScript.playerInput.inputManager.ToggleActionMap(playerScript.playerInput.inputManager
+                        .InputActions.Combat);
+                    _isOverworld = false;
+                }
+                else
+                {
+                    playerScript.playerInput.inputManager.ToggleActionMap(playerScript.playerInput.inputManager
+                        .InputActions.Overworld);
+                    _isOverworld = true;
+                }
+            }
         }
         
         #endregion
@@ -63,8 +80,7 @@ namespace HeavenlySin.Player
             // Variables to optimize code.
             var mainCameraTransform = _camera.transform;
             var mainCameraTransformEulerAngles = mainCameraTransform.eulerAngles;
-            var jumpingBool = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
-            
+
             // Makes player move in relation to the direction they are facing.
             _moveDir = Quaternion.Euler(0f, mainCameraTransformEulerAngles.y, 0f) * _direction;
             
@@ -79,7 +95,7 @@ namespace HeavenlySin.Player
             }
             
             // Jump Calculations.
-            if (jumpingBool && isGrounded)
+            if (_isJumping && isGrounded)
             {
                 _velocity.y = Mathf.Sqrt(jumpHeight * -2f * GRAVITY);
             }
@@ -102,9 +118,22 @@ namespace HeavenlySin.Player
         private void MovePlayer()
         {
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-            // TODO: This could be changed to account for switching to a different combat input action map.
-            _direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
-                playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
+            //Change movement based on the enabled action map
+            if (_isOverworld)
+            {
+                _direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
+                    playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
+                _isJumping = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
+            }
+            else
+            {
+                _direction = new Vector3(
+                        playerScript.playerInput.inputManager.InputActions.Combat.Movement.ReadValue<Vector2>().x, 0f,
+                        playerScript.playerInput.inputManager.InputActions.Combat.Movement.ReadValue<Vector2>().y)
+                    .normalized;
+                _isJumping = playerScript.playerInput.inputManager.InputActions.Combat.Jump.triggered;
+            }
+
             CalculateMovement();
         }
 
