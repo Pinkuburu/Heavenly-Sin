@@ -24,7 +24,7 @@ namespace HeavenlySin.Player
                     ""name"": ""Movement"",
                     ""type"": ""Value"",
                     ""id"": ""e2b6eef7-77f4-4b0d-8ece-2dbd81e1b31c"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -33,6 +33,14 @@ namespace HeavenlySin.Player
                     ""type"": ""Button"",
                     ""id"": ""404e9981-6235-4cea-9d8b-fdf77367b5f2"",
                     ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""e7f7d88d-b308-4fca-bf0e-90b2705d5a27"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -103,6 +111,17 @@ namespace HeavenlySin.Player
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""21bff309-59f8-4cdc-b997-4ac097f93a23"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -111,9 +130,17 @@ namespace HeavenlySin.Player
             ""id"": ""6b21ec96-53f3-453e-a470-81ffa6590ded"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""5435a418-a80e-4521-927d-206fe1c4440e"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Jump"",
                     ""type"": ""Button"",
-                    ""id"": ""ecee8d1b-d9a8-4a9b-8adb-d10a08ded5ee"",
+                    ""id"": ""9ead4eb3-1268-4b5e-9d8b-09fb02fd2a03"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -122,12 +149,78 @@ namespace HeavenlySin.Player
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""fb6af05b-6513-46d3-8ae0-09d0546bab88"",
+                    ""id"": ""220ba8f5-0ea1-4c06-ae58-d90814216f51"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""4ee2067b-60a5-40d5-b894-3b121f3bdb8d"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""8e9262ff-f9f7-4c68-9274-06fe69fb7e05"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""d3bf5ee4-9e0c-491b-bb2e-719441f355c5"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""3714bab4-7e1f-4f44-bc7f-b9aeb6209bc4"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""ddabccba-24f7-4266-aa56-7a7ed24c12cc"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2b6c5037-45b0-43ad-9324-35de4f72267e"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -221,9 +314,11 @@ namespace HeavenlySin.Player
             m_Overworld = asset.FindActionMap("Overworld", throwIfNotFound: true);
             m_Overworld_Movement = m_Overworld.FindAction("Movement", throwIfNotFound: true);
             m_Overworld_Jump = m_Overworld.FindAction("Jump", throwIfNotFound: true);
+            m_Overworld_Look = m_Overworld.FindAction("Look", throwIfNotFound: true);
             // Combat
             m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
-            m_Combat_Newaction = m_Combat.FindAction("New action", throwIfNotFound: true);
+            m_Combat_Movement = m_Combat.FindAction("Movement", throwIfNotFound: true);
+            m_Combat_Jump = m_Combat.FindAction("Jump", throwIfNotFound: true);
             // Dialogue
             m_Dialogue = asset.FindActionMap("Dialogue", throwIfNotFound: true);
             m_Dialogue_Newaction = m_Dialogue.FindAction("New action", throwIfNotFound: true);
@@ -284,12 +379,14 @@ namespace HeavenlySin.Player
         private IOverworldActions m_OverworldActionsCallbackInterface;
         private readonly InputAction m_Overworld_Movement;
         private readonly InputAction m_Overworld_Jump;
+        private readonly InputAction m_Overworld_Look;
         public struct OverworldActions
         {
             private @PlayerControls m_Wrapper;
             public OverworldActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
             public InputAction @Movement => m_Wrapper.m_Overworld_Movement;
             public InputAction @Jump => m_Wrapper.m_Overworld_Jump;
+            public InputAction @Look => m_Wrapper.m_Overworld_Look;
             public InputActionMap Get() { return m_Wrapper.m_Overworld; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -305,6 +402,9 @@ namespace HeavenlySin.Player
                     @Jump.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnJump;
                     @Jump.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnJump;
                     @Jump.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnJump;
+                    @Look.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLook;
+                    @Look.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLook;
+                    @Look.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLook;
                 }
                 m_Wrapper.m_OverworldActionsCallbackInterface = instance;
                 if (instance != null)
@@ -315,6 +415,9 @@ namespace HeavenlySin.Player
                     @Jump.started += instance.OnJump;
                     @Jump.performed += instance.OnJump;
                     @Jump.canceled += instance.OnJump;
+                    @Look.started += instance.OnLook;
+                    @Look.performed += instance.OnLook;
+                    @Look.canceled += instance.OnLook;
                 }
             }
         }
@@ -323,12 +426,14 @@ namespace HeavenlySin.Player
         // Combat
         private readonly InputActionMap m_Combat;
         private ICombatActions m_CombatActionsCallbackInterface;
-        private readonly InputAction m_Combat_Newaction;
+        private readonly InputAction m_Combat_Movement;
+        private readonly InputAction m_Combat_Jump;
         public struct CombatActions
         {
             private @PlayerControls m_Wrapper;
             public CombatActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-            public InputAction @Newaction => m_Wrapper.m_Combat_Newaction;
+            public InputAction @Movement => m_Wrapper.m_Combat_Movement;
+            public InputAction @Jump => m_Wrapper.m_Combat_Jump;
             public InputActionMap Get() { return m_Wrapper.m_Combat; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -338,16 +443,22 @@ namespace HeavenlySin.Player
             {
                 if (m_Wrapper.m_CombatActionsCallbackInterface != null)
                 {
-                    @Newaction.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnNewaction;
-                    @Newaction.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnNewaction;
-                    @Newaction.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnNewaction;
+                    @Movement.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnMovement;
+                    @Movement.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnMovement;
+                    @Movement.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnMovement;
+                    @Jump.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnJump;
+                    @Jump.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnJump;
+                    @Jump.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnJump;
                 }
                 m_Wrapper.m_CombatActionsCallbackInterface = instance;
                 if (instance != null)
                 {
-                    @Newaction.started += instance.OnNewaction;
-                    @Newaction.performed += instance.OnNewaction;
-                    @Newaction.canceled += instance.OnNewaction;
+                    @Movement.started += instance.OnMovement;
+                    @Movement.performed += instance.OnMovement;
+                    @Movement.canceled += instance.OnMovement;
+                    @Jump.started += instance.OnJump;
+                    @Jump.performed += instance.OnJump;
+                    @Jump.canceled += instance.OnJump;
                 }
             }
         }
@@ -455,10 +566,12 @@ namespace HeavenlySin.Player
         {
             void OnMovement(InputAction.CallbackContext context);
             void OnJump(InputAction.CallbackContext context);
+            void OnLook(InputAction.CallbackContext context);
         }
         public interface ICombatActions
         {
-            void OnNewaction(InputAction.CallbackContext context);
+            void OnMovement(InputAction.CallbackContext context);
+            void OnJump(InputAction.CallbackContext context);
         }
         public interface IDialogueActions
         {

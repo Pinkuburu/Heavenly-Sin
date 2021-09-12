@@ -63,7 +63,6 @@ namespace HeavenlySin.Player
             // Variables to optimize code.
             var mainCameraTransform = _camera.transform;
             var mainCameraTransformEulerAngles = mainCameraTransform.eulerAngles;
-            //var jumpingInt = (int)playerScript.playerInput.inputManager.InputActions.Overworld.Jump.ReadValue<float>();
             var jumpingBool = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
             
             // Makes player move in relation to the direction they are facing.
@@ -103,6 +102,7 @@ namespace HeavenlySin.Player
         private void MovePlayer()
         {
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+            // TODO: This could be changed to account for switching to a different combat input action map.
             _direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
                 playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
             CalculateMovement();

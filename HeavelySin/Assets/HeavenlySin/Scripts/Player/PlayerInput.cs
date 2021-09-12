@@ -24,6 +24,7 @@ namespace HeavenlySin.Player
         private void OnEnable()
         {
             EnableActionMap();
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void OnDisable()
@@ -50,7 +51,7 @@ namespace HeavenlySin.Player
         {
             move = inputManager.InputActions.Overworld.Movement;
             move.Enable();
-            inputManager.InputActions.Overworld.Jump.Enable();
+            inputManager.InputActions.Overworld.Enable();
         }
     }
 }
