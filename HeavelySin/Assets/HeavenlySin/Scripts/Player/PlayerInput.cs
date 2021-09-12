@@ -12,6 +12,7 @@ namespace HeavenlySin.Player
         /// </summary>
         public InputManager inputManager;
         public PlayerScript playerScript;
+        public SpriteRenderer sprite;
         
         [HideInInspector] public InputAction move;
         
@@ -40,11 +41,16 @@ namespace HeavenlySin.Player
             {
                 EnableActionMap();
             }
+            else
+            {
+                DisableActionMap();
+            }
         }
         
         private void DisableActionMap()
         {
             move.Disable();
+            sprite.enabled = true;
         }
 
         private void EnableActionMap()
@@ -52,6 +58,7 @@ namespace HeavenlySin.Player
             move = inputManager.InputActions.Overworld.Movement;
             move.Enable();
             inputManager.InputActions.Overworld.Enable();
+            sprite.enabled = false;
         }
     }
 }

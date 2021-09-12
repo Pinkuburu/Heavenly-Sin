@@ -411,6 +411,11 @@ Transform:
   m_Father: {fileID: 654279974}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &283681853 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 72763172438997611, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+  m_PrefabInstance: {fileID: 72763173404378909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &368304979
 GameObject:
   m_ObjectHideFlags: 3
@@ -538,7 +543,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419851083}
-  m_LocalRotation: {x: 0.16102149, y: -0.000000016981847, z: 0.000000002770596, w: 0.98695093}
+  m_LocalRotation: {x: 0.16102149, y: 0.000000016981858, z: -0.0000000027705975, w: 0.98695093}
   m_LocalPosition: {x: -3.17, y: 3.86, z: -9.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -575,7 +580,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.776675, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -677,7 +682,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.776675, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1084,7 +1089,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.010084643, y: -0, z: -0, w: 0.9999492}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.17, y: 1.1152, z: -3.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1647,10 +1652,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 423373536}
     m_Modifications:
+    - target: {fileID: 72763171883129893, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 72763171883129893, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72763171883129893, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72763171883129893, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72763171883129893, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72763171883129893, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 72763171883129898, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
       propertyPath: m_Name
       value: CameraLookAt
       objectReference: {fileID: 0}
+    - target: {fileID: 72763172438997605, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 283681853}
     - target: {fileID: 72763172438997608, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
       propertyPath: m_RootOrder
       value: 0
