@@ -2,12 +2,11 @@ using UnityEngine;
 
 namespace HeavenlySin.Player
 {
+    /// <summary>
+    /// Calculates all player movement.
+    /// </summary>
     public class PlayerMovement : MonoBehaviour
     {
-        /// <summary>
-        /// Calculates all player movement.
-        /// </summary>
-        
         #region Constant Fields
         
         private const float GRAVITY = -20f;
