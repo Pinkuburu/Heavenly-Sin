@@ -3,13 +3,13 @@ using UnityEngine.InputSystem;
 
 namespace HeavenlySin.Player
 {
+    /// <summary>
+    /// The PlayerInput class takes and stores all the keyboard/controller
+    /// input. Anything that uses this input has to go through PlayerScript
+    /// to get to it.
+    /// </summary>
     public class PlayerInput : MonoBehaviour
     {
-        /// <summary>
-        /// The PlayerInput class takes and stores all the keyboard/controller
-        /// input. Anything that uses this input has to go through PlayerScript
-        /// to get to it.
-        /// </summary>
         public InputManager inputManager;
         public PlayerScript playerScript;
         public SpriteRenderer sprite;
@@ -51,6 +51,7 @@ namespace HeavenlySin.Player
         private void DisableActionMap()
         {
             move.Disable();
+            inputManager.InputActions.Overworld.Interact.performed -= DoInteract;
             sprite.enabled = true;
         }
         
@@ -58,11 +59,18 @@ namespace HeavenlySin.Player
         {
             sprite.enabled = false;
         }
+        
+        private void DoInteract(InputAction.CallbackContext obj)
+        {
+            playerScript.playerCollision.currentTarget?.Interact();
+        }
 
         private void EnableActionMap()
         {
             move = inputManager.InputActions.Overworld.Movement;
             move.Enable();
+            inputManager.InputActions.Overworld.Interact.performed += DoInteract;
+            
             inputManager.InputActions.Overworld.Enable();
             Invoke(nameof(DisableSprite), 0.5f);
         }

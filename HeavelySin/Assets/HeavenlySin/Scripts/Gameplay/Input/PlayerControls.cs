@@ -43,6 +43,14 @@ namespace HeavenlySin.Player
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""f8c4c911-50e4-4d5e-a86d-6439801d4a8a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -120,6 +128,17 @@ namespace HeavenlySin.Player
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5236773e-c06f-44f5-a080-bc104a5017cd"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -315,6 +334,7 @@ namespace HeavenlySin.Player
             m_Overworld_Movement = m_Overworld.FindAction("Movement", throwIfNotFound: true);
             m_Overworld_Jump = m_Overworld.FindAction("Jump", throwIfNotFound: true);
             m_Overworld_Look = m_Overworld.FindAction("Look", throwIfNotFound: true);
+            m_Overworld_Interact = m_Overworld.FindAction("Interact", throwIfNotFound: true);
             // Combat
             m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
             m_Combat_Movement = m_Combat.FindAction("Movement", throwIfNotFound: true);
@@ -380,6 +400,7 @@ namespace HeavenlySin.Player
         private readonly InputAction m_Overworld_Movement;
         private readonly InputAction m_Overworld_Jump;
         private readonly InputAction m_Overworld_Look;
+        private readonly InputAction m_Overworld_Interact;
         public struct OverworldActions
         {
             private @PlayerControls m_Wrapper;
@@ -387,6 +408,7 @@ namespace HeavenlySin.Player
             public InputAction @Movement => m_Wrapper.m_Overworld_Movement;
             public InputAction @Jump => m_Wrapper.m_Overworld_Jump;
             public InputAction @Look => m_Wrapper.m_Overworld_Look;
+            public InputAction @Interact => m_Wrapper.m_Overworld_Interact;
             public InputActionMap Get() { return m_Wrapper.m_Overworld; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -405,6 +427,9 @@ namespace HeavenlySin.Player
                     @Look.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLook;
                     @Look.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLook;
                     @Look.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLook;
+                    @Interact.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
+                    @Interact.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
+                    @Interact.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
                 }
                 m_Wrapper.m_OverworldActionsCallbackInterface = instance;
                 if (instance != null)
@@ -418,6 +443,9 @@ namespace HeavenlySin.Player
                     @Look.started += instance.OnLook;
                     @Look.performed += instance.OnLook;
                     @Look.canceled += instance.OnLook;
+                    @Interact.started += instance.OnInteract;
+                    @Interact.performed += instance.OnInteract;
+                    @Interact.canceled += instance.OnInteract;
                 }
             }
         }
@@ -567,6 +595,7 @@ namespace HeavenlySin.Player
             void OnMovement(InputAction.CallbackContext context);
             void OnJump(InputAction.CallbackContext context);
             void OnLook(InputAction.CallbackContext context);
+            void OnInteract(InputAction.CallbackContext context);
         }
         public interface ICombatActions
         {
