@@ -51,6 +51,7 @@ namespace HeavenlySin.Player
         private void DisableActionMap()
         {
             move.Disable();
+            inputManager.InputActions.Overworld.Interact.performed -= DoInteract;
             sprite.enabled = true;
         }
         
@@ -58,11 +59,18 @@ namespace HeavenlySin.Player
         {
             sprite.enabled = false;
         }
+        
+        private void DoInteract(InputAction.CallbackContext obj)
+        {
+            playerScript.playerCollision.currentTarget?.Interact();
+        }
 
         private void EnableActionMap()
         {
             move = inputManager.InputActions.Overworld.Movement;
             move.Enable();
+            inputManager.InputActions.Overworld.Interact.performed += DoInteract;
+            
             inputManager.InputActions.Overworld.Enable();
             Invoke(nameof(DisableSprite), 0.5f);
         }

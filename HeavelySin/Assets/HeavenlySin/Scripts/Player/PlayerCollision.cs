@@ -11,6 +11,7 @@ namespace HeavenlySin.Player
     public class PlayerCollision : MonoBehaviour
     {
         #region Public Fields
+        public IInteractable currentTarget;
         public PlayerScript playerScript;
         [Tooltip("The maximum distance players can interact with interactable objects.")]
         [Range(0, 20)]public float range;
@@ -18,7 +19,6 @@ namespace HeavenlySin.Player
         
         #region Private Fields
         private Camera _camera;
-        private IInteractable _currentTarget;
         #endregion
         
         #region Life Cycle
@@ -47,44 +47,44 @@ namespace HeavenlySin.Player
                 {
                     if (hit.distance <= interactable.MaxRange)
                     {
-                        if (interactable == _currentTarget)
+                        if (interactable == currentTarget)
                             return;
-                        if (_currentTarget != null)
+                        if (currentTarget != null)
                         {
-                            _currentTarget.OnEndHover();
-                            _currentTarget = interactable;
-                            _currentTarget.OnStartHover();
+                            currentTarget.OnEndHover();
+                            currentTarget = interactable;
+                            currentTarget.OnStartHover();
                             return;
                         }
 
-                        _currentTarget = interactable;
-                        _currentTarget.OnStartHover();
+                        currentTarget = interactable;
+                        currentTarget.OnStartHover();
                     }
                     // If the object is still further than their individual max interaction range, make the target null.
                     else
                     {
-                        if (_currentTarget != null)
+                        if (currentTarget != null)
                         {
-                            _currentTarget.OnEndHover();
-                            _currentTarget = null;
+                            currentTarget.OnEndHover();
+                            currentTarget = null;
                         }
                     }
                 }
                 else
                 {
-                    if (_currentTarget == null)
+                    if (currentTarget == null)
                         return;
-                    _currentTarget.OnEndHover();
-                    _currentTarget = null;
+                    currentTarget.OnEndHover();
+                    currentTarget = null;
                 }
             }
             // If the ray does not hit anything, make the current target null.
             else
             {
-                if (_currentTarget == null)
+                if (currentTarget == null)
                     return;
-                _currentTarget.OnEndHover();
-                _currentTarget = null;
+                currentTarget.OnEndHover();
+                currentTarget = null;
             }
         }
         #endregion
