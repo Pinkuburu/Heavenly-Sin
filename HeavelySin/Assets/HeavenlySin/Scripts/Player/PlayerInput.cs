@@ -25,7 +25,8 @@ namespace HeavenlySin.Player
         private void OnEnable()
         {
             EnableActionMap();
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
         }
 
         private void OnDisable()
