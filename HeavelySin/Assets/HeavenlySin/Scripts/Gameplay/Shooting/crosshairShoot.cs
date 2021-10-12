@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using HeavenlySin.Enemy;
 using UnityEngine;
 
 namespace HeavenlySin
@@ -7,9 +8,10 @@ namespace HeavenlySin
     public class crosshairShoot : MonoBehaviour
     {
         private Vector3 targetPos;
-        public float speed = 2.0f;
+        /*public float speed = 2.0f;
         public float shootSpeed = 3.0f;
-        public Rigidbody Projectile;
+        public Rigidbody Projectile;*/
+        public float damage;
         public Camera UIcamera;
 
         void Start()
@@ -40,7 +42,8 @@ namespace HeavenlySin
             if (Physics.Raycast(ray.origin, ray.direction, out hit, Mathf.Infinity)){
                 if (hit.transform.gameObject.tag == "Enemy")
                 {
-                    Destroy(hit.transform.gameObject);
+                    //Destroy(hit.transform.gameObject);
+                    hit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
                 }
             }
         }
