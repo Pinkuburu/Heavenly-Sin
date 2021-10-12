@@ -1,52 +1,111 @@
 using System.Collections;
-using System.Collections.Generic;
 using HeavenlySin.Enemy;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Shooting
 {
+    /// <summary>
+    /// This class handles the moving of the player's crosshair
+    /// as well as the shooting and reloading mechanics
+    /// </summary>
+    
+    // TODO: Rename this class to CrosshairShoot and rename the file. 
     public class crosshairShoot : MonoBehaviour
     {
-        private Vector3 targetPos;
-        /*public float speed = 2.0f;
-        public float shootSpeed = 3.0f;
-        public Rigidbody Projectile;*/
+        #region Public Fields
+        
         public float damage;
-        public Camera UIcamera;
-
-        void Start()
+        public float fireRate = 15f;
+        public int maxAmmo = 6;
+        public float reloadTime = 1f;
+        public Camera UICamera;
+        
+        #endregion
+        
+        #region Private Fields
+        
+        private int _currentAmmo;
+        private bool _isReloading = false;
+        private float _nextTimeToFire = 0f;
+        private Vector3 _targetPos;
+        
+        #endregion
+        
+        #region LifeCycle
+        
+        private void Start()
         {
-            targetPos = transform.position;
-
+            _targetPos = transform.position;
+            _currentAmmo = maxAmmo;
         }
         
-        void Update()
+        private void Update()
         {
 
-            float distance = transform.position.z + UIcamera.transform.position.z;
-            targetPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
-            targetPos = UIcamera.ScreenToWorldPoint(targetPos);
+            var distance = transform.position.z + UICamera.transform.position.z;
+            _targetPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
+            _targetPos = UICamera.ScreenToWorldPoint(_targetPos);
 
-            Vector3 followXonly = new Vector3(targetPos.x, targetPos.y, transform.position.z);
-            transform.position = followXonly;
+            var followXOnly = new Vector3(_targetPos.x, _targetPos.y, transform.position.z);
+            transform.position = followXOnly;
+            
+            if (_isReloading)
+            {
+                return;
+            }
+            
+            if (_currentAmmo <= 0)
+            {
+                StartCoroutine(Reload());
+                return;
+            }
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StartCoroutine(Reload());
+                return;
+            }
+
+            if (Input.GetMouseButtonDown(0) && Time.time >= _nextTimeToFire)
+            {
+                _nextTimeToFire = Time.time + 1f / fireRate;
                 PlayerShoot();
+            }
         }
+        
+        #endregion
 
-        void PlayerShoot()
+        #region Private Methods
+        
+        private void PlayerShoot()
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.DrawRay(ray.origin, ray.direction * 100, Color.red);
-            if (Physics.Raycast(ray.origin, ray.direction, out hit, Mathf.Infinity)){
-                if (hit.transform.gameObject.tag == "Enemy")
+            Debug.Log("Fire!");
+
+            _currentAmmo--;
+
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray.origin, ray.direction, out var hit, Mathf.Infinity))
+            {
+                if (hit.transform.gameObject.CompareTag("Enemy"))
                 {
-                    //Destroy(hit.transform.gameObject);
                     hit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
                 }
             }
         }
+        
+        private IEnumerator Reload()
+        {
+            _isReloading = true;
+            Debug.Log("Reloading...");
+            yield return new WaitForSeconds(reloadTime);
+            _currentAmmo = maxAmmo;
+            _isReloading = false;
+            /*if (Input.GetMouseButtonDown(0))
+                PlayerShoot();
+                */
+        }
+        
+        #endregion
     }
 }
 
