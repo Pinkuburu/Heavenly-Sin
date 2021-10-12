@@ -1,23 +1,38 @@
 using System.Collections;
+using HeavenlySin.Enemy;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Shooting
 {
+    /// <summary>
+    /// This class handles the moving of the player's crosshair
+    /// as well as the shooting and reloading mechanics
+    /// </summary>
+    
+    // TODO: Rename this class to CrosshairShoot and rename the file. 
     public class crosshairShoot : MonoBehaviour
     {
-        private Vector3 _targetPos;
-        private float _nextTimeToFire = 0f;
-        public float speed = 2.0f;
-        public float shootSpeed = 3.0f;
-        public float fireRate = 15f;
-       
-        public int maxAmmo = 6;
-        private int _currentAmmo;
-        public float reloadTime = 1f;
-        private bool _isReloading = false;
+        #region Public Fields
         
+        public float damage;
+        public float fireRate = 15f;
+        public int maxAmmo = 6;
+        public float reloadTime = 1f;
         public Camera UICamera;
-
+        
+        #endregion
+        
+        #region Private Fields
+        
+        private int _currentAmmo;
+        private bool _isReloading = false;
+        private float _nextTimeToFire = 0f;
+        private Vector3 _targetPos;
+        
+        #endregion
+        
+        #region LifeCycle
+        
         private void Start()
         {
             _targetPos = transform.position;
@@ -38,8 +53,7 @@ namespace HeavenlySin
             {
                 return;
             }
-                
-
+            
             if (_currentAmmo <= 0)
             {
                 StartCoroutine(Reload());
@@ -52,14 +66,33 @@ namespace HeavenlySin
                 return;
             }
 
-            if (Input.GetMouseButtonDown(0) &&    Time.time >= _nextTimeToFire)
+            if (Input.GetMouseButtonDown(0) && Time.time >= _nextTimeToFire)
             {
                 _nextTimeToFire = Time.time + 1f / fireRate;
                 PlayerShoot();
             }
-                
         }
+        
+        #endregion
 
+        #region Private Methods
+        
+        private void PlayerShoot()
+        {
+            Debug.Log("Fire!");
+
+            _currentAmmo--;
+
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray.origin, ray.direction, out var hit, Mathf.Infinity))
+            {
+                if (hit.transform.gameObject.CompareTag("Enemy"))
+                {
+                    hit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
+                }
+            }
+        }
+        
         private IEnumerator Reload()
         {
             _isReloading = true;
@@ -71,21 +104,8 @@ namespace HeavenlySin
                 PlayerShoot();
                 */
         }
-
-        private void PlayerShoot()
-        {
-            Debug.Log("Fire!");
-
-            _currentAmmo--;
-
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray.origin, ray.direction, out var hit, Mathf.Infinity)){
-                if (hit.transform.gameObject.CompareTag("Enemy"))
-                {
-                    Destroy(hit.transform.gameObject);
-                }
-            }
-        }
+        
+        #endregion
     }
 }
 

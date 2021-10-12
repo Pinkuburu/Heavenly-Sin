@@ -8,4 +8,5 @@
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cheavenlysin_005Cscripts_005Cscriptableobjects_005Cgameevents_005Cscripts_005Cintevents/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cheavenlysin_005Cscripts_005Cscriptableobjects_005Cgameevents_005Cscripts_005Cvoidevents/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cheavenlysin_005Cscripts_005Cscriptableobjects_005Cinput/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cheavenlysin_005Cscripts_005Cscriptableobjects_005Cinput_005Cscripts/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cheavenlysin_005Cscripts_005Cscriptableobjects_005Cinput_005Cscripts/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cheavenlysin_005Cscripts_005Cscriptableobjects_005Cstats_005Cscripts/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

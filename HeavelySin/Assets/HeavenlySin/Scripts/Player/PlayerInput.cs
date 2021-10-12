@@ -13,7 +13,7 @@ namespace HeavenlySin.Player
         public InputManager inputManager;
         public PlayerScript playerScript;
         public SpriteRenderer sprite;
-        
+                                                              
         [HideInInspector] public InputAction move;
         
         #region Life Cycle
@@ -26,7 +26,7 @@ namespace HeavenlySin.Player
         {
             EnableActionMap();
             //Cursor.lockState = CursorLockMode.Locked;
-            //Cursor.visible = false;
+            Cursor.visible = false;
         }
 
         private void OnDisable()
