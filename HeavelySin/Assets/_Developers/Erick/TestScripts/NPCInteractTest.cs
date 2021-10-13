@@ -1,6 +1,7 @@
 using HeavenlySin.GameEvents;
 using HeavenlySin.Interactable;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 /// <summary>
 /// This is a test class to demonstrate the outline of an interactable
@@ -21,16 +22,25 @@ public class NPCInteractTest : MonoBehaviour, IInteractable
     
     #region Private Fields
     private const float MAX_RANGE = 100f;
+    private DialogueSystemTrigger dialogue;
     #endregion
 
     #region Properties
     public float MaxRange => MAX_RANGE;
     #endregion
     
+
+    #region Private Methods
+    private void Start()
+    {
+         dialogue = GetComponent<DialogueSystemTrigger>();
+    }
+    #endregion
+
     #region Public Methods
     public void Interact()
     {
-        Debug.Log("Hello, World!");
+        dialogue.OnUse(this.gameObject.transform); 
     }
 
     public void OnEndHover()
@@ -43,4 +53,6 @@ public class NPCInteractTest : MonoBehaviour, IInteractable
         startHover.Raise(imageIndex);
     }
     #endregion
+
 }
+
