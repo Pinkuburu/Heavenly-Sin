@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6494871, g: 0.7731114, b: 0.834781, a: 1}
+  m_IndirectSpecularColor: {r: 0.6494871, g: 0.7731115, b: 0.834781, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25148,6 +25148,10 @@ PrefabInstance:
       propertyPath: damage
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: UICamera
+      value: 
+      objectReference: {fileID: 1595251931}
     - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: UIcamera
       value: 
