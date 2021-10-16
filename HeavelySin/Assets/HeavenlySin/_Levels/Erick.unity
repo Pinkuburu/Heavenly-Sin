@@ -25144,26 +25144,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
-      propertyPath: damage
-      value: 20
+    - target: {fileID: 941563011, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 941563014, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: rotationSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 941563014, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: isClockwiseRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097404617, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.900024
       objectReference: {fileID: 0}
     - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: UICamera
       value: 
       objectReference: {fileID: 1595251931}
     - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
-      propertyPath: UIcamera
-      value: 
-      objectReference: {fileID: 1595251931}
-    - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
-      propertyPath: Projectile
-      value: 
+      propertyPath: fireRate
+      value: 2.49
       objectReference: {fileID: 0}
     - target: {fileID: 924417425846815576, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1595251931}
+    - target: {fileID: 924417425846815576, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 924417426346120434, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.465
+      objectReference: {fileID: 0}
+    - target: {fileID: 924417426346120434, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.465
+      objectReference: {fileID: 0}
+    - target: {fileID: 924417426346120434, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.465
+      objectReference: {fileID: 0}
     - target: {fileID: 924417426836175978, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -25227,11 +25251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245221602851756888, guid: 82f742dac33b991439d643dac9297278, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018986288
+      value: -0.000000018986285
       objectReference: {fileID: 0}
     - target: {fileID: 6245221602851756888, guid: 82f742dac33b991439d643dac9297278, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000003097621
+      value: 0.0000000030976204
       objectReference: {fileID: 0}
     - target: {fileID: 6245221602851756889, guid: 82f742dac33b991439d643dac9297278, type: 3}
       propertyPath: m_Follow

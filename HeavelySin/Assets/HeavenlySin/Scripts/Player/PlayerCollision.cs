@@ -37,6 +37,7 @@ namespace HeavenlySin.Player
         #region Private Methods
         private void RaycastForInteractable()
         {
+            // TODO: Maybe change this to cast from the player
             var ray = _camera.ScreenPointToRay(Input.mousePosition);
             // Cast a ray from the camera to the mouse (middle of the screen).
             if (Physics.Raycast(ray, out var hit, range))

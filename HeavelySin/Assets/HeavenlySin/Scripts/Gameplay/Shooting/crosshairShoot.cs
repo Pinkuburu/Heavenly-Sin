@@ -1,5 +1,6 @@
 using System.Collections;
 using HeavenlySin.Enemy;
+using HeavenlySin.GameEvents;
 using UnityEngine;
 
 namespace HeavenlySin.Shooting
@@ -15,18 +16,20 @@ namespace HeavenlySin.Shooting
         #region Public Fields
         
         public float damage;
-        public float fireRate = 15f;
+        [Tooltip("How many times the player can fire per second.")]
+        [Range(1, 5)]public float fireRate;
         public int maxAmmo = 6;
         public float reloadTime = 1f;
         public Camera UICamera;
-        
+        [SerializeField] private IntEvent OnGunFire;
+        [SerializeField] private VoidEvent OnGunReload;
         #endregion
         
         #region Private Fields
         
+        private bool _allowFire = true;
         private int _currentAmmo;
         private bool _isReloading = false;
-        private float _nextTimeToFire = 0f;
         private Vector3 _targetPos;
         
         #endregion
@@ -41,14 +44,15 @@ namespace HeavenlySin.Shooting
         
         private void Update()
         {
-
-            var distance = transform.position.z + UICamera.transform.position.z;
+            var position = transform.position;
+            var distance = position.z + UICamera.transform.position.z;
             _targetPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
             _targetPos = UICamera.ScreenToWorldPoint(_targetPos);
 
-            var followXOnly = new Vector3(_targetPos.x, _targetPos.y, transform.position.z);
-            transform.position = followXOnly;
-            
+            var followXOnly = new Vector3(_targetPos.x, _targetPos.y, position.z);
+            position = followXOnly;
+            transform.position = position;
+
             if (_isReloading)
             {
                 return;
@@ -66,9 +70,8 @@ namespace HeavenlySin.Shooting
                 return;
             }
 
-            if (Input.GetMouseButtonDown(0) && Time.time >= _nextTimeToFire)
+            if (Input.GetMouseButtonDown(0) && _allowFire)
             {
-                _nextTimeToFire = Time.time + 1f / fireRate;
                 PlayerShoot();
             }
         }
@@ -79,10 +82,11 @@ namespace HeavenlySin.Shooting
         
         private void PlayerShoot()
         {
-            Debug.Log("Fire!");
-
+            _allowFire = false;
+            
+            OnGunFire.Raise(_currentAmmo);
             _currentAmmo--;
-
+            
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray.origin, ray.direction, out var hit, Mathf.Infinity))
             {
@@ -91,20 +95,23 @@ namespace HeavenlySin.Shooting
                     hit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
                 }
             }
+            Invoke(nameof(AllowFire), 1/fireRate);
         }
         
         private IEnumerator Reload()
         {
             _isReloading = true;
-            Debug.Log("Reloading...");
             yield return new WaitForSeconds(reloadTime);
             _currentAmmo = maxAmmo;
             _isReloading = false;
-            /*if (Input.GetMouseButtonDown(0))
-                PlayerShoot();
-                */
+            OnGunReload.Raise();
         }
-        
+
+        private void AllowFire()
+        {
+            _allowFire = true;
+        }
+
         #endregion
     }
 }
