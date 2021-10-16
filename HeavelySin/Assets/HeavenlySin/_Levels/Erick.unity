@@ -25168,6 +25168,14 @@ PrefabInstance:
       propertyPath: fireRate
       value: 2.49
       objectReference: {fileID: 0}
+    - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: onGunFire
+      value: 
+      objectReference: {fileID: 11400000, guid: 3059e0cc07a59a249966c915074c9cb8, type: 2}
+    - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: onGunReload
+      value: 
+      objectReference: {fileID: 11400000, guid: bc0eccb66be4d834ba5eb237e360f39a, type: 2}
     - target: {fileID: 924417425846815576, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: m_Camera
       value: 
@@ -25251,11 +25259,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245221602851756888, guid: 82f742dac33b991439d643dac9297278, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000018986285
+      value: 0.000000018986288
       objectReference: {fileID: 0}
     - target: {fileID: 6245221602851756888, guid: 82f742dac33b991439d643dac9297278, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000030976204
+      value: -0.000000003097621
       objectReference: {fileID: 0}
     - target: {fileID: 6245221602851756889, guid: 82f742dac33b991439d643dac9297278, type: 3}
       propertyPath: m_Follow

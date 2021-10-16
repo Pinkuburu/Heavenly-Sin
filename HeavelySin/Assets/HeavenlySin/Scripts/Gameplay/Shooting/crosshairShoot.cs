@@ -10,8 +10,7 @@ namespace HeavenlySin.Shooting
     /// as well as the shooting and reloading mechanics
     /// </summary>
     
-    // TODO: Rename this class to CrosshairShoot and rename the file. 
-    public class crosshairShoot : MonoBehaviour
+    public class CrosshairShoot : MonoBehaviour
     {
         #region Public Fields
         
@@ -21,8 +20,8 @@ namespace HeavenlySin.Shooting
         public int maxAmmo = 6;
         public float reloadTime = 1f;
         public Camera UICamera;
-        [SerializeField] private IntEvent OnGunFire;
-        [SerializeField] private VoidEvent OnGunReload;
+        [SerializeField] private IntEvent onGunFire;
+        [SerializeField] private VoidEvent onGunReload;
         #endregion
         
         #region Private Fields
@@ -84,7 +83,7 @@ namespace HeavenlySin.Shooting
         {
             _allowFire = false;
             
-            OnGunFire.Raise(_currentAmmo);
+            onGunFire.Raise(_currentAmmo);
             _currentAmmo--;
             
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -104,7 +103,7 @@ namespace HeavenlySin.Shooting
             yield return new WaitForSeconds(reloadTime);
             _currentAmmo = maxAmmo;
             _isReloading = false;
-            OnGunReload.Raise();
+            onGunReload.Raise();
         }
 
         private void AllowFire()
