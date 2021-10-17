@@ -54,20 +54,26 @@ namespace HeavenlySin.Player
         private void Update()
         {
             MovePlayer();
-            if (Input.GetKeyDown(KeyCode.T))
+        }
+        
+        #endregion
+        
+        #region Public Methods
+        
+        public void ChangeMovement(int num)
+        {
+            if (num == 0)
             {
-                if (!playerScript.playerInput.inputManager.InputActions.Combat.enabled)
-                {
-                    playerScript.playerInput.inputManager.ToggleActionMap(playerScript.playerInput.inputManager
+                playerScript.playerInput.inputManager.ToggleActionMap(playerScript.playerInput.inputManager
+                    .InputActions.Overworld);
+                _isOverworld = true;
+            }
+            else if(num == 1)
+            {
+                playerScript.playerInput.inputManager.ToggleActionMap(playerScript.playerInput.inputManager
                         .InputActions.Combat);
-                    _isOverworld = false;
-                }
-                else
-                {
-                    playerScript.playerInput.inputManager.ToggleActionMap(playerScript.playerInput.inputManager
-                        .InputActions.Overworld);
-                    _isOverworld = true;
-                }
+                playerScript.playerInput.sprite.enabled = true;
+                _isOverworld = false;
             }
         }
         
@@ -135,7 +141,6 @@ namespace HeavenlySin.Player
 
             CalculateMovement();
         }
-
         #endregion
 
         #region Debug Methods

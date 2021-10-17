@@ -16,13 +16,10 @@ namespace HeavenlySin.CameraScripts
         #endregion
  
         #region LifeCycle
-        private void Update()
+
+        private void Start()
         {
-            // Debug statement to test camera transitions.
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                SwitchState();
-            }
+            SwitchState();
         }
         #endregion
         

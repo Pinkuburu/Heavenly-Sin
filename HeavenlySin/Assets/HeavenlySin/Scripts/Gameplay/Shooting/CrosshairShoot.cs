@@ -43,6 +43,7 @@ namespace HeavenlySin.Shooting
         
         private void Update()
         {
+            Cursor.lockState = CursorLockMode.None;
             var position = transform.position;
             var distance = position.z + UICamera.transform.position.z;
             _targetPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);

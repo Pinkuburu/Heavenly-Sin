@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.UI
 {
     public class SkyboxRotate : MonoBehaviour
     {
