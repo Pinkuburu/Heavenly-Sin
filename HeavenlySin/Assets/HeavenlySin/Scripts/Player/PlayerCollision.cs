@@ -14,7 +14,7 @@ namespace HeavenlySin.Player
         public IInteractable currentTarget;
         public PlayerScript playerScript;
         [Tooltip("The maximum distance players can interact with interactable objects.")]
-        [Range(0, 20)]public float range;
+        [Range(1, 20)]public float range;
         #endregion
         
         #region Private Fields

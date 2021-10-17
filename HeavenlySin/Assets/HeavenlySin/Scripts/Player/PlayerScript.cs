@@ -9,6 +9,7 @@ namespace HeavenlySin.Player
     /// </summary>
     public class PlayerScript : MonoBehaviour
     {
+        public Inventory.Inventory inventory;
         public PlayerAnimation playerAnimation;
         public PlayerCollision playerCollision;
         public PlayerInput playerInput;

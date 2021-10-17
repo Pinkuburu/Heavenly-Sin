@@ -17,16 +17,16 @@ namespace HeavenlySin.Player
         [HideInInspector] public InputAction move;
         
         #region Life Cycle
-        private void Start()
+
+        private void Awake()
         {
-            inputManager.ActionMapChange += CheckEnabledActionMap;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.None;
         }
 
         private void OnEnable()
         {
-            EnableActionMap();
-            //Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            inputManager.ActionMapChange += CheckEnabledActionMap;
         }
 
         private void OnDisable()
@@ -53,7 +53,6 @@ namespace HeavenlySin.Player
         {
             move.Disable();
             inputManager.InputActions.Overworld.Interact.performed -= DoInteract;
-            sprite.enabled = true;
         }
         
         private void DisableSprite()
@@ -73,7 +72,6 @@ namespace HeavenlySin.Player
             inputManager.InputActions.Overworld.Interact.performed += DoInteract;
             
             inputManager.InputActions.Overworld.Enable();
-            Invoke(nameof(DisableSprite), 0.5f);
         }
         #endregion
     }

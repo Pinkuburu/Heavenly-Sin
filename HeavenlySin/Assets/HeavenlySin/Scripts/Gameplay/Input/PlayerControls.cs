@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-namespace HeavenlySin.Player
+namespace HeavenlySin
 {
     public class @PlayerControls : IInputActionCollection, IDisposable
     {
@@ -166,17 +166,6 @@ namespace HeavenlySin.Player
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""220ba8f5-0ea1-4c06-ae58-d90814216f51"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": ""WASD"",
                     ""id"": ""4ee2067b-60a5-40d5-b894-3b121f3bdb8d"",
