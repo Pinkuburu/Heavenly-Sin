@@ -33,9 +33,9 @@ namespace HeavenlySin
             ReloadScene();
         }
 
-        private void ReloadScene()
+        private static void ReloadScene()
         {
-            Scene scene = SceneManager.GetActiveScene();
+            var scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
         }
         #endregion
