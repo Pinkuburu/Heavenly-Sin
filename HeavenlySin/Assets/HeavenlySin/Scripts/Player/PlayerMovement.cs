@@ -37,7 +37,6 @@ namespace HeavenlySin.Player
         private Camera _camera;
         private Vector3 _direction;
         private Vector3 _moveDir = Vector3.zero;
-        private bool _isOverworld = true;
         private bool _isJumping;
         private float _targetAngle;
         private Vector3 _velocity = Vector3.zero;
@@ -54,27 +53,6 @@ namespace HeavenlySin.Player
         private void Update()
         {
             MovePlayer();
-        }
-        
-        #endregion
-        
-        #region Public Methods
-        
-        public void ChangeMovement(int num)
-        {
-            if (num == 0)
-            {
-                playerScript.playerInput.inputManager.ToggleActionMap(playerScript.playerInput.inputManager
-                    .InputActions.Overworld);
-                _isOverworld = true;
-            }
-            else if(num == 1)
-            {
-                playerScript.playerInput.inputManager.ToggleActionMap(playerScript.playerInput.inputManager
-                        .InputActions.Combat);
-                playerScript.playerInput.sprite.enabled = true;
-                _isOverworld = false;
-            }
         }
         
         #endregion
@@ -123,21 +101,10 @@ namespace HeavenlySin.Player
         private void MovePlayer()
         {
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-            //Change movement based on the enabled action map
-            if (_isOverworld)
-            {
-                _direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
-                    playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
-                _isJumping = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
-            }
-            else
-            {
-                _direction = new Vector3(
-                        playerScript.playerInput.inputManager.InputActions.Combat.Movement.ReadValue<Vector2>().x, 0f,
-                        playerScript.playerInput.inputManager.InputActions.Combat.Movement.ReadValue<Vector2>().y)
-                    .normalized;
-                _isJumping = playerScript.playerInput.inputManager.InputActions.Combat.Jump.triggered;
-            }
+            
+            _direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
+                playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
+            _isJumping = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
 
             CalculateMovement();
         }

@@ -26,7 +26,7 @@ namespace HeavenlySin.Player
 
         private void OnEnable()
         {
-            inputManager.ActionMapChange += CheckEnabledActionMap;
+            EnableActionMap();
         }
 
         private void OnDisable()
@@ -37,29 +37,13 @@ namespace HeavenlySin.Player
         #endregion
         
         #region Private Methods
-        private void CheckEnabledActionMap(InputActionMap actionMap)
-        {
-            if (actionMap == (InputActionMap)inputManager.InputActions.Overworld)
-            {
-                EnableActionMap();
-            }
-            else
-            {
-                DisableActionMap();
-            }
-        }
-        
+
         private void DisableActionMap()
         {
             move.Disable();
             inputManager.InputActions.Overworld.Interact.performed -= DoInteract;
         }
-        
-        private void DisableSprite()
-        {
-            sprite.enabled = false;
-        }
-        
+
         private void DoInteract(InputAction.CallbackContext obj)
         {
             playerScript.playerCollision.currentTarget?.Interact();
@@ -73,6 +57,7 @@ namespace HeavenlySin.Player
             
             inputManager.InputActions.Overworld.Enable();
         }
+        
         #endregion
     }
 }
