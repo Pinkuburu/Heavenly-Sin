@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1968043582044677317}
   - component: {fileID: 6293192156323946476}
   m_Layer: 0
-  m_Name: P_Car
+  m_Name: P_Car_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,7 +40,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22264310607447312}
-  m_Mesh: {fileID: 6239881831769578202, guid: b2b41fafd2b7e5c43a33d709656eb9eb, type: 3}
+  m_Mesh: {fileID: 6239881831769578202, guid: 0409805593348144fb1a1a412aeb512a, type: 3}
 --- !u!23 &1968043582044677317
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f5382c82d4ab8a42bbdca7ba79116ed, type: 2}
+  - {fileID: 2100000, guid: 5cc108a426e76074aac099d7f473e79a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
