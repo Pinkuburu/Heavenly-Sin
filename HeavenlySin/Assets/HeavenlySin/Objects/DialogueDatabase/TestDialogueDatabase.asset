@@ -1432,9 +1432,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: '{{default}}
-
-          LoadLevel(Dreamscape);'
+        value: '{{default}}'
         type: 0
         typeString: 
       conversationID: 3
