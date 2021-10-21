@@ -18033,14 +18033,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7743556999111537880, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9999492
-      objectReference: {fileID: 0}
-    - target: {fileID: 7743556999111537880, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.010084643
-      objectReference: {fileID: 0}
     - target: {fileID: 7743556999111537887, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
       propertyPath: near clip plane
       value: 0.001
@@ -18094,20 +18086,16 @@ PrefabInstance:
       value: Cameras
       objectReference: {fileID: 0}
     - target: {fileID: 7743556999446423527, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7743556999446423527, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7743556999654617824, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000001698186
+      value: -0.000000016981847
       objectReference: {fileID: 0}
     - target: {fileID: 7743556999654617824, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000002770597
+      value: 0.0000000027705953
       objectReference: {fileID: 0}
     - target: {fileID: 7743556999654617825, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
       propertyPath: m_Follow
@@ -18117,17 +18105,9 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1297507898}
-    - target: {fileID: 7743556999654617825, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
-      propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7775176
-      objectReference: {fileID: 0}
     - target: {fileID: 8851409472928559048, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1297507899}
-    - target: {fileID: 8851409472928559048, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}
-      propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7775176
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90a8a083832aec4caafa4eefa9fa33f, type: 3}

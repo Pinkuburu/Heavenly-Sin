@@ -449,7 +449,7 @@ MonoBehaviour:
   - {fileID: 7743556999654617825}
   m_Instructions:
   - m_FullHash: 329558610
-    m_VirtualCamera: {fileID: 0}
+    m_VirtualCamera: {fileID: 8851409472928559048}
     m_ActivateAfter: 0
     m_MinDuration: 0
   - m_FullHash: -1982969619
@@ -465,7 +465,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: ee400f094477b0b47a5fcc9c6c9d67ae, type: 2}
   m_ParentHash:
   - m_Hash: 329558610
     m_ParentHash: 756556552
@@ -564,7 +564,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7772397, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -635,7 +635,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7772397, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
