@@ -28490,7 +28490,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: New Conversation 1
+  conversation: Wrath tutorial (conversation)
   conversationConversant: {fileID: 1438010788}
   conversationActor: {fileID: 1083953527}
   startConversationEntryID: -1
