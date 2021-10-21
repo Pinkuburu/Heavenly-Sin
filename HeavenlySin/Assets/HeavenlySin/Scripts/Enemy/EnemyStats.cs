@@ -37,7 +37,6 @@ namespace HeavenlySin.Enemy
         public void TakeDamage(float damage)
         {
             _health -= damage;
-            Debug.Log("Health: " + _health);
             IsDead();
             // TODO: update UI health bar.
         }
