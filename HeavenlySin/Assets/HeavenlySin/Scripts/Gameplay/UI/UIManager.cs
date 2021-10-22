@@ -16,6 +16,26 @@ namespace HeavenlySin.UI
 
         #region Public Methods
 
+        public void Update()
+        {
+            //Pausing and resuming the game state
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                if(Time.timeScale == 1)
+                {
+                    Time.timeScale = 0;
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                }
+                else
+                {
+                    Time.timeScale = 1;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
+            }
+        }
+
         public void DisableImage(int index)
         {
             uiElements[index].enabled = false;
