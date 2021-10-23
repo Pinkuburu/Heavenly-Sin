@@ -38,6 +38,11 @@ namespace HeavenlySin
         {
             SceneManager.LoadScene("Credits");
         }
+
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
         #endregion
 
         #region Private Methods
