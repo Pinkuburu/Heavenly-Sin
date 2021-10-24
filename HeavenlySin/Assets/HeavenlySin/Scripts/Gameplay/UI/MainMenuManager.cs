@@ -41,7 +41,14 @@ namespace HeavenlySin
 
         public void QuitGame()
         {
-            Application.Quit();
+            if(SceneManager.GetActiveScene().name != "MainMenu")
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+            else
+            {
+                Application.Quit();
+            }
         }
         #endregion
 
