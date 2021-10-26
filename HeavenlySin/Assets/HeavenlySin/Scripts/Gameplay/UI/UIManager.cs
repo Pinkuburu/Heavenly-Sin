@@ -19,6 +19,12 @@ namespace HeavenlySin.UI
 
         #region Public Methods
 
+        public void Start()
+        {
+            uiMenus[0].SetActive(false); //pause menu
+            uiMenus[1].SetActive(false); //settings menu
+        }
+
         public void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -69,8 +75,16 @@ namespace HeavenlySin.UI
 
         public void Settings()
         {
-            DisableMenu(0);
-            EnableMenu(1);
+            if(uiMenus[1].activeSelf == false)
+            {
+                uiMenus[0].SetActive(false);
+                uiMenus[1].SetActive(true);
+            }
+            else
+            {
+                uiMenus[0].SetActive(true);
+                uiMenus[1].SetActive(false);
+            }
         }
 
         public void QuitGame()
