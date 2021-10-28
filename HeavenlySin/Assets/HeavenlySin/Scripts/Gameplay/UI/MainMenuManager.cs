@@ -38,6 +38,18 @@ namespace HeavenlySin
         {
             SceneManager.LoadScene("Credits");
         }
+
+        public void QuitGame()
+        {
+            if(SceneManager.GetActiveScene().name != "MainMenu")
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+            else
+            {
+                Application.Quit();
+            }
+        }
         #endregion
 
         #region Private Methods

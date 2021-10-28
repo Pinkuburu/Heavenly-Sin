@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/HeavenlySin/_Levels/Dreamscape.unity
     guid: b47be98e7f3e2074685fce9bba32249b
+  - enabled: 1
+    path: Assets/HeavenlySin/_Levels/Speakeasy.unity
+    guid: 271c4a53ccb9551428679ec8e216e10f
+  - enabled: 1
+    path: Assets/HeavenlySin/_Levels/Office.unity
+    guid: 0c7b1b0a5984b9841b715ac15301f5f3
   m_configObjects: {}
