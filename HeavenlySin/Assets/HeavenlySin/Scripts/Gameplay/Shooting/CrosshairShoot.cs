@@ -20,7 +20,6 @@ namespace HeavenlySin.Shooting
         public int maxAmmo = 6;
         public float reloadTime = 1f;
         public Camera UICamera;
-        public GameObject player;
         [SerializeField] private IntEvent onGunFire;
         [SerializeField] private VoidEvent onGunReload;
         #endregion
@@ -30,6 +29,7 @@ namespace HeavenlySin.Shooting
         private bool _allowFire = true;
         private int _currentAmmo;
         private bool _isReloading = false;
+        private GameObject _player;
         private Vector3 _targetPos;
         
         #endregion
@@ -40,7 +40,7 @@ namespace HeavenlySin.Shooting
         {
             _targetPos = transform.position;
             _currentAmmo = maxAmmo;
-             player = GameObject.FindGameObjectWithTag("Player");
+             _player = GameObject.FindGameObjectWithTag("Player");
         }
         
         private void Update()
@@ -92,22 +92,14 @@ namespace HeavenlySin.Shooting
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray.origin, ray.direction, out var hit, Mathf.Infinity))
             {
-                
-            
-                Debug.Log("Hit an enemy");
-                Debug.Log("Casting player ray");
-
-        
-                if (Physics.Raycast(player.transform.position, hit.transform.position - player.transform.position, out var playerHit, (hit.transform.position-player.transform.position).magnitude))
+                if (Physics.Raycast(_player.transform.position, hit.transform.position - _player.transform.position, out var playerHit, (hit.transform.position-_player.transform.position).magnitude))
                 {
                     if (playerHit.transform.gameObject.CompareTag("Enemy"))
                     {
                         playerHit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
                     }
                 }
-                 
             }
-              
             
             Invoke(nameof(AllowFire), 1/fireRate);
         }
