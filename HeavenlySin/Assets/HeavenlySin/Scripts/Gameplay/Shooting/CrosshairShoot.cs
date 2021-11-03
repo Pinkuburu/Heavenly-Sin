@@ -20,6 +20,7 @@ namespace HeavenlySin.Shooting
         public int maxAmmo = 6;
         public float reloadTime = 1f;
         public Camera UICamera;
+        public GameObject player;
         [SerializeField] private IntEvent onGunFire;
         [SerializeField] private VoidEvent onGunReload;
         #endregion
@@ -39,6 +40,7 @@ namespace HeavenlySin.Shooting
         {
             _targetPos = transform.position;
             _currentAmmo = maxAmmo;
+             player = GameObject.FindGameObjectWithTag("Player");
         }
         
         private void Update()
@@ -90,11 +92,23 @@ namespace HeavenlySin.Shooting
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray.origin, ray.direction, out var hit, Mathf.Infinity))
             {
-                if (hit.transform.gameObject.CompareTag("Enemy"))
+                
+            
+                Debug.Log("Hit an enemy");
+                Debug.Log("Casting player ray");
+
+        
+                if (Physics.Raycast(player.transform.position, hit.transform.position - player.transform.position, out var playerHit, (hit.transform.position-player.transform.position).magnitude))
                 {
-                    hit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
+                    if (playerHit.transform.gameObject.CompareTag("Enemy"))
+                    {
+                        playerHit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
+                    }
                 }
+                 
             }
+              
+            
             Invoke(nameof(AllowFire), 1/fireRate);
         }
         
