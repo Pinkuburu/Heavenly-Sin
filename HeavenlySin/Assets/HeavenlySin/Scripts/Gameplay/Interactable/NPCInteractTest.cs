@@ -18,7 +18,7 @@ namespace HeavenlySin.Interactable
         public int imageIndex;
         [SerializeField] private IntEvent endHover;
         [SerializeField] private IntEvent startHover;
-    
+        [SerializeField] private IntEvent onPlaySound;
         #endregion
     
         #region Private Fields
@@ -44,7 +44,8 @@ namespace HeavenlySin.Interactable
         
         public void Interact()
         {
-            dialogue.OnUse(this.gameObject.transform); 
+            dialogue.OnUse(this.gameObject.transform);
+            onPlaySound.Raise(0);
         }
 
         public void OnEndHover()

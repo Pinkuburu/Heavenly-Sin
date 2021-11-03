@@ -13,6 +13,7 @@ namespace HeavenlySin
         [SerializeField] private IntEvent endHover;
         [SerializeField] private IntEvent startHover;
         [SerializeField] private VoidEvent onOpenAttempt;
+        
         #endregion
     
         #region Private Fields
