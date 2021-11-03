@@ -26,14 +26,7 @@ namespace HeavenlySin.CameraScripts
         #region Private Methods
         private void SwitchState()
         {
-            if (_isOverworldCamera)
-            {
-                animator.Play("Combat");
-            }
-            else
-            {
-                animator.Play("Overworld");
-            }
+            animator.Play(_isOverworldCamera ? "Combat" : "Overworld");
             _isOverworldCamera = !_isOverworldCamera;
         }
         #endregion
