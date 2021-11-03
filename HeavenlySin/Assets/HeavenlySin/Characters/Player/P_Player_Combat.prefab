@@ -16,10 +16,9 @@ GameObject:
   - component: {fileID: 7046123091241203601}
   - component: {fileID: 7046123091241203600}
   - component: {fileID: 7046123091241203615}
-  - component: {fileID: 6974486095657550241}
   m_Layer: 0
   m_Name: P_Player_Combat
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,34 +198,6 @@ MonoBehaviour:
   jumpHeight: 1.7
   playerScript: {fileID: 7046123091241203603}
   speed: 5
---- !u!114 &6974486095657550241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7046123091241203612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a030edee9b95546a9b4d0d7b95ae47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 87ca07b3ace278d4e89e2c845add29dc, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7046123091241203615}
-        m_TargetAssemblyTypeName: HeavenlySin.Player.PlayerMovement, Assembly-CSharp
-        m_MethodName: ChangeMovement
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &7046123092003796143
 GameObject:
   m_ObjectHideFlags: 0

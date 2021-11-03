@@ -45,7 +45,7 @@ namespace HeavenlySin.Interactable
         public void Interact()
         {
             dialogue.OnUse(this.gameObject.transform);
-            onPlaySound.Raise(0);
+            //onPlaySound.Raise(0);
         }
 
         public void OnEndHover()
