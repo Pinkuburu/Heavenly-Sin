@@ -11,27 +11,59 @@ namespace HeavenlySin.Enemy
         #region Fields
 
         public EnemyScript enemyScript;
-        
+        public float detectDistance;
+        public float moveSpeed;
+        private bool isDetected = false;
+        private GameObject _playerBody;
+
         #endregion
- 
+
         #region LifeCycle
-        private void Awake()
-        {
-        }
 
         private void Start()
         {
+            _playerBody = GameObject.FindGameObjectWithTag("Player");
         }
- 
+
         private void Update()
         {
+            Wander();
+            PlayerDetection();
+
+            if(isDetected)
+            {
+                transform.position += _playerBody.transform.position * moveSpeed * Time.deltaTime;
+            }
         }
+
         #endregion
 
         #region Public Methods
         #endregion 
 
         #region Private Methods
+
+        private void Wander()
+        {
+            //generate a random direction with clamped max/min distances and move toward it constantly
+        }
+
+        private void PlayerDetection()
+        {
+            Collider[] detectedObjects = Physics.OverlapSphere(transform.position, detectDistance);
+            foreach(var hitCollider in detectedObjects)
+            {
+                if(hitCollider.gameObject.CompareTag("Player"))
+                {
+                    if (Physics.Raycast(transform.position, (hitCollider.gameObject.transform.position - transform.position), out var enemyRay, detectDistance))
+                    {
+                        Debug.Log("You've been detected!"); //remove
+                        isDetected = true;
+                    }
+                }
+            }
+        }
+
         #endregion
     }
 }
