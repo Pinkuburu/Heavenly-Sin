@@ -1,3 +1,4 @@
+using HeavenlySin.GameEvents;
 using UnityEngine;
 
 namespace HeavenlySin.Player
@@ -29,7 +30,10 @@ namespace HeavenlySin.Player
         public PlayerScript playerScript;
         [Tooltip("How fast the player can move")]
         public float speed = 5f;
-        
+        [Tooltip("How much max health the player has")]
+        public float _health;
+        [SerializeField] private IntEvent playerSounds;
+
         #endregion
         
         #region Private Fields
@@ -40,11 +44,29 @@ namespace HeavenlySin.Player
         private bool _isJumping;
         private float _targetAngle;
         private Vector3 _velocity = Vector3.zero;
-        
+
         #endregion
-        
+
         #region Life Cycle
-        
+
+        public void TakeDamage(float damage)
+        {
+            _health -= damage;
+            //playerSounds.Raise(); //Hurt SFX
+            IsDead();
+            // TODO: update UI health bar.
+        }
+
+        private void IsDead()
+        {
+            if (_health <= 0)
+            {
+                //playerSounds.Raise(); //Death SFX
+                Destroy(gameObject);
+                //TODO: death animation and restart, UI?
+            }
+        }
+
         private void Start()
         {
             _camera = Camera.main;
@@ -75,12 +97,14 @@ namespace HeavenlySin.Player
             if (isGrounded && _velocity.y < 0f)
             {
                 _velocity.y = -0.5f;
+                playerSounds.Raise(9); //Jump landing SFX
             }
             
             // Jump Calculations.
             if (_isJumping && isGrounded)
             {
                 _velocity.y = Mathf.Sqrt(jumpHeight * -2f * GRAVITY);
+                playerSounds.Raise(10); //Jump SFX
             }
             _velocity.y += GRAVITY * Time.deltaTime;
             characterController.Move(_velocity * Time.deltaTime);
@@ -108,6 +132,7 @@ namespace HeavenlySin.Player
 
             CalculateMovement();
         }
+
         #endregion
 
         #region Debug Methods

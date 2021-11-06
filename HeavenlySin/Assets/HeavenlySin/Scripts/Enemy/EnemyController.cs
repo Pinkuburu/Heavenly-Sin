@@ -1,3 +1,4 @@
+using HeavenlySin.GameEvents;
 using UnityEngine;
 
 namespace HeavenlySin.Enemy
@@ -8,11 +9,17 @@ namespace HeavenlySin.Enemy
     /// </summary>
     public class EnemyController : MonoBehaviour
     {
-        #region Fields
+        #region Public Fields
 
         public EnemyScript enemyScript;
         public float detectDistance;
         public float moveSpeed;
+        [SerializeField] private IntEvent enemySounds;
+
+        #endregion
+
+        #region Private Fields
+
         private bool isDetected = false;
         private GameObject _playerBody;
 
@@ -32,7 +39,7 @@ namespace HeavenlySin.Enemy
 
             if(isDetected)
             {
-                transform.position += _playerBody.transform.position * moveSpeed * Time.deltaTime;
+                //transform.position += _playerBody.transform.position * moveSpeed * Time.deltaTime;
             }
         }
 
@@ -46,6 +53,7 @@ namespace HeavenlySin.Enemy
         private void Wander()
         {
             //generate a random direction with clamped max/min distances and move toward it constantly
+            //enemySounds.Raise(); //Idling SFX
         }
 
         private void PlayerDetection()
@@ -57,10 +65,19 @@ namespace HeavenlySin.Enemy
                 {
                     if (Physics.Raycast(transform.position, (hitCollider.gameObject.transform.position - transform.position), out var enemyRay, detectDistance))
                     {
-                        Debug.Log("You've been detected!"); //remove
+                        Debug.Log("You've been detected!"); //Remove this! 
                         isDetected = true;
+                        //enemySounds.Raise(); //Detected SFX
                     }
                 }
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.gameObject.CompareTag("Player"))
+            {
+                //Do some damage to the player
             }
         }
 

@@ -20,6 +20,7 @@ namespace HeavenlySin.Shooting
         public int maxAmmo = 6;
         public float reloadTime = 1f;
         public Camera UICamera;
+        [SerializeField] private IntEvent gunSounds;
         [SerializeField] private IntEvent onGunFire;
         [SerializeField] private VoidEvent onGunReload;
         [SerializeField] private Transform firePoint;
@@ -94,6 +95,9 @@ namespace HeavenlySin.Shooting
             onGunFire.Raise(_currentAmmo);
             _currentAmmo--;
 
+            //SFX
+            gunSounds.Raise(15);
+
             //muzzle flash FX
             GameObject muzzleFlashClone = Instantiate(muzzleFlash, firePoint.transform.position, firePoint.transform.rotation);
             muzzleFlashClone.transform.SetParent(firePoint);
@@ -125,6 +129,7 @@ namespace HeavenlySin.Shooting
             _currentAmmo = maxAmmo;
             _isReloading = false;
             onGunReload.Raise();
+            gunSounds.Raise(2); //Reload SFX
         }
 
         private void AllowFire()
