@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7302640855515088884}
   - component: {fileID: 3376251285537416710}
   m_Layer: 6
-  m_Name: TEST_CloudPlatform
+  m_Name: P_CloudPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
