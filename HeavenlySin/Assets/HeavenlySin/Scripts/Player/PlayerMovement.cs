@@ -49,24 +49,6 @@ namespace HeavenlySin.Player
 
         #region Life Cycle
 
-        public void TakeDamage(float damage)
-        {
-            _health -= damage;
-            //playerSounds.Raise(); //Hurt SFX
-            IsDead();
-            // TODO: update UI health bar.
-        }
-
-        private void IsDead()
-        {
-            if (_health <= 0)
-            {
-                //playerSounds.Raise(); //Death SFX
-                Destroy(gameObject);
-                //TODO: death animation and restart, UI?
-            }
-        }
-
         private void Start()
         {
             _camera = Camera.main;
@@ -97,7 +79,6 @@ namespace HeavenlySin.Player
             if (isGrounded && _velocity.y < 0f)
             {
                 _velocity.y = -0.5f;
-                playerSounds.Raise(9); //Jump landing SFX
             }
             
             // Jump Calculations.
@@ -133,16 +114,34 @@ namespace HeavenlySin.Player
             CalculateMovement();
         }
 
+        public void TakeDamage(float damage)
+        {
+            _health -= damage;
+            //playerSounds.Raise(); //Hurt SFX
+            IsDead();
+            // TODO: update UI health bar.
+        }
+
+        private void IsDead()
+        {
+            if (_health <= 0)
+            {
+                //playerSounds.Raise(); //Death SFX
+                Destroy(gameObject);
+                //TODO: death animation and restart, UI?
+            }
+        }
+
         #endregion
 
         #region Debug Methods
-        
+
         /*private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundDistance);
         }*/
-        
+
         #endregion
     }
 }
