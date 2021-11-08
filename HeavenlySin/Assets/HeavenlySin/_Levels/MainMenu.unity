@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 130953423}
   - component: {fileID: 130953422}
   - component: {fileID: 130953425}
+  - component: {fileID: 130953426}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -275,6 +276,70 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &130953426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130953420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &274229193
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 274229196}
+  - {fileID: 1467757514}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -504,6 +570,7 @@ GameObject:
   - component: {fileID: 662313058}
   - component: {fileID: 662313057}
   - component: {fileID: 662313060}
+  - component: {fileID: 662313061}
   m_Layer: 5
   m_Name: CreditsButton
   m_TagString: Untagged
@@ -643,6 +710,70 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &662313061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662313055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,6 +880,7 @@ GameObject:
   - component: {fileID: 717742955}
   - component: {fileID: 717742954}
   - component: {fileID: 717742957}
+  - component: {fileID: 717742958}
   m_Layer: 5
   m_Name: StartNewGameButton
   m_TagString: Untagged
@@ -888,6 +1020,70 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &717742958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717742952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1382,7 @@ GameObject:
   - component: {fileID: 1366174211}
   - component: {fileID: 1366174210}
   - component: {fileID: 1366174213}
+  - component: {fileID: 1366174214}
   m_Layer: 5
   m_Name: LoadGameButton
   m_TagString: Untagged
@@ -1325,6 +1522,132 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1366174214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366174208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1001 &1467757513
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 654279974}
+    m_Modifications:
+    - target: {fileID: 51557933945738667, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_Name
+      value: P_AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+--- !u!4 &1467757514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+  m_PrefabInstance: {fileID: 1467757513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1535744696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1692,7 @@ GameObject:
   - component: {fileID: 1721705270}
   - component: {fileID: 1721705269}
   - component: {fileID: 1721705272}
+  - component: {fileID: 1721705273}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1508,6 +1832,70 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1721705273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721705267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: Raise
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+          m_TargetAssemblyTypeName: HeavenlySin.GameEvents.BaseGameEvent`1[[System.Int32,
+            mscorlib
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1775277598
 GameObject:
   m_ObjectHideFlags: 0
