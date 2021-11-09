@@ -39,7 +39,7 @@ namespace HeavenlySin.Enemy
 
             if(isDetected)
             {
-                //transform.position += _playerBody.transform.position * moveSpeed * Time.deltaTime;
+                transform.position += (_playerBody.transform.position - transform.position).normalized * moveSpeed * Time.deltaTime;
             }
         }
 
