@@ -109,6 +109,7 @@ namespace HeavenlySin.Shooting
                 if (rayHit.collider.gameObject.CompareTag("Enemy"))
                 {
                     rayHit.collider.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
+                    //blood goes here?
                 }
 
                 //ricochet FX
