@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Player
       objectReference: {fileID: 0}
+    - target: {fileID: 72763172438997610, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
+      propertyPath: playerSounds
+      value: 
+      objectReference: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
     - target: {fileID: 72763172438997611, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1547,10 +1551,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.990566, g: 0.56297064, b: 0.3317462, a: 1}
-  m_Intensity: 10
-  m_Range: 10
-  m_SpotAngle: 100
+  m_Color: {r: 0.9528302, g: 0.83910376, b: 0.7775454, a: 1}
+  m_Intensity: 100
+  m_Range: 25
+  m_SpotAngle: 179
   m_InnerSpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
