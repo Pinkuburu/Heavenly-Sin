@@ -20,25 +20,33 @@ namespace HeavenlySin.Shooting
         public int maxAmmo = 6;
         public float reloadTime = 1f;
         public Camera UICamera;
+        [SerializeField] private IntEvent gunSounds;
         [SerializeField] private IntEvent onGunFire;
         [SerializeField] private VoidEvent onGunReload;
+        [SerializeField] private Transform firePoint;
+        [SerializeField] private GameObject muzzleFlash;
+        [SerializeField] private GameObject hitFX;
+
         #endregion
-        
+
         #region Private Fields
-        
+
         private bool _allowFire = true;
         private int _currentAmmo;
         private bool _isReloading = false;
+        private GameObject _player;
         private Vector3 _targetPos;
-        
+        private RaycastHit rayHit;
+
         #endregion
-        
+
         #region LifeCycle
-        
+
         private void Start()
         {
             _targetPos = transform.position;
             _currentAmmo = maxAmmo;
+            _player = GameObject.FindGameObjectWithTag("Player");
         }
         
         private void Update()
@@ -86,15 +94,32 @@ namespace HeavenlySin.Shooting
             
             onGunFire.Raise(_currentAmmo);
             _currentAmmo--;
-            
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray.origin, ray.direction, out var hit, Mathf.Infinity))
+
+            //SFX
+            gunSounds.Raise(15);
+
+            //muzzle flash FX
+            GameObject muzzleFlashClone = Instantiate(muzzleFlash, firePoint.transform.position, firePoint.transform.rotation);
+            muzzleFlashClone.transform.SetParent(firePoint);
+            Destroy(muzzleFlashClone, 0.025f);
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if(Physics.Raycast(ray.origin, ray.direction, out rayHit, Mathf.Infinity))
             {
-                if (hit.transform.gameObject.CompareTag("Enemy"))
+                if (rayHit.collider.gameObject.CompareTag("Enemy"))
                 {
-                    hit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
+                    rayHit.collider.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
+                    //blood goes here?
+                }
+
+                //ricochet FX
+                if (rayHit.collider.gameObject.CompareTag("Object"))
+                {
+                    GameObject hitFXClone = Instantiate(hitFX, rayHit.point, transform.rotation);
+                    Destroy(hitFXClone, 0.5f);
                 }
             }
+            
             Invoke(nameof(AllowFire), 1/fireRate);
         }
         
@@ -105,6 +130,7 @@ namespace HeavenlySin.Shooting
             _currentAmmo = maxAmmo;
             _isReloading = false;
             onGunReload.Raise();
+            gunSounds.Raise(2); //Reload SFX
         }
 
         private void AllowFire()

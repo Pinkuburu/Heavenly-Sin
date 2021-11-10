@@ -64,11 +64,10 @@ namespace HeavenlySin.Player
                     // If the object is still further than their individual max interaction range, make the target null.
                     else
                     {
-                        if (currentTarget != null)
-                        {
-                            currentTarget.OnEndHover();
-                            currentTarget = null;
-                        }
+                        if (currentTarget == null)
+                            return;
+                        currentTarget.OnEndHover();
+                        currentTarget = null;
                     }
                 }
                 else

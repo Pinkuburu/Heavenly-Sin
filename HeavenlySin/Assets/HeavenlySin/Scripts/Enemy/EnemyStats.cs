@@ -1,3 +1,4 @@
+using HeavenlySin.GameEvents;
 using UnityEngine;
 
 namespace HeavenlySin.Enemy
@@ -7,10 +8,15 @@ namespace HeavenlySin.Enemy
     /// </summary>
     public class EnemyStats : MonoBehaviour
     {
-        #region Fields
+        #region Public Fields
 
         public EnemyScript enemyScript;
         public Stats.Stats stats;
+        [SerializeField] private IntEvent enemySounds;
+
+        #endregion
+
+        #region
 
         private float _health;
         
@@ -36,6 +42,7 @@ namespace HeavenlySin.Enemy
         public void TakeDamage(float damage)
         {
             _health -= damage;
+            //enemySounds.Raise(); //Hurt SFX
             IsDead();
             // TODO: update UI health bar.
         }
@@ -48,6 +55,7 @@ namespace HeavenlySin.Enemy
         {
             if (_health <= 0)
             {
+                //enemySounds.Raise(); //Death SFX
                 Destroy(gameObject);
             }
         }
