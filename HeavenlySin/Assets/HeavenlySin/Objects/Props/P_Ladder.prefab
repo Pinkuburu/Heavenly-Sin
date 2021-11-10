@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9041524102221182970}
   - component: {fileID: 6529380591355708208}
   - component: {fileID: 5574489509027176378}
+  - component: {fileID: 5574489507687006501}
   m_Layer: 0
   m_Name: P_Ladder
   m_TagString: Untagged
@@ -91,8 +92,20 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4728209501385777893}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.6053681, y: 8.074806, z: 3.239814}
-  m_Center: {x: -0.012604952, y: 3.9665031, z: -0.032660007}
+  m_Size: {x: 3.6053681, y: 9.425236, z: 3.239814}
+  m_Center: {x: -0.012604952, y: 4.641718, z: -0.032660007}
+--- !u!114 &5574489507687006501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728209501385777893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff8fa419fde7c045ac8975e113aabda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
