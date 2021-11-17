@@ -22,6 +22,7 @@ namespace HeavenlySin
 
         private void Update()
         {
+            transform.Rotate(Random.Range(-2, 2), Random.Range(-2, 2), Random.Range(-2, 2));
             Destroy(this.gameObject, 10f);
         }
         #endregion
