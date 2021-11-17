@@ -55,7 +55,7 @@ namespace HeavenlySin
                         shootTimer += Time.deltaTime;
                         if(shootTimer >= timeTilNextShoot)
                         {
-                            GameObject projectileClone = Instantiate(projectile, transform.position, Quaternion.identity);
+                            GameObject projectileClone = Instantiate(projectile, transform.position, transform.rotation);
                             projectileClone.GetComponent<Rigidbody>().AddForce(hitCollider.gameObject.transform.position * projectileSpeed);
                             shootTimer = 0f;
                             timeTilNextShoot = Random.Range(minDelay, maxDelay);

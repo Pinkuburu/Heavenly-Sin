@@ -58,30 +58,23 @@ namespace HeavenlySin.Enemy
             }
         }
 
-        #endregion
-
-        #region Public Methods
-        #endregion 
-
-        #region Private Methods
-
         private void Wander()
         {
             //enemySounds.Raise(); //Enemy idling SFX
             moveTimer += Time.deltaTime;
             if (moveTimer >= timeTilNextMove)
             {
-                randomPos = new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f));
+                randomPos = new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f));
                 moveTimer = 0f;
                 timeTilNextMove = Random.Range(0.5f, 2f);
             }
 
             //flip the sprite with direction
-            if(randomPos.x > 0)
+            if (randomPos.x > 0)
             {
                 GetComponent<SpriteRenderer>().flipX = true;
             }
-            if(randomPos.x < 0)
+            if (randomPos.x < 0)
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
@@ -92,9 +85,9 @@ namespace HeavenlySin.Enemy
         private void PlayerDetection()
         {
             Collider[] detectedObjects = Physics.OverlapSphere(transform.position, detectDistance);
-            foreach(var hitCollider in detectedObjects)
+            foreach (var hitCollider in detectedObjects)
             {
-                if(hitCollider.gameObject.CompareTag("Player"))
+                if (hitCollider.gameObject.CompareTag("Player"))
                 {
                     if (Physics.Raycast(transform.position, (hitCollider.gameObject.transform.position - transform.position), out var enemyRay, detectDistance))
                     {
@@ -108,7 +101,7 @@ namespace HeavenlySin.Enemy
 
         private void OnTriggerEnter(Collider other)
         {
-            if(other.gameObject.CompareTag("Player"))
+            if (other.gameObject.CompareTag("Player"))
             {
                 //Do some damage to the player
             }
