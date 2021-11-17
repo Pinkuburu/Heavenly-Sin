@@ -7,7 +7,7 @@ namespace HeavenlySin
     public class BossController : MonoBehaviour
     {
         #region Fields
-        public float detectDistance, moveSpeed, minTravel, maxTravel, minDelay, maxDelay, projectileSpeed;
+        public float detectDistance, moveSpeed, minTravel, maxTravel, minDelay, maxDelay;
         public GameObject projectile;
         Vector3 randomPos;
         private RaycastHit _enemyRay;
@@ -56,7 +56,6 @@ namespace HeavenlySin
                         if(shootTimer >= timeTilNextShoot)
                         {
                             GameObject projectileClone = Instantiate(projectile, transform.position, transform.rotation);
-                            projectileClone.GetComponent<Rigidbody>().AddForce(hitCollider.gameObject.transform.position * projectileSpeed);
                             shootTimer = 0f;
                             timeTilNextShoot = Random.Range(minDelay, maxDelay);
                         }
