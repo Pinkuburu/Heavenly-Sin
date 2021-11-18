@@ -13072,7 +13072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 793981438471790506, guid: 02f1242df21821d448ee2ab08a6ea6ae, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 793981438471790506, guid: 02f1242df21821d448ee2ab08a6ea6ae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14038,7 +14038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &371235314
 Transform:
   m_ObjectHideFlags: 0
@@ -39474,7 +39474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de338ed02e05b874b917976b635675f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onSceneLoad: {fileID: 11400000, guid: 87ca07b3ace278d4e89e2c845add29dc, type: 2}
 --- !u!1001 &1126493683
 PrefabInstance:
   m_ObjectHideFlags: 0
