@@ -29,7 +29,6 @@ namespace HeavenlySin.AudioManagement
         public void PlaySound(int index)
         {
             sources[(int)sounds[index].soundType].PlayOneShot(sounds[index].clip);
-            Debug.Log("Played sound " + sounds[index].clip.name);
         }
         
         #endregion
