@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6494871, g: 0.7731115, b: 0.834781, a: 1}
+  m_IndirectSpecularColor: {r: 0.6494871, g: 0.7731114, b: 0.834781, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2794,7 +2794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: 
   persistentDataName: 
-  portrait: {fileID: 0}
+  portrait: {fileID: 2800000, guid: adc63234dbbdcfc4eac0cceb60931f0d, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
     barkUI: {fileID: 0}
@@ -2882,7 +2882,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Wrath tutorial (conversation)
+  conversation: WesInOffice
   conversationConversant: {fileID: 1438010788}
   conversationActor: {fileID: 7012997}
   startConversationEntryID: -1
@@ -3578,7 +3578,7 @@ MonoBehaviour:
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 899539751844916737}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HeavenlySin.GameState, Assembly-CSharp
         m_MethodName: SetTransform
         m_Mode: 0
@@ -4306,17 +4306,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bb29907a70414446a923cae000dad32, type: 3}
---- !u!114 &899539751844916737 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 899539750755040346, guid: 6bb29907a70414446a923cae000dad32, type: 3}
-  m_PrefabInstance: {fileID: 899539751844916736}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976715740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de338ed02e05b874b917976b635675f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1927713888920686792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5801475569230701623, guid: 9e875717ecfa30f4291cedc77b4c9f30, type: 3}

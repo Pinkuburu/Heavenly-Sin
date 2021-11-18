@@ -55448,7 +55448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: 
   persistentDataName: 
-  portrait: {fileID: 0}
+  portrait: {fileID: 2800000, guid: adc63234dbbdcfc4eac0cceb60931f0d, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
     barkUI: {fileID: 0}
