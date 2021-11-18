@@ -30291,7 +30291,64 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
+        value: SetContinueMode(false);
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 30
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 30
+        originDialogueID: 27
+        destinationConversationID: 30
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 1320
+        width: 160
+        height: 30
+    - id: 28
+      fields:
+      - title: Title
         value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 9
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 'LoadLevel(Overworld);
+
+          {{default}}'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 30
@@ -30310,12 +30367,12 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 1320
+        y: 1370
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 16.89572, y: 938.0586}
-    canvasZoom: 0.6099999
+    canvasScrollPosition: {x: 0, y: 1129.7681}
+    canvasZoom: 1.2999992
   - id: 31
     fields:
     - title: Title
