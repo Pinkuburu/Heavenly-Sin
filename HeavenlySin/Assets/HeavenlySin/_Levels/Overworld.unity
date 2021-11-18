@@ -1876,6 +1876,8 @@ GameObject:
   - component: {fileID: 41888425}
   - component: {fileID: 41888427}
   - component: {fileID: 41888426}
+  - component: {fileID: 41888429}
+  - component: {fileID: 41888428}
   m_Layer: 6
   m_Name: SpeakeasyDoor
   m_TagString: Untagged
@@ -1951,7 +1953,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7c515730685af1143a1870bfc2ead91c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3f02a0fb805f7b4f861410f64a06534, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1962,6 +1964,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &41888428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41888424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d845c1180eb27344843b942bce28dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageIndex: 0
+  openDoor: {fileID: 41888429}
+  sceneName: Speakeasy
+  endHover: {fileID: 0}
+  startHover: {fileID: 0}
+--- !u!114 &41888429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41888424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10951b7c6f8c9344b9505f1af8a7306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: b3f02a0fb805f7b4f861410f64a06534, type: 3}
+  isOpen: 1
 --- !u!1001 &42713743
 PrefabInstance:
   m_ObjectHideFlags: 0
