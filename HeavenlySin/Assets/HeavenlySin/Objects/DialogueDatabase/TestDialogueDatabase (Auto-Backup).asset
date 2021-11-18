@@ -30310,13 +30310,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-<<<<<<< HEAD
-    canvasScrollPosition: {x: 0, y: 1047.1676}
-    canvasZoom: 0.96999955
-=======
     canvasScrollPosition: {x: 22.17634, y: 991.56177}
     canvasZoom: 0.8199996
->>>>>>> fdc390215d2071359268ebdbbb4d16df9c0b6ca3
   - id: 31
     fields:
     - title: Title
