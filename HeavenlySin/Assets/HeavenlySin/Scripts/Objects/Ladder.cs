@@ -7,9 +7,14 @@ namespace HeavenlySin.Objects
 {
     public class Ladder : MonoBehaviour
     {
+        #region Variables
+
+        public string sceneName;
+        #endregion
+
         #region Fields
         #endregion
- 
+
         #region LifeCycle
         private void Awake()
         {
@@ -34,7 +39,7 @@ namespace HeavenlySin.Objects
             var items = other.gameObject.GetComponent<PlayerScript>().inventory.items;
             foreach (var i in items.Where(i => i.itemName == "Key"))
             {
-                SceneManager.LoadScene("Overworld");
+                SceneManager.LoadScene(sceneName);
             }
         }
 

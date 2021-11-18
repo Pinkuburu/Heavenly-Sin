@@ -6,11 +6,14 @@ namespace HeavenlySin.Interactable
 {
     public class EnterHouse : MonoBehaviour, IInteractable
     {
+
+
         #region Public Fields
 
         [Tooltip("The index number of the image displayed when hovering over an interactable object.")]
         public int imageIndex;
         public OpenDoor openDoor;
+        public string sceneName;
         [SerializeField] private IntEvent endHover;
         [SerializeField] private IntEvent startHover;
         
@@ -31,7 +34,7 @@ namespace HeavenlySin.Interactable
         {
             if (openDoor.isOpen)
             {
-                SceneManager.LoadScene("Dreamscape");
+                SceneManager.LoadScene(sceneName);
             }
         }
 
