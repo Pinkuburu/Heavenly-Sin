@@ -26,7 +26,7 @@ namespace HeavenlySin.Shooting
         [SerializeField] private Transform firePoint;
         [SerializeField] private GameObject muzzleFlash;
         [SerializeField] private GameObject hitFX;
-
+        
         #endregion
 
         #region Private Fields
@@ -37,7 +37,7 @@ namespace HeavenlySin.Shooting
         private GameObject _player;
         private Vector3 _targetPos;
         private RaycastHit rayHit;
-
+        
         #endregion
 
         #region LifeCycle
@@ -52,6 +52,7 @@ namespace HeavenlySin.Shooting
         private void Update()
         {
             Cursor.lockState = CursorLockMode.None;
+
             var position = transform.position;
             var distance = position.z + UICamera.transform.position.z;
             _targetPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
@@ -119,17 +120,17 @@ namespace HeavenlySin.Shooting
                     Destroy(hitFXClone, 0.5f);
                 }
             }
-            
+
             Invoke(nameof(AllowFire), 1/fireRate);
         }
         
         private IEnumerator Reload()
         {
             _isReloading = true;
+            onGunReload.Raise();
             yield return new WaitForSeconds(reloadTime);
             _currentAmmo = maxAmmo;
             _isReloading = false;
-            onGunReload.Raise();
             gunSounds.Raise(2); //Reload SFX
         }
 

@@ -1,9 +1,8 @@
 using HeavenlySin.GameEvents;
-using HeavenlySin.Interactable;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace HeavenlySin
+namespace HeavenlySin.Interactable
 {
     public class EnterHouse : MonoBehaviour, IInteractable
     {

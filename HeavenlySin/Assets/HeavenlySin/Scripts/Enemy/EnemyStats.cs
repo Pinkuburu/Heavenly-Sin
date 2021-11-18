@@ -10,9 +10,10 @@ namespace HeavenlySin.Enemy
     {
         #region Public Fields
 
-        public EnemyScript enemyScript;
+        //public EnemyScript enemyScript;
         public Stats.Stats stats;
         [SerializeField] private IntEvent enemySounds;
+        public Animator anim;
 
         #endregion
 
@@ -42,9 +43,12 @@ namespace HeavenlySin.Enemy
         public void TakeDamage(float damage)
         {
             _health -= damage;
+            anim.SetTrigger("isHurt");
             //enemySounds.Raise(); //Hurt SFX
             IsDead();
             // TODO: update UI health bar.
+
+
         }
         
         #endregion 
@@ -56,7 +60,7 @@ namespace HeavenlySin.Enemy
             if (_health <= 0)
             {
                 //enemySounds.Raise(); //Death SFX
-                Destroy(gameObject);
+                Destroy(gameObject, 0.25f);
             }
         }
         

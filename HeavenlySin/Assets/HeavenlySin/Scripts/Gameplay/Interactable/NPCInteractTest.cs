@@ -36,7 +36,6 @@ namespace HeavenlySin.Interactable
         private void Start()
         {
             dialogue = GetComponent<DialogueSystemTrigger>();
-            
         }
         #endregion
 
