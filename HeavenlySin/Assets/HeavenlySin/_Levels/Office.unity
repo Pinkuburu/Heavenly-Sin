@@ -3557,39 +3557,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958030569}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1976715740 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 899539750755040344, guid: 6bb29907a70414446a923cae000dad32, type: 3}
-  m_PrefabInstance: {fileID: 899539751844916736}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1976715743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976715740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ba728cca1f57274f85b171770bb9b89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: c71767c4a604b9245a13e610cb69a627, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HeavenlySin.GameState, Assembly-CSharp
-        m_MethodName: SetTransform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &2023765015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4252,7 +4219,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 899539750755040346, guid: 6bb29907a70414446a923cae000dad32, type: 3}
+    - target: {fileID: 727181910, guid: 6bb29907a70414446a923cae000dad32, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 318287601}
