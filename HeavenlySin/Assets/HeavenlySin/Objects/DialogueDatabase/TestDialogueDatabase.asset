@@ -301,7 +301,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -315,7 +315,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -329,7 +329,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -343,7 +343,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -357,7 +357,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -371,7 +371,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -385,7 +385,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -399,7 +399,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -413,7 +413,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -1501,11 +1501,11 @@ MonoBehaviour:
     - title: Title
       value: Wrath tutorial (conversation)
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 1
       type: 5
@@ -1924,7 +1924,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.94000006
+    canvasZoom: 0.8800001
   - id: 4
     fields:
     - title: Title
@@ -2240,7 +2240,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.97
+    canvasZoom: 0.94000006
   - id: 5
     fields:
     - title: Title
@@ -28768,11 +28768,11 @@ MonoBehaviour:
     - title: Title
       value: Penelope-Lance Cutscene
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 4
       type: 5
@@ -29585,7 +29585,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 1270
+        y: 1268.7341
         width: 160
         height: 30
     - id: 15
@@ -30291,7 +30291,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: SetContinueMode(false);
+        value: 'SetContinueMode(false);
+
+          {{default}}'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 30
@@ -30346,9 +30348,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 'LoadLevel(Overworld);
-
-          {{default}}'
+        value: LoadLevel(Lust Dreamscape);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 30
@@ -30367,12 +30367,12 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 1370
+        y: 1368.8236
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 1129.7681}
-    canvasZoom: 1.2999992
+    canvasScrollPosition: {x: 22.17634, y: 991.56177}
+    canvasZoom: 0.8199996
   - id: 31
     fields:
     - title: Title

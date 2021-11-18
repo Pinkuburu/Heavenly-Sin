@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace UnityTemplateProjects
+namespace HeavenlySin.CinematicCamera
 {
     public class SimpleCameraController : MonoBehaviour
     {

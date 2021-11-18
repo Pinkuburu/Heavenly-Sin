@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Shooting
 {
     public class MuzzleFlash : MonoBehaviour
     {

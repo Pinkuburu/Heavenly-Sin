@@ -1,8 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace HeavenlySin
+namespace HeavenlySin.UI
 {
     /// <summary>
     /// This class controls the functionality of buttons and scene switching from the Main Menu
