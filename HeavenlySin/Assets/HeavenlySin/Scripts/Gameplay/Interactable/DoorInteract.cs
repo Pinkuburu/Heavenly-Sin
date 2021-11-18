@@ -1,8 +1,7 @@
 using HeavenlySin.GameEvents;
-using HeavenlySin.Interactable;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Interactable
 {
     public class DoorInteract : MonoBehaviour, IInteractable
     {
