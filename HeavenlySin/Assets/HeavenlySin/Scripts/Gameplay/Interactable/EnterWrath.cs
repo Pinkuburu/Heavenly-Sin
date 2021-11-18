@@ -1,16 +1,9 @@
 using HeavenlySin.GameEvents;
-using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
 namespace HeavenlySin.Interactable
 {
-    /// <summary>
-    /// This is a test class to demonstrate the outline of an interactable
-    /// object.
-    /// </summary>
-
-    //TODO: The way different types of items interact could be stored in scriptable objects?
-    public class NPCInteractTest : MonoBehaviour, IInteractable
+    public class EnterWrath : MonoBehaviour, IInteractable
     {
         #region Public Fields
 
@@ -19,31 +12,25 @@ namespace HeavenlySin.Interactable
         [SerializeField] private IntEvent endHover;
         [SerializeField] private IntEvent startHover;
         [SerializeField] private IntEvent onPlaySound;
+        [SerializeField] private VoidEvent onFadeStart;
+        [SerializeField] private VoidEvent onFadeEnd;
         #endregion
     
         #region Private Fields
         private const float MAX_RANGE = 100f;
-        private DialogueSystemTrigger dialogue;
         #endregion
 
         #region Properties
         public float MaxRange => MAX_RANGE;
         
         #endregion
-        
-        #region Private Methods
-        
-        private void Start()
-        {
-            dialogue = GetComponent<DialogueSystemTrigger>();
-        }
-        #endregion
 
         #region Public Methods
         
         public void Interact()
         {
-            dialogue.OnUse(this.gameObject.transform);
+            onFadeStart.Raise();
+            Invoke(nameof(EnableWrath), 1f);
             //onPlaySound.Raise(0);
         }
 
@@ -56,9 +43,14 @@ namespace HeavenlySin.Interactable
         {
             startHover.Raise(imageIndex);
         }
+
+        public void EnableWrath()
+        {
+            // Enable wrath and whatever.
+            onFadeEnd.Raise();
+        }
         
         #endregion
 
     }
 }
-
