@@ -301,7 +301,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -315,7 +315,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -329,7 +329,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -343,7 +343,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -357,7 +357,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -371,7 +371,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -385,7 +385,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -399,7 +399,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -413,7 +413,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -1501,11 +1501,11 @@ MonoBehaviour:
     - title: Title
       value: Wrath tutorial (conversation)
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 1
       type: 5
@@ -1924,7 +1924,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.94000006
+    canvasZoom: 0.8800001
   - id: 4
     fields:
     - title: Title
@@ -2240,7 +2240,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.97
+    canvasZoom: 0.94000006
   - id: 5
     fields:
     - title: Title
@@ -2640,8 +2640,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 161.97557
-        y: 28.536568
+        x: 201.26128
+        y: 16.92942
         width: 160
         height: 30
     - id: 1
@@ -2818,8 +2818,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 193.70842
-        y: 147.7162
+        x: 204.42271
+        y: 146.82335
         width: 160
         height: 30
     - id: 8
@@ -2923,8 +2923,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 3.2478292, y: 6.2957916}
-    canvasZoom: 0.7900002
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1.03
   - id: 13
     fields:
     - title: Title
@@ -19529,10 +19529,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: "So, the party started after I nailed my last girl in the bathroom.
-          (switch to normal) That\u2019s when I see Penelope walk in. She looks at
-          me and laughs and then goes over to the bar. I go over and shoot the breeze
-          with Sal for a bit before I go drink some more booze and talk to Penelope.
-          After a while the party ends so I go home."
+          That\u2019s when I see Penelope walk in. She looks at me and laughs and
+          then goes over to the bar. I go over and shoot the breeze with Sal for
+          a bit before I go drink some more booze and talk to Penelope. After a while
+          the party ends so I go home."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -19566,8 +19566,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 970
+        x: 306.4516
+        y: 1002.25793
         width: 160
         height: 30
     - id: 14
@@ -23017,8 +23017,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 1407.2216}
-    canvasZoom: 0.22000033
+    canvasScrollPosition: {x: 27.123081, y: 1279.0375}
+    canvasZoom: 0.28000033
   - id: 28
     fields:
     - title: Title
@@ -28707,11 +28707,11 @@ MonoBehaviour:
     - title: Title
       value: Penelope-Lance Cutscene
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 4
       type: 5
@@ -29524,7 +29524,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 1270
+        y: 1268.7341
         width: 160
         height: 30
     - id: 15
@@ -30230,7 +30230,64 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
+        value: 'SetContinueMode(false);
+
+          {{default}}'
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 30
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 30
+        originDialogueID: 27
+        destinationConversationID: 30
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 1320
+        width: 160
+        height: 30
+    - id: 28
+      fields:
+      - title: Title
         value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 9
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: LoadLevel(Lust Dreamscape);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 30
@@ -30249,12 +30306,17 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 1320
+        y: 1368.8236
         width: 160
         height: 30
     entryGroups: []
+<<<<<<< HEAD
     canvasScrollPosition: {x: 0, y: 1047.1676}
     canvasZoom: 0.96999955
+=======
+    canvasScrollPosition: {x: 22.17634, y: 991.56177}
+    canvasZoom: 0.8199996
+>>>>>>> fdc390215d2071359268ebdbbb4d16df9c0b6ca3
   - id: 31
     fields:
     - title: Title
@@ -33154,7 +33216,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.5800004
+    canvasZoom: 0.43000045
   syncInfo:
     syncActors: 0
     syncItems: 0
