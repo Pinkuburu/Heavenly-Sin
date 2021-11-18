@@ -91,7 +91,6 @@ namespace HeavenlySin.Enemy
                 {
                     if (Physics.Raycast(transform.position, (hitCollider.gameObject.transform.position - transform.position), out var enemyRay, detectDistance))
                     {
-                        Debug.Log("You've been detected!");
                         isDetected = true;
                         //enemySounds.Raise(); //Detected SFX
                     }
