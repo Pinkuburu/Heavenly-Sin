@@ -1,5 +1,7 @@
 using HeavenlySin.GameEvents;
+using HeavenlySin.Scene.Scripts;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace HeavenlySin.Interactable
 {
@@ -10,14 +12,19 @@ namespace HeavenlySin.Interactable
         [Tooltip("The index number of the image displayed when hovering over an interactable object.")]
         public int imageIndex;
         [SerializeField] private IntEvent endHover;
-        [SerializeField] private IntEvent startHover;
         [SerializeField] private IntEvent onPlaySound;
         [SerializeField] private VoidEvent onFadeStart;
         [SerializeField] private VoidEvent onFadeEnd;
+        [SerializeField] private IntEvent startHover;
+        [SerializeField] private TransformEvent onChangeScene;
+        public SceneStats sceneStats;
+
+        public GameObject wrath;
         #endregion
     
         #region Private Fields
         private const float MAX_RANGE = 100f;
+        private bool _enterWrath;
         #endregion
 
         #region Properties
@@ -30,7 +37,17 @@ namespace HeavenlySin.Interactable
         public void Interact()
         {
             onFadeStart.Raise();
-            Invoke(nameof(EnableWrath), 1f);
+            if (!_enterWrath)
+            {
+                _enterWrath = true;
+                Invoke(nameof(EnableWrath), 1f);
+            }
+            else
+            {
+                // Set the transform the player should end up a
+                onChangeScene.Raise(sceneStats.playerPos.transform);
+                Invoke(nameof(TransitionScene), 1f);
+            }
             //onPlaySound.Raise(0);
         }
 
@@ -48,6 +65,12 @@ namespace HeavenlySin.Interactable
         {
             // Enable wrath and whatever.
             onFadeEnd.Raise();
+            wrath.SetActive(true);
+        }
+
+        public void TransitionScene()
+        {
+            SceneManager.LoadScene((int)sceneStats.sceneIndex);
         }
         
         #endregion
