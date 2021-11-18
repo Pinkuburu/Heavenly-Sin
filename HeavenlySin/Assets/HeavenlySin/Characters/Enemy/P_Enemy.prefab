@@ -162,6 +162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6a6d614c5072b4db120e4d7d28b483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyScript: {fileID: 1631913634856078268}
   stats: {fileID: 11400000, guid: 49d03e2f5bad3754d8a817a4bada0e42, type: 2}
   enemySounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  anim: {fileID: 2010358664534669820}

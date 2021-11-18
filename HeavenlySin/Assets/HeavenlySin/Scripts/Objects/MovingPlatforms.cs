@@ -54,6 +54,14 @@ namespace HeavenlySin
                 other.gameObject.transform.SetParent(this.gameObject.transform);
             }
         }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if(other.gameObject.CompareTag("Player"))
+            {
+                other.gameObject.transform.SetParent(null);
+            }
+        }
         #endregion
     }
 }
