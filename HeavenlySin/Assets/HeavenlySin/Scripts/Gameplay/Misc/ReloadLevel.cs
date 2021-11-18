@@ -30,13 +30,15 @@ namespace HeavenlySin
 
         private void OnTriggerEnter(Collider other)
         {
-            ReloadScene();
+            if(other.gameObject.CompareTag("Player"))
+            {
+                ReloadScene();
+            }
         }
 
         private static void ReloadScene()
         {
-            var scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         #endregion
     }
