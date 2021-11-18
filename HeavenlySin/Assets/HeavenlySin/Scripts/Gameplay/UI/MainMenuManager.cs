@@ -21,7 +21,7 @@ namespace HeavenlySin
 
         public void StartNewGame()
         {
-            SceneManager.LoadScene("Overworld");
+            SceneManager.LoadScene("Office");
         }
 
         public void LoadSavedGame()
