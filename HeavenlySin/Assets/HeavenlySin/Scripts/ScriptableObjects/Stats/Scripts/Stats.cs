@@ -9,6 +9,8 @@ namespace HeavenlySin.Stats
     [CreateAssetMenu(fileName = "New Stats", menuName = "ScriptableObjects/Stats")]
     public class Stats : ScriptableObject
     {
+        public float strength;
+        public float currentHealth;
         public float maxHealth;
     }
 }
