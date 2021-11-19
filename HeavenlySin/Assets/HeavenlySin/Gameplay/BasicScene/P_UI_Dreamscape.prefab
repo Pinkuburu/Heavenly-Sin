@@ -1662,7 +1662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -28.899963}
+  m_AnchoredPosition: {x: 0, y: -28.899658}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1097404619
@@ -2848,7 +2848,7 @@ MonoBehaviour:
   maxAmmo: 6
   reloadTime: 1
   UICamera: {fileID: 0}
-  gunSounds: {fileID: 0}
+  gunSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
   onGunFire: {fileID: 11400000, guid: 3059e0cc07a59a249966c915074c9cb8, type: 2}
   onGunReload: {fileID: 11400000, guid: bc0eccb66be4d834ba5eb237e360f39a, type: 2}
   firePoint: {fileID: 0}
@@ -2963,6 +2963,49 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &157478990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717334053062947755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f031b42800f2ef4a9e7d0149f18ce48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 3e1f4461ee01032438b677d282f17f1c, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 157478991}
+        m_TargetAssemblyTypeName: HeavenlySin.HealthUI, Assembly-CSharp
+        m_MethodName: UpdateHealthUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &157478991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717334053062947755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc459364032bdf4b8d7f82543b83103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1717334052395605204}
+  healthPercent: {fileID: 1717334051820856482}
+  playerStats: {fileID: 11400000, guid: 779bd8db266844540bb65ceb289eec42, type: 2}
 --- !u!1001 &1737746333199813896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3040,7 +3083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1137305337274269346, guid: de094deec54cb974babb9441e56e8a6c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 54
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1137305337274269346, guid: de094deec54cb974babb9441e56e8a6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3068,6 +3111,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de094deec54cb974babb9441e56e8a6c, type: 3}
+--- !u!114 &1717334051820856482 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1137305338046458282, guid: de094deec54cb974babb9441e56e8a6c, type: 3}
+  m_PrefabInstance: {fileID: 1737746333199813896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1717334052395605204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1137305336607412700, guid: de094deec54cb974babb9441e56e8a6c, type: 3}
+  m_PrefabInstance: {fileID: 1737746333199813896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1717334053062947755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1137305337274269347, guid: de094deec54cb974babb9441e56e8a6c, type: 3}
+  m_PrefabInstance: {fileID: 1737746333199813896}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1717334053062947754 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1137305337274269346, guid: de094deec54cb974babb9441e56e8a6c, type: 3}

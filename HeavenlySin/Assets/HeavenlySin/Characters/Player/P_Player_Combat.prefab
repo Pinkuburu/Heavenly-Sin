@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: 7046123091241203601}
   - component: {fileID: 7046123091241203600}
   - component: {fileID: 7046123091241203615}
+  - component: {fileID: 1518835384}
+  - component: {fileID: 1518835377}
   m_Layer: 0
   m_Name: P_Player_Combat
   m_TagString: Player
@@ -226,10 +228,39 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   isGrounded: 0
-  jumpHeight: 1.7
+  jumpHeight: 2
   playerScript: {fileID: 7046123091241203603}
-  speed: 5
+  speed: 5.5
+  _health: 0
   playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+--- !u!136 &1518835384
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046123091241203612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.8633333
+  m_Height: 6.4533334
+  m_Direction: 1
+  m_Center: {x: 0, y: 3.2266667, z: 0}
+--- !u!114 &1518835377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046123091241203612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a01cd062589f04f9248fa584a31be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 779bd8db266844540bb65ceb289eec42, type: 2}
+  onTakeDamage: {fileID: 11400000, guid: 3e1f4461ee01032438b677d282f17f1c, type: 2}
 --- !u!1 &7046123092003796143
 GameObject:
   m_ObjectHideFlags: 0

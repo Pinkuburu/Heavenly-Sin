@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 899539750755040345}
   - component: {fileID: 727181910}
+  - component: {fileID: 1976715743}
   m_Layer: 0
   m_Name: Gamestate
   m_TagString: Untagged
@@ -45,6 +46,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerState: {fileID: 11400000, guid: 4b6cca1f274ad154c81f7a9ee50a466f, type: 2}
   player: {fileID: 0}
+--- !u!114 &1976715743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899539750755040344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba728cca1f57274f85b171770bb9b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: c71767c4a604b9245a13e610cb69a627, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 727181910}
+        m_TargetAssemblyTypeName: HeavenlySin.GameState, Assembly-CSharp
+        m_MethodName: SetTransform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &899539751356377893
 GameObject:
   m_ObjectHideFlags: 0
