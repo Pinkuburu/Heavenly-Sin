@@ -8,9 +8,8 @@ namespace HeavenlySin.Enemy
     public class EnemyScript : MonoBehaviour
     {
         #region Fields
-
-        public EnemyController controller;
-        public EnemyStats stats;
+        
+        public EnemyStats enemyStats;
         
         #endregion
  

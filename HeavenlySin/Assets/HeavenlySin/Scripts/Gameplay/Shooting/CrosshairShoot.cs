@@ -104,7 +104,7 @@ namespace HeavenlySin.Shooting
             muzzleFlashClone.transform.SetParent(firePoint);
             Destroy(muzzleFlashClone, 0.025f);
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if(Physics.Raycast(ray.origin, ray.direction, out rayHit, Mathf.Infinity))
             {
                 if (rayHit.collider.gameObject.CompareTag("Enemy"))
@@ -112,11 +112,16 @@ namespace HeavenlySin.Shooting
                     rayHit.collider.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
                     //blood goes here?
                 }
+                if (rayHit.collider.gameObject.CompareTag("Boss"))
+                {
+                    rayHit.collider.gameObject.GetComponent<BossStats>().TakeDamage(damage);
+                    //blood goes here?
+                }
 
                 //ricochet FX
                 if (rayHit.collider.gameObject.CompareTag("Object"))
                 {
-                    GameObject hitFXClone = Instantiate(hitFX, rayHit.point, transform.rotation);
+                    var hitFXClone = Instantiate(hitFX, rayHit.point, transform.rotation);
                     Destroy(hitFXClone, 0.5f);
                 }
             }
@@ -127,11 +132,11 @@ namespace HeavenlySin.Shooting
         private IEnumerator Reload()
         {
             _isReloading = true;
-            onGunReload.Raise();
+            gunSounds.Raise(2); //Reload SFX
             yield return new WaitForSeconds(reloadTime);
             _currentAmmo = maxAmmo;
             _isReloading = false;
-            gunSounds.Raise(2); //Reload SFX
+            onGunReload.Raise();
         }
 
         private void AllowFire()

@@ -1,19 +1,17 @@
 using HeavenlySin.GameEvents;
 using UnityEngine;
 
-namespace HeavenlySin.Enemy
+namespace HeavenlySin
 {
-    /// <summary>
-    /// This class handles the enemy's health and damage dealing.
-    /// </summary>
-    public class EnemyStats : MonoBehaviour
+    public class BossStats : MonoBehaviour
     {
         #region Public Fields
         
         public Stats.Stats statistics;
         [SerializeField] private IntEvent enemySounds;
         public Animator anim;
-
+        [SerializeField] private VoidEvent onLevelComplete;
+        
         #endregion
 
         #region
@@ -27,7 +25,7 @@ namespace HeavenlySin.Enemy
         {
             _health = statistics.maxHealth;
         }
-
+        
         #endregion
 
         #region Public Methods
@@ -50,10 +48,10 @@ namespace HeavenlySin.Enemy
             if (_health <= 0)
             {
                 //enemySounds.Raise(); //Death SFX
+                onLevelComplete.Raise();
                 Destroy(gameObject, 0.25f);
             }
         }
-        
         #endregion
     }
 }

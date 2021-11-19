@@ -9,22 +9,22 @@ namespace HeavenlySin.Enemy
         public GameObject projectile;
         public GameObject enemy;
         public Transform firePoint;
-        Vector3 randomPos;
+        private Vector3 _randomPos;
         private RaycastHit _enemyRay;
-        private float timeTilNextShoot;
-        private float shootTimer = 0f;
-        private float timeTilNextMove;
-        private float moveTimer = 0f;
-        Vector3 startPos;
-        private bool outOfBounds = false;
-        public bool isAttacking = false;
+        private float _timeTilNextShoot;
+        private float _shootTimer;
+        private float _timeTilNextMove;
+        private float _moveTimer;
+        private Vector3 _startPos;
+        private bool _outOfBounds;
+        public bool isAttacking;
         #endregion
 
         #region LifeCycle
         private void Start()
         {
-            timeTilNextShoot = Random.Range(minDelay, maxDelay);
-            startPos = transform.position;
+            _timeTilNextShoot = Random.Range(minDelay, maxDelay);
+            _startPos = transform.position;
         }
 
         private void Update()
@@ -32,7 +32,6 @@ namespace HeavenlySin.Enemy
             Movement();
             if(isAttacking)
             {
-                
                 Attack();
             }            
         }
@@ -40,51 +39,51 @@ namespace HeavenlySin.Enemy
         public void IsAttacking()
         {
             isAttacking = !isAttacking;
-            Debug.Log("you're being attacked!");
         }
 
         private void Movement()
         {
-            moveTimer += Time.deltaTime;
-            if(moveTimer >= timeTilNextMove)
+            _moveTimer += Time.deltaTime;
+            if(_moveTimer >= _timeTilNextMove)
             {
-                randomPos = new Vector3(Random.Range(minTravel, maxTravel), Random.Range(minTravel, maxTravel), Random.Range(minTravel, maxTravel));
-                moveTimer = 0f;
-                timeTilNextMove = Random.Range(1f, 4f);
+                _randomPos = new Vector3(Random.Range(minTravel, maxTravel), Random.Range(minTravel, maxTravel), Random.Range(minTravel, maxTravel));
+                _moveTimer = 0f;
+                _timeTilNextMove = Random.Range(1f, 4f);
             }
 
-            if (outOfBounds)
+            if (_outOfBounds)
             {
-                transform.position = Vector3.Lerp(transform.position, startPos, Time.deltaTime * moveSpeed);
-                outOfBounds = false;
+                transform.position = Vector3.Lerp(transform.position, _startPos, Time.deltaTime * moveSpeed);
+                _outOfBounds = false;
             }
             else
             {
-                transform.position = Vector3.Lerp(transform.position, transform.position - randomPos, Time.deltaTime * moveSpeed);
+                var position = transform.position;
+                position = Vector3.Lerp(position, position - _randomPos, Time.deltaTime * moveSpeed);
+                transform.position = position;
 
-                if (Vector3.Distance(startPos, transform.position) > wanderDistance)
+                if (Vector3.Distance(_startPos, transform.position) > wanderDistance)
                 {
-                    outOfBounds = true;
+                    _outOfBounds = true;
                 }
-
             }
         }
 
         private void Attack()
         {
-            Collider[] detectedObjects = Physics.OverlapSphere(transform.position, detectDistance);
+            var detectedObjects = Physics.OverlapSphere(transform.position, detectDistance);
             foreach(var hitCollider in detectedObjects)
             {
                 if (hitCollider.gameObject.CompareTag("Player"))
                 {
                     if (Physics.Raycast(transform.position, (hitCollider.gameObject.transform.position - transform.position), out _enemyRay, Mathf.Infinity))
                     {
-                        shootTimer += Time.deltaTime;
-                        if(shootTimer >= timeTilNextShoot)
+                        _shootTimer += Time.deltaTime;
+                        if(_shootTimer >= _timeTilNextShoot)
                         {
-                            GameObject projectileClone = Instantiate(projectile, firePoint.transform.position, transform.rotation);
-                            shootTimer = 0f;
-                            timeTilNextShoot = Random.Range(minDelay, maxDelay);
+                            var projectileClone = Instantiate(projectile, firePoint.transform.position, transform.rotation);
+                            _shootTimer = 0f;
+                            _timeTilNextShoot = Random.Range(minDelay, maxDelay);
                         }
                     }
                 }
@@ -93,9 +92,9 @@ namespace HeavenlySin.Enemy
 
         private void SpawnEnemies()
         {
-            for(int i = 0; i < spawnAmount; i++)
+            for(var i = 0; i < spawnAmount; i++)
             {
-                GameObject EnemyClone = Instantiate(enemy, transform.position, transform.rotation);
+                var enemyClone = Instantiate(enemy, transform.position, transform.rotation);
             }
         }
         #endregion

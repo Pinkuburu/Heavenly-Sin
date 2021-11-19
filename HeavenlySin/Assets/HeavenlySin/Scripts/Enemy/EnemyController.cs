@@ -102,9 +102,8 @@ namespace HeavenlySin.Enemy
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                Debug.Log("hello");
                 //Do some damage to the player
-                other.GetComponent<PlayerStats>().TakeDamage(enemyScript.stats.stats.strength);
+                other.GetComponent<PlayerStats>().TakeDamage(enemyScript.enemyStats.statistics.strength);
             }
         }
 

@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920c4b49020919f42a266a962cc30ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossStats: {fileID: 11400000, guid: dea72a90acbe59948bb0e2b1efed35e6, type: 2}
   projectileSpeed: 10
 --- !u!1001 &2996572363051074023
 PrefabInstance:

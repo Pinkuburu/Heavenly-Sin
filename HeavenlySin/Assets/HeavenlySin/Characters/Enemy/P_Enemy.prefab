@@ -132,8 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7483cd450a430774681668806fb5a017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 6708588221242707120}
-  stats: {fileID: 3770126812847319041}
+  enemyStats: {fileID: 3770126812847319041}
 --- !u!114 &6708588221242707120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +149,6 @@ MonoBehaviour:
   detectDistance: 3
   moveSpeed: 1
   enemySounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
-  onTakeDamage: {fileID: 11400000, guid: 3e1f4461ee01032438b677d282f17f1c, type: 2}
 --- !u!114 &3770126812847319041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6a6d614c5072b4db120e4d7d28b483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 49d03e2f5bad3754d8a817a4bada0e42, type: 2}
+  statistics: {fileID: 11400000, guid: b41d0d1a9b04d9442a645bb08551c1c1, type: 2}
   enemySounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
   anim: {fileID: 2010358664534669820}
