@@ -4094,8 +4094,13 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
+<<<<<<< Updated upstream
     canvasScrollPosition: {x: 11.122313, y: 17.370058}
     canvasZoom: 0.8200002
+=======
+    canvasScrollPosition: {x: 19.573528, y: 161.32982}
+    canvasZoom: 0.7000003
+>>>>>>> Stashed changes
   - id: 15
     fields:
     - title: Title
@@ -4780,7 +4785,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -4803,7 +4808,7 @@ MonoBehaviour:
     - id: 1
       fields:
       - title: Title
-        value: Player opening Dialouge
+        value: Player Opening Dialouge
         type: 0
         typeString: CustomFieldType_Text
       - title: Description
@@ -4823,7 +4828,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: Phew! I finally grabbed Wes' keys. I wonder why he'd leave them up
+          on the rooftop...
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -4912,59 +4918,10 @@ MonoBehaviour:
         y: 170
         width: 160
         height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: "Something doesn\u2019t seem right\u2026 I better go check it out."
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Double-click this passage to edit it.
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 17
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 270
-        width: 160
-        height: 30
     - id: 4
       fields:
       - title: Title
-        value: That's odd, where did he go? Link 1
+        value: That's odd, where did he go?
         type: 0
         typeString: CustomFieldType_Text
       - title: Description
@@ -5013,7 +4970,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 121.03093
+        y: 119.93202
         width: 160
         height: 30
     - id: 5
@@ -5040,7 +4997,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Something doesn\u2019t seem right\u2026 I better go check it out."
+        value: "Something doesn\u2019t seem right\u2026 I better go check it out.
+          The scream sounded like it came from the speakeasy down the alley."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5054,13 +5012,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 17
-        originDialogueID: 5
-        destinationConversationID: 17
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -19666,7 +19618,11 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
+<<<<<<< Updated upstream
     canvasZoom: 0.6700003
+=======
+    canvasZoom: 0.76000035
+>>>>>>> Stashed changes
   - id: 29
     fields:
     - title: Title
