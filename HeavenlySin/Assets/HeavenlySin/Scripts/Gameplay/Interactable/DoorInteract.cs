@@ -1,4 +1,5 @@
 using HeavenlySin.GameEvents;
+using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
 namespace HeavenlySin.Interactable
@@ -17,18 +18,27 @@ namespace HeavenlySin.Interactable
     
         #region Private Fields
         private const float MAX_RANGE = 100f;
+        private DialogueSystemTrigger dialogue;
         #endregion
 
         #region Properties
         public float MaxRange => MAX_RANGE;
-        
+
+        #endregion
+
+        #region Private Methods
+
+        private void Start()
+        {
+            dialogue = GetComponent<DialogueSystemTrigger>();
+        }
         #endregion
 
         #region Public Methods
-        
+
         public void Interact()
         {
-            //Do a dialogue thing
+            dialogue.OnUse(this.gameObject.transform);
             onOpenAttempt.Raise();
             Debug.Log("Locked");
         }

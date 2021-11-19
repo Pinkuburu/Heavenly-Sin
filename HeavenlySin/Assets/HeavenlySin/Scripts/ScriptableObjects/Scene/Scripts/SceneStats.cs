@@ -19,6 +19,8 @@ namespace HeavenlySin.Scene.Scripts
         TUTORIAL_MINDSCAPE,
         SPEAKEASY,
         LUST_DREAMSCAPE,
-        LUST_CUTSCENE
+        LUST_CUTSCENE,
+        OVERWORLD1,
+        OVERWORLD2
     };
 }
