@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1cbd0f038e8864993063dcfed54775, type: 3}
   m_Name: Enemy_LustMiniboss
   m_EditorClassIdentifier: 
+  strength: 25
+  currentHealth: 140
   maxHealth: 140
