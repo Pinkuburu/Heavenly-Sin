@@ -19791,7 +19791,7 @@ PrefabInstance:
     - target: {fileID: 5574489507687006501, guid: c68e5cc9f4d567542973b86fc89895bf, type: 3}
       propertyPath: sceneStats
       value: 
-      objectReference: {fileID: 11400000, guid: 05b01eedb213d5847a8334189671514d, type: 2}
+      objectReference: {fileID: 11400000, guid: 3dac12c1152317a419f6730dbece49fa, type: 2}
     - target: {fileID: 5574489507687006501, guid: c68e5cc9f4d567542973b86fc89895bf, type: 3}
       propertyPath: onFadeStart
       value: 

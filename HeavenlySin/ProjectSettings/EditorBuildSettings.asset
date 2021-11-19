@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/HeavenlySin/_Levels/Lust Dreamscape Cutscene.unity
     guid: d64fcfddd0780fb44a7ac5115b917a0d
+  - enabled: 1
+    path: Assets/HeavenlySin/_Levels/Overworld 1.unity
+    guid: e0319d1c623af5c4f8908c2d1b23227d
+  - enabled: 1
+    path: Assets/HeavenlySin/_Levels/Overworld 2.unity
+    guid: ccad79e7f20cc544ca00c6f7b4310e4d
   m_configObjects: {}
