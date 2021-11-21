@@ -805,8 +805,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1980045423}
   - {fileID: 1528162485}
+  - {fileID: 1980045423}
   - {fileID: 1451031458}
   - {fileID: 1825937567}
   - {fileID: 2141649075}
@@ -7914,7 +7914,7 @@ Transform:
   - {fileID: 128342815}
   - {fileID: 1553474574}
   m_Father: {fileID: 55422449}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1535744696
 GameObject:
