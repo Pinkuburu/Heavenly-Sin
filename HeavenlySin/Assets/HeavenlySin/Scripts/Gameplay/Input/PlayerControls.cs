@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-namespace HeavenlySin
+namespace HeavenlySin.Player
 {
     public class @PlayerControls : IInputActionCollection, IDisposable
     {
@@ -48,6 +48,22 @@ namespace HeavenlySin
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""f8c4c911-50e4-4d5e-a86d-6439801d4a8a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""d5b31a8e-c71c-4b94-b4f7-9047ce809da0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SprintStop"",
+                    ""type"": ""Button"",
+                    ""id"": ""5dcd8838-61e9-4cb3-94d5-7336c3726186"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -139,6 +155,28 @@ namespace HeavenlySin
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f01d1b64-1bea-439c-a39e-ff6ac4498271"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""92d64094-f67b-4468-a947-855aaf87cf28"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SprintStop"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -324,6 +362,8 @@ namespace HeavenlySin
             m_Overworld_Jump = m_Overworld.FindAction("Jump", throwIfNotFound: true);
             m_Overworld_Look = m_Overworld.FindAction("Look", throwIfNotFound: true);
             m_Overworld_Interact = m_Overworld.FindAction("Interact", throwIfNotFound: true);
+            m_Overworld_Sprint = m_Overworld.FindAction("Sprint", throwIfNotFound: true);
+            m_Overworld_SprintStop = m_Overworld.FindAction("SprintStop", throwIfNotFound: true);
             // Combat
             m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
             m_Combat_Movement = m_Combat.FindAction("Movement", throwIfNotFound: true);
@@ -390,6 +430,8 @@ namespace HeavenlySin
         private readonly InputAction m_Overworld_Jump;
         private readonly InputAction m_Overworld_Look;
         private readonly InputAction m_Overworld_Interact;
+        private readonly InputAction m_Overworld_Sprint;
+        private readonly InputAction m_Overworld_SprintStop;
         public struct OverworldActions
         {
             private @PlayerControls m_Wrapper;
@@ -398,6 +440,8 @@ namespace HeavenlySin
             public InputAction @Jump => m_Wrapper.m_Overworld_Jump;
             public InputAction @Look => m_Wrapper.m_Overworld_Look;
             public InputAction @Interact => m_Wrapper.m_Overworld_Interact;
+            public InputAction @Sprint => m_Wrapper.m_Overworld_Sprint;
+            public InputAction @SprintStop => m_Wrapper.m_Overworld_SprintStop;
             public InputActionMap Get() { return m_Wrapper.m_Overworld; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -419,6 +463,12 @@ namespace HeavenlySin
                     @Interact.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
                     @Interact.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
                     @Interact.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
+                    @Sprint.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSprint;
+                    @Sprint.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSprint;
+                    @Sprint.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSprint;
+                    @SprintStop.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSprintStop;
+                    @SprintStop.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSprintStop;
+                    @SprintStop.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSprintStop;
                 }
                 m_Wrapper.m_OverworldActionsCallbackInterface = instance;
                 if (instance != null)
@@ -435,6 +485,12 @@ namespace HeavenlySin
                     @Interact.started += instance.OnInteract;
                     @Interact.performed += instance.OnInteract;
                     @Interact.canceled += instance.OnInteract;
+                    @Sprint.started += instance.OnSprint;
+                    @Sprint.performed += instance.OnSprint;
+                    @Sprint.canceled += instance.OnSprint;
+                    @SprintStop.started += instance.OnSprintStop;
+                    @SprintStop.performed += instance.OnSprintStop;
+                    @SprintStop.canceled += instance.OnSprintStop;
                 }
             }
         }
@@ -585,6 +641,8 @@ namespace HeavenlySin
             void OnJump(InputAction.CallbackContext context);
             void OnLook(InputAction.CallbackContext context);
             void OnInteract(InputAction.CallbackContext context);
+            void OnSprint(InputAction.CallbackContext context);
+            void OnSprintStop(InputAction.CallbackContext context);
         }
         public interface ICombatActions
         {

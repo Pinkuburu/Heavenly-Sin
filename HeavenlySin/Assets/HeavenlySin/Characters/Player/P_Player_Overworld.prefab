@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 72763172438997604}
   - component: {fileID: 72763172438997605}
   - component: {fileID: 72763172438997610}
-  - component: {fileID: 310299732}
   m_Layer: 0
   m_Name: P_Player_Overworld
   m_TagString: Untagged
@@ -254,6 +253,7 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
+  isSprinting: 0
 --- !u!114 &72763172438997610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,37 +272,11 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  health: 0
   isGrounded: 0
   jumpHeight: 1.7
   playerScript: {fileID: 72763172438997606}
-  speed: 5
-  _health: 0
-  playerSounds: {fileID: 0}
---- !u!114 &310299732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72763172438997609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a030edee9b95546a9b4d0d7b95ae47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 87ca07b3ace278d4e89e2c845add29dc, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 72763172438997610}
-        m_TargetAssemblyTypeName: HeavenlySin.Player.PlayerMovement, Assembly-CSharp
-        m_MethodName: ChangeMovement
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  speed: 0
+  sprintSpeed: 8
+  walkSpeed: 5
+  playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
