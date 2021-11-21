@@ -24,14 +24,16 @@ namespace HeavenlySin.Player
         public float groundDistance;
         [Tooltip("The layer that the player can be grounded on")]
         public LayerMask groundMask;
+        [Tooltip("How much max health the player has")]
+        public float health;
         public bool isGrounded;
         [Tooltip("How high the player can jump")]
         public float jumpHeight = 1.7f;
         public PlayerScript playerScript;
-        [Tooltip("How fast the player can move")]
-        public float speed = 5f;
-        [Tooltip("How much max health the player has")]
-        public float _health;
+        [Tooltip("How fast the player can sprint when holding left shift")]
+        public float sprintSpeed;
+        [Tooltip("How fast the player can walk")]
+        public float walkSpeed = 5f;
         [SerializeField] private IntEvent playerSounds;
 
         #endregion
@@ -42,9 +44,10 @@ namespace HeavenlySin.Player
         private Vector3 _direction;
         private Vector3 _moveDir = Vector3.zero;
         private bool _isJumping;
+        private float _speed;
         private float _targetAngle;
         private Vector3 _velocity = Vector3.zero;
-
+        private bool _isSprinting;
         #endregion
 
         #region Life Cycle
@@ -64,7 +67,8 @@ namespace HeavenlySin.Player
         #region Private Methods
         private void CalculateMovement()
         {
-            // Variables to optimize code.
+            _speed = _isSprinting ? sprintSpeed : walkSpeed;
+                // Variables to optimize code.
             var mainCameraTransform = _camera.transform;
             var mainCameraTransformEulerAngles = mainCameraTransform.eulerAngles;
 
@@ -93,13 +97,13 @@ namespace HeavenlySin.Player
             if (isGrounded)
             {
                 characterController.stepOffset = 0.3f;
-                characterController.Move(speed * Time.deltaTime * _moveDir);
+                characterController.Move(_speed * Time.deltaTime * _moveDir);
             }
             // If not grounded (or most likely jumping), change movement.
             else 
             {
                 characterController.stepOffset = 0f;
-                characterController.Move(JUMP_CONTROL_MODIFIER * speed * Time.deltaTime * _moveDir);
+                characterController.Move(JUMP_CONTROL_MODIFIER * _speed * Time.deltaTime * _moveDir);
             }
         }
         
@@ -110,13 +114,13 @@ namespace HeavenlySin.Player
             _direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
                 playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
             _isJumping = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
-
+            _isSprinting = playerScript.playerInput.isSprinting;
             CalculateMovement();
         }
 
         public void TakeDamage(float damage)
         {
-            _health -= damage;
+            health -= damage;
             //playerSounds.Raise(); //Hurt SFX
             IsDead();
             // TODO: update UI health bar.
@@ -124,7 +128,7 @@ namespace HeavenlySin.Player
 
         private void IsDead()
         {
-            if (_health <= 0)
+            if (health <= 0)
             {
                 //playerSounds.Raise(); //Death SFX
                 Destroy(gameObject);

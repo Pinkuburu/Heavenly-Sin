@@ -43852,10 +43852,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Player_Overworld
       objectReference: {fileID: 0}
-    - target: {fileID: 72763172438997610, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
-      propertyPath: playerSounds
-      value: 
-      objectReference: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6b41bec6700cf8459f78385b9776775, type: 3}
 --- !u!4 &1083953527 stripped
