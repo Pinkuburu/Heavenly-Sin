@@ -15,7 +15,7 @@ namespace HeavenlySin.Player
         public SpriteRenderer sprite;
                                                               
         [HideInInspector] public InputAction move;
-        
+        [HideInInspector] public bool isSprinting;
         #region Life Cycle
 
         private void Awake()
@@ -54,10 +54,21 @@ namespace HeavenlySin.Player
             move = inputManager.InputActions.Overworld.Movement;
             move.Enable();
             inputManager.InputActions.Overworld.Interact.performed += DoInteract;
-            
+            inputManager.InputActions.Overworld.Sprint.performed += DoSprint;
+            inputManager.InputActions.Overworld.SprintStop.performed += DoSprintStop;
             inputManager.InputActions.Overworld.Enable();
         }
-        
+
+        private void DoSprintStop(InputAction.CallbackContext obj)
+        {
+            isSprinting = false;
+        }
+
+        private void DoSprint(InputAction.CallbackContext obj)
+        {
+            isSprinting = true;
+        }
+
         #endregion
     }
 }

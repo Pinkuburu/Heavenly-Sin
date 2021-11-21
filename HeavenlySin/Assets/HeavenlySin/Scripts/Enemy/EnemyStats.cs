@@ -1,5 +1,6 @@
 using HeavenlySin.GameEvents;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace HeavenlySin.Enemy
 {
@@ -12,6 +13,7 @@ namespace HeavenlySin.Enemy
         
         public Stats.Stats statistics;
         [SerializeField] private IntEvent enemySounds;
+        public Slider healthSlider;
         public Animator anim;
 
         #endregion
@@ -35,6 +37,7 @@ namespace HeavenlySin.Enemy
         public void TakeDamage(float damage)
         {
             _health -= damage;
+            healthSlider.value = (_health / statistics.maxHealth);
             anim.SetTrigger("isHurt");
             //enemySounds.Raise(); //Hurt SFX
             IsDead();
