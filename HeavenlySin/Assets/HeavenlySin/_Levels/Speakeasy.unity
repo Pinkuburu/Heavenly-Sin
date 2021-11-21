@@ -2689,7 +2689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: Giana
   persistentDataName: Giana
-  portrait: {fileID: 0}
+  portrait: {fileID: 2800000, guid: 7cb81ae55d3208f43a54bb8a317b6ba6, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
     barkUI: {fileID: 0}
@@ -3514,7 +3514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: Gerardo
   persistentDataName: Gerardo
-  portrait: {fileID: 0}
+  portrait: {fileID: 2800000, guid: 3ad402ad729f9c0478eddb8b03415a41, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
     barkUI: {fileID: 0}
@@ -12617,7 +12617,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 720}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
@@ -12794,7 +12794,7 @@ MonoBehaviour:
       cancelConversation:
         key: 27
         buttonName: 
-    dialogueUI: {fileID: 934396078}
+    dialogueUI: {fileID: 159120, guid: adc24357fea057a4884a14c87b85b1cd, type: 3}
     defaultCanvas: {fileID: 1365582670}
     localizationSettings:
       language: 
@@ -14972,7 +14972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: Wes
   persistentDataName: Wes (Ghost)
-  portrait: {fileID: 0}
+  portrait: {fileID: 2800000, guid: 30b2cfe4268117645b860e0cca77dc0c, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
     barkUI: {fileID: 0}
@@ -19081,7 +19081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: Penelope
   persistentDataName: Penelope
-  portrait: {fileID: 0}
+  portrait: {fileID: 2800000, guid: 9d3c84bf446df774693106489f9a414d, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
     barkUI: {fileID: 0}
@@ -19849,7 +19849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: Lance
   persistentDataName: Lance
-  portrait: {fileID: 0}
+  portrait: {fileID: 2800000, guid: ebc76f164c7bc1a41bb4b065911b3893, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
     barkUI: {fileID: 0}
