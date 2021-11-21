@@ -1,15 +1,15 @@
 using HeavenlySin.GameEvents;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Enemy
 {
     public class BossStats : MonoBehaviour
     {
         #region Public Fields
         
+        public Animator anim;
         public Stats.Stats statistics;
         [SerializeField] private IntEvent enemySounds;
-        public Animator anim;
         [SerializeField] private VoidEvent onLevelComplete;
         
         #endregion

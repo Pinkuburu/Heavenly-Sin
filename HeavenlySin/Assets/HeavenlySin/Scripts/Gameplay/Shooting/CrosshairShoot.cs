@@ -33,10 +33,9 @@ namespace HeavenlySin.Shooting
 
         private bool _allowFire = true;
         private int _currentAmmo;
-        private bool _isReloading = false;
-        private GameObject _player;
+        private bool _isReloading;
         private Vector3 _targetPos;
-        private RaycastHit rayHit;
+        private RaycastHit _rayHit;
         
         #endregion
 
@@ -46,7 +45,6 @@ namespace HeavenlySin.Shooting
         {
             _targetPos = transform.position;
             _currentAmmo = maxAmmo;
-            _player = GameObject.FindGameObjectWithTag("Player");
         }
         
         private void Update()
@@ -100,28 +98,28 @@ namespace HeavenlySin.Shooting
             gunSounds.Raise(15);
 
             //muzzle flash FX
-            GameObject muzzleFlashClone = Instantiate(muzzleFlash, firePoint.transform.position, firePoint.transform.rotation);
+            var muzzleFlashClone = Instantiate(muzzleFlash, firePoint.transform.position, firePoint.transform.rotation);
             muzzleFlashClone.transform.SetParent(firePoint);
             Destroy(muzzleFlashClone, 0.025f);
 
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if(Physics.Raycast(ray.origin, ray.direction, out rayHit, Mathf.Infinity))
+            if(Physics.Raycast(ray.origin, ray.direction, out _rayHit, Mathf.Infinity))
             {
-                if (rayHit.collider.gameObject.CompareTag("Enemy"))
+                if (_rayHit.collider.gameObject.CompareTag("Enemy"))
                 {
-                    rayHit.collider.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
+                    _rayHit.collider.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
                     //blood goes here?
                 }
-                if (rayHit.collider.gameObject.CompareTag("Boss"))
+                if (_rayHit.collider.gameObject.CompareTag("Boss"))
                 {
-                    rayHit.collider.gameObject.GetComponent<BossStats>().TakeDamage(damage);
+                    _rayHit.collider.gameObject.GetComponent<BossStats>().TakeDamage(damage);
                     //blood goes here?
                 }
 
                 //ricochet FX
-                if (rayHit.collider.gameObject.CompareTag("Object"))
+                if (_rayHit.collider.gameObject.CompareTag("Object"))
                 {
-                    var hitFXClone = Instantiate(hitFX, rayHit.point, transform.rotation);
+                    var hitFXClone = Instantiate(hitFX, _rayHit.point, transform.rotation);
                     Destroy(hitFXClone, 0.5f);
                 }
             }

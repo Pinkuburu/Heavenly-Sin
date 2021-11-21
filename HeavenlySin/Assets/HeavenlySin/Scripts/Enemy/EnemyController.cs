@@ -1,4 +1,5 @@
 using HeavenlySin.GameEvents;
+using HeavenlySin.Player;
 using UnityEngine;
 
 namespace HeavenlySin.Enemy
