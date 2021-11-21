@@ -24807,8 +24807,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Ok Lance, what did you want to talk to me about, I should probably
-          go with my husband to find the keys."'
+        value: Ok Lance, what did you want to talk to me about, I should probably
+          go with my husband to find the keys.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -24864,8 +24864,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\"Yeah, I guess that\u2019s true, he doesn\u2019t need two sets of
-          hands to look for a small set of keys.\""
+        value: "Yeah, I guess that\u2019s true, he doesn\u2019t need two sets of
+          hands to look for a small set of keys."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -24920,7 +24920,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"So, what is it then, what did you want to say?"'
+        value: So, what is it then, what did you want to say?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -24975,7 +24975,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Spit it out Lance."'
+        value: Spit it out Lance.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25030,8 +25030,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"You say that to all the girls, is that seriously what you wanted
-          to tell me?"'
+        value: You say that to all the girls, is that seriously what you wanted to
+          tell me?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25086,8 +25086,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Honey, you wouldn''t know real love from fake love if it snuck up
-          behind you and bit your ass."'
+        value: Honey, you wouldn't know real love from fake love if it snuck up behind
+          you and bit your ass.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25142,7 +25142,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Ha, you wish."'
+        value: Ha, you wish.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25197,7 +25197,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\"Yeah, I would \u201Clove to\u201D but I can\u2019t, I\u2019m married.\""
+        value: "Yeah, I would \u201Clove to\u201D but I can\u2019t, I\u2019m married."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25254,8 +25254,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\"That may be true, but I\u2019ll never admit it if I hypothetically
-          made the wrong decision all those years ago. I have to stick to it now.\""
+        value: "That may be true, but I\u2019ll never admit it if I hypothetically
+          made the wrong decision all those years ago. I have to stick to it now.1"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25310,7 +25310,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\"But Gerardo doesn\u2019t force me to do anything.\""
+        value: "But Gerardo doesn\u2019t force me to do anything."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25366,8 +25366,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\"I mean that\u2019s true but who needs all those things anyway.
-          I\u2019m beautiful without them.\""
+        value: "I mean that\u2019s true but who needs all those things anyway. I\u2019m
+          beautiful without them."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25423,7 +25423,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\"Well I don\u2019t see why that\u2019s important.\""
+        value: "Well I don\u2019t see why that\u2019s important."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25478,7 +25478,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Pretty much."'
+        value: Pretty much.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -25955,7 +25955,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 820
+        y: 818.69916
         width: 160
         height: 30
     - id: 23
@@ -26293,8 +26293,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7687486
+    canvasScrollPosition: {x: 4.826538, y: 674.1067}
+    canvasZoom: 0.8287485
   - id: 31
     fields:
     - title: Title
