@@ -1,7 +1,6 @@
-using HeavenlySin.GameEvents;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Objects
 {
     public class OpenDoor : MonoBehaviour
     {
@@ -15,21 +14,14 @@ namespace HeavenlySin
 
         private SpriteRenderer _renderer;
         public bool isOpen;
+        
         #endregion
         
- 
         #region LifeCycle
-        private void Awake()
-        {
-        }
 
         private void Start()
         {
             _renderer = gameObject.GetComponent<SpriteRenderer>();
-        }
- 
-        private void Update()
-        {
         }
         #endregion
 
@@ -41,9 +33,6 @@ namespace HeavenlySin
             isOpen = true;
         }
         
-        #endregion 
-
-        #region Private Methods
         #endregion
     }
 }

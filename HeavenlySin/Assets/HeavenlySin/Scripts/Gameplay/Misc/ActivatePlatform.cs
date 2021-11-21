@@ -22,9 +22,12 @@ namespace HeavenlySin
 
         private void OnTriggerEnter(Collider other)
         {
-            onFadeStart.Raise();
-            onChangeScene.Raise(sceneStats.playerPos.transform);
-            Invoke(nameof(TransitionScene), 1f);
+            if (other.gameObject.CompareTag("Player"))
+            {
+                onFadeStart.Raise();
+                onChangeScene.Raise(sceneStats.playerPos.transform);
+                Invoke(nameof(TransitionScene), 1f);
+            }
         }
         
         public void TransitionScene()

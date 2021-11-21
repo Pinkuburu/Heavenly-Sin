@@ -1,3 +1,4 @@
+using HeavenlySin.Player;
 using UnityEngine;
 using Random = UnityEngine.Random;
 

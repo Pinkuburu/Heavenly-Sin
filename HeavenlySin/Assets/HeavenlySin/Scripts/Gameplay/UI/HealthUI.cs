@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace HeavenlySin
+namespace HeavenlySin.UI
 {
     public class HealthUI : MonoBehaviour
     {

@@ -1,4 +1,5 @@
 using HeavenlySin.GameEvents;
+using HeavenlySin.Objects;
 using HeavenlySin.Scene.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;

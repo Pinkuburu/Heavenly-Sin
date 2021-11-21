@@ -9,20 +9,6 @@ namespace HeavenlySin
         public Animator anim;
         
         #endregion
- 
-        #region LifeCycle
-        private void Awake()
-        {
-        }
-
-        private void Start()
-        {
-        }
- 
-        private void Update()
-        {
-        }
-        #endregion
 
         #region Public Methods
 

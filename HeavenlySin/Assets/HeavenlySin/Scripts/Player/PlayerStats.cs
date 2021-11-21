@@ -2,7 +2,7 @@ using HeavenlySin.GameEvents;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace HeavenlySin
+namespace HeavenlySin.Player
 {
     public class PlayerStats : MonoBehaviour
     {
