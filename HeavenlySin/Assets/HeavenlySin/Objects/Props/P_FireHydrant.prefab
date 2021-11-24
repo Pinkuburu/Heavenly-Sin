@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7155791525772887242}
   - component: {fileID: 4947922391446679552}
   - component: {fileID: 4454583600524227797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: P_FireHydrant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6893446712502702549}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -11.01, y: 2.13, z: 1.94}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &7155791525772887242
 MeshFilter:
   m_ObjectHideFlags: 0
