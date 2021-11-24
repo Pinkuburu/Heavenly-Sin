@@ -25,6 +25,7 @@ namespace HeavenlySin.Shooting
         [SerializeField] private VoidEvent onGunReload;
         [SerializeField] private Transform firePoint;
         [SerializeField] private GameObject muzzleFlash;
+        [SerializeField] private GameObject bulletTrail;
         [SerializeField] private GameObject hitFX;
         
         #endregion
@@ -105,15 +106,20 @@ namespace HeavenlySin.Shooting
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if(Physics.Raycast(ray.origin, ray.direction, out _rayHit, Mathf.Infinity))
             {
+                //bullet trail FX
+                var bulletTrailClone = Instantiate(bulletTrail, firePoint.transform.position, firePoint.transform.rotation);
+                LineRenderer lineR = bulletTrailClone.GetComponent<LineRenderer>();
+                lineR.SetPosition(0, firePoint.transform.position);
+                lineR.SetPosition(1, _rayHit.point);
+                Destroy(bulletTrailClone, 1f);
+
                 if (_rayHit.collider.gameObject.CompareTag("Enemy"))
                 {
                     _rayHit.collider.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
-                    //blood goes here?
                 }
                 if (_rayHit.collider.gameObject.CompareTag("Boss"))
                 {
                     _rayHit.collider.gameObject.GetComponent<BossStats>().TakeDamage(damage);
-                    //blood goes here?
                 }
 
                 //ricochet FX
