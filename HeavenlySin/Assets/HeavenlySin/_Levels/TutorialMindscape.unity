@@ -1495,9 +1495,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 149184472, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 176426387, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2212090460937893244}
+    - target: {fileID: 228087600, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 228087603, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2212090460937893244}
+    - target: {fileID: 228087604, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 228087604, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 228087604, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422904337, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1097404617, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -28.899963
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765431285, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804368466, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: UICamera
@@ -1519,6 +1559,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2212090460937893244}
+    - target: {fileID: 924417425846815577, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 924417426836175978, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: m_RootOrder
       value: 1
