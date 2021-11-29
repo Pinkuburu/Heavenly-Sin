@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3248331743668134166}
   - component: {fileID: 1926343375095197363}
   - component: {fileID: 4422332927697295993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: P_Barrel_Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
