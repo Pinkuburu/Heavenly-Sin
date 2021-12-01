@@ -48,7 +48,7 @@ namespace HeavenlySin.Enemy
         {
             if (_health <= 0)
             {
-                anim.SetTrigger("isDefeated");
+                anim.SetTrigger("isDead");
                 //enemySounds.Raise(); //Death SFX
                 onLevelComplete.Raise();
                 Destroy(gameObject, 5f);
