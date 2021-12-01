@@ -38,7 +38,6 @@ namespace HeavenlySin.Enemy
             anim.SetTrigger("isHurt");
             //enemySounds.Raise(); //Hurt SFX
             IsDead();
-            // TODO: update UI health bar.
         }
         
         #endregion 
@@ -49,9 +48,10 @@ namespace HeavenlySin.Enemy
         {
             if (_health <= 0)
             {
+                anim.SetTrigger("isDefeated");
                 //enemySounds.Raise(); //Death SFX
                 onLevelComplete.Raise();
-                Destroy(gameObject, 0.25f);
+                Destroy(gameObject, 5f);
             }
         }
         #endregion
