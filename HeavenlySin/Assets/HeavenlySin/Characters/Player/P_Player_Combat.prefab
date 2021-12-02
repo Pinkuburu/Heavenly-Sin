@@ -120,7 +120,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.01, y: 7.92}
+  m_Size: {x: 3.7266667, y: 6.4533334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -193,6 +193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScript: {fileID: 7046123091241203603}
+  horizontal: 0
+  vertical: 0
+  isMoving: 0
 --- !u!114 &7046123091241203601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +259,7 @@ MonoBehaviour:
   sprintSpeed: 0
   walkSpeed: 5
   playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  direction: {x: 0, y: 0, z: 0}
 --- !u!136 &1518835384
 CapsuleCollider:
   m_ObjectHideFlags: 0
