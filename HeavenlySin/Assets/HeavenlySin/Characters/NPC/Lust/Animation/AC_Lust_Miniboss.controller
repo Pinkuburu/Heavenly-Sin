@@ -87,7 +87,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lust_Miniboss
+  m_Name: AC_Lust_Miniboss
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isHurt
