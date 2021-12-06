@@ -37,6 +37,7 @@ namespace HeavenlySin.Player
 
         public void TakeDamage(float damage)
         {
+            //hurt animation
             _health -= damage;
             stats.currentHealth = _health;
             onTakeDamage.Raise();
@@ -51,6 +52,8 @@ namespace HeavenlySin.Player
         {
             if (_health <= 0)
             {
+                //death animation
+                Destroy(this.gameObject, 3f);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }

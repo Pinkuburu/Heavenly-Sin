@@ -35,13 +35,13 @@ namespace HeavenlySin.Player
         [Tooltip("How fast the player can walk")]
         public float walkSpeed = 5f;
         [SerializeField] private IntEvent playerSounds;
+        public Vector3 direction;
 
         #endregion
-        
+
         #region Private Fields
-        
+
         private Camera _camera;
-        private Vector3 _direction;
         private Vector3 _moveDir = Vector3.zero;
         private bool _isJumping;
         private float _speed;
@@ -73,7 +73,7 @@ namespace HeavenlySin.Player
             var mainCameraTransformEulerAngles = mainCameraTransform.eulerAngles;
 
             // Makes player move in relation to the direction they are facing.
-            _moveDir = Quaternion.Euler(0f, mainCameraTransformEulerAngles.y, 0f) * _direction;
+            _moveDir = Quaternion.Euler(0f, mainCameraTransformEulerAngles.y, 0f) * direction;
             
             // Lerp angle rotation.
             var angle = Mathf.LerpAngle(transform.eulerAngles.y, _targetAngle, SMOOTH * Time.deltaTime);
@@ -111,7 +111,7 @@ namespace HeavenlySin.Player
         {
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
             
-            _direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
+            direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
                 playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
             _isJumping = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
             _isSprinting = playerScript.playerInput.isSprinting;

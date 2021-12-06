@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 72763172438997604}
   - component: {fileID: 72763172438997605}
   - component: {fileID: 72763172438997610}
+  - component: {fileID: 7993421740242781705}
   m_Layer: 0
   m_Name: P_Player_Overworld
   m_TagString: Untagged
@@ -216,6 +217,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScript: {fileID: 72763172438997606}
+  horizontal: 0
+  vertical: 0
+  isMoving: 0
 --- !u!114 &72763172438997604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +280,26 @@ MonoBehaviour:
   isGrounded: 0
   jumpHeight: 1.7
   playerScript: {fileID: 72763172438997606}
-  speed: 0
   sprintSpeed: 8
   walkSpeed: 5
   playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  direction: {x: 0, y: 0, z: 0}
+--- !u!95 &7993421740242781705
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72763172438997609}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce3310dfee0d0104997978125bbb8fd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

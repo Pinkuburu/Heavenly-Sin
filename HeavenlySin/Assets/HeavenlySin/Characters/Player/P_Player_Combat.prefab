@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 7046123091241203613}
   - component: {fileID: 7046123091241203614}
   - component: {fileID: 7046123091241203604}
+  - component: {fileID: 3857105870462504802}
   - component: {fileID: 7046123091241203603}
   - component: {fileID: 7046123091241203602}
   - component: {fileID: 7046123091241203601}
@@ -119,7 +120,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.01, y: 7.92}
+  m_Size: {x: 3.7266667, y: 6.4533334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -143,6 +144,25 @@ CharacterController:
   m_SkinWidth: 0.001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 3.4, z: 0}
+--- !u!95 &3857105870462504802
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046123091241203612}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce3310dfee0d0104997978125bbb8fd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &7046123091241203603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScript: {fileID: 7046123091241203603}
+  horizontal: 0
+  vertical: 0
+  isMoving: 0
 --- !u!114 &7046123091241203601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +233,7 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
+  isSprinting: 0
 --- !u!114 &7046123091241203615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,12 +252,14 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  health: 0
   isGrounded: 0
   jumpHeight: 2
   playerScript: {fileID: 7046123091241203603}
-  speed: 5.5
-  _health: 0
+  sprintSpeed: 0
+  walkSpeed: 5
   playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  direction: {x: 0, y: 0, z: 0}
 --- !u!136 &1518835384
 CapsuleCollider:
   m_ObjectHideFlags: 0
