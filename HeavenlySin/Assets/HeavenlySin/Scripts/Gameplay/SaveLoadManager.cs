@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using HeavenlySin.Game;
 using HeavenlySin.Items;
@@ -18,9 +19,9 @@ namespace HeavenlySin.Gameplay
 
         // This keeps only one in the scene but a new one gets enabled every time we go to the main menu
         // which is where the script lives.
-        private void Start()
+
+        private void Awake()
         {
-            //Save();
             DontDestroyOnLoad(this.gameObject);
             if (instance != null && instance != this)
                 Destroy(this.gameObject);
@@ -33,11 +34,6 @@ namespace HeavenlySin.Gameplay
         private void OnEnable()
         {
             Load();
-        }
-
-        private void Update()
-        {
-            
         }
 
         public void Save()
