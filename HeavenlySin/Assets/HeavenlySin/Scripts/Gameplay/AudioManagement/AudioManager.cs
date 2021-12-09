@@ -34,24 +34,24 @@ namespace HeavenlySin.Gameplay.AudioManagement
     }
     
     [System.Serializable]
-    public class AudioSettingsValues
+    public class AudioSettings
     {
         public float masterVolume;
         public float sfxVolume;
         public float musicVolume;
 
-        public AudioSettingsValues(float masterVolume, float sfxVolume, float musicVolume)
+        public AudioSettings(float masterVolume, float sfxVolume, float musicVolume)
         {
             this.masterVolume = masterVolume;
             this.sfxVolume = sfxVolume;
             this.musicVolume = musicVolume;
         }
 
-        public AudioSettingsValues(AudioSettingsValues audioSettingsValues)
+        public AudioSettings(AudioSettings audioSettings)
         {
-            this.masterVolume = audioSettingsValues.masterVolume;
-            this.sfxVolume = audioSettingsValues.sfxVolume;
-            this.musicVolume = audioSettingsValues.musicVolume;
+            this.masterVolume = audioSettings.masterVolume;
+            this.sfxVolume = audioSettings.sfxVolume;
+            this.musicVolume = audioSettings.musicVolume;
         }
     }
 }

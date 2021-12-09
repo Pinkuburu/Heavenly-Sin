@@ -1,31 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using HeavenlySin.Gameplay.AudioManagement;
+using HeavenlySin.Game;
 using HeavenlySin.Items;
+using HeavenlySin.Scene.Scripts;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using AudioSettings = HeavenlySin.Gameplay.AudioManagement.AudioSettings;
 
 namespace HeavenlySin.Gameplay
 {
     public class SaveLoadManager : MonoBehaviour
     {
+        public static SaveLoadManager instance;
+        public GameStateInfo gameStateInfo;
         private int _gameStage;
-        private AudioSettingsValues _audioSettingsValues;
+        private AudioSettings _audioSettings;
         public Inventory.Inventory inventory;
-        public int currentScene;
-        public Vector3 playerPosition;
+
+        // This keeps only one in the scene but a new one gets enabled every time we go to the main menu
+        // which is where the script lives.
         private void Start()
         {
-            Save();
-            //Load();
+            //Save();
             DontDestroyOnLoad(this.gameObject);
-            Debug.Log("hello");
+            if (instance != null && instance != this)
+                Destroy(this.gameObject);
+            else
+            {
+                instance = this;
+            }
+        }
+
+        private void OnEnable()
+        {
+            Load();
         }
 
         private void Update()
         {
-
+            
         }
 
         public void Save()
@@ -33,11 +45,11 @@ namespace HeavenlySin.Gameplay
             var saveObject = new SaveObject
             {
                 // TODO: Make these dynamic
-                audioSettingsValues = new AudioSettingsValues(0.4f, 0.5f, 0.5f),
-                gameStage = 0,
-                // TODO: Scene and position need to come from the scriptable object.
-                scene = SceneManager.GetActiveScene().buildIndex,
-                position = new Vector3(1, 2.5f, 3),
+                audioSettings = new AudioSettings(0.4f, 0.5f, 0.5f),
+                gameStage = _gameStage,
+                
+                scene = (int)gameStateInfo.sceneIndex,
+                position = gameStateInfo.playerPos,
                 items = inventory.items
             };
             var json = JsonUtility.ToJson(saveObject);
@@ -51,10 +63,12 @@ namespace HeavenlySin.Gameplay
             {
                 var saveString = File.ReadAllText(Application.dataPath + "/savedata.json");
                 var saveObject = JsonUtility.FromJson<SaveObject>(saveString);
-                SceneManager.LoadScene(saveObject.scene);
-                playerPosition = saveObject.position;
-                _audioSettingsValues = new AudioSettingsValues(saveObject.audioSettingsValues);
+                
+                _audioSettings = new AudioSettings(saveObject.audioSettings);
                 _gameStage = saveObject.gameStage;
+                gameStateInfo.sceneIndex = (Scenes)saveObject.scene;
+                gameStateInfo.playerPos = saveObject.position;
+                inventory.items = saveObject.items;
                 Debug.Log("LOADED");
             }
             else
@@ -66,10 +80,10 @@ namespace HeavenlySin.Gameplay
     
     public class SaveObject
     {
-        public AudioSettingsValues audioSettingsValues;
+        public AudioSettings audioSettings;
         public int gameStage;
         public int scene;
-        public Vector3 position;
+        public Transform position;
         public List<Clue> items;
     }
 }

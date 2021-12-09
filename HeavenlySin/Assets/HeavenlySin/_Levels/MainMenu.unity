@@ -1127,10 +1127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8561af3b353f5d14ca021a60ff67d6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStage: 0
+  gameStateInfo: {fileID: 11400000, guid: 4b6cca1f274ad154c81f7a9ee50a466f, type: 2}
   inventory: {fileID: 11400000, guid: 97311344db77f994a989fefbb056a55b, type: 2}
-  currentScene: 0
-  playerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
