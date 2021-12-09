@@ -25938,7 +25938,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: LoadLevel(Ending);
+        value: LoadLevel(Credits);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 30
@@ -25961,8 +25961,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 4.826538, y: 674.1067}
-    canvasZoom: 0.8287485
+    canvasScrollPosition: {x: 0, y: 1028.9957}
+    canvasZoom: 0.646
   - id: 31
     fields:
     - title: Title
