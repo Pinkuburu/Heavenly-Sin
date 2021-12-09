@@ -1,8 +1,7 @@
 using HeavenlySin.Audio;
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace HeavenlySin.AudioManagement
+namespace HeavenlySin.Gameplay.AudioManagement
 {
     /// <summary>
     /// This class will handle all the sound and music in the game.
@@ -16,7 +15,7 @@ namespace HeavenlySin.AudioManagement
         
         public Sound[] sounds;
         public AudioSource[] sources;
-        
+
         #endregion
         
         #region Public Methods
@@ -32,5 +31,27 @@ namespace HeavenlySin.AudioManagement
         }
         
         #endregion
+    }
+    
+    [System.Serializable]
+    public class AudioSettingsValues
+    {
+        public float masterVolume;
+        public float sfxVolume;
+        public float musicVolume;
+
+        public AudioSettingsValues(float masterVolume, float sfxVolume, float musicVolume)
+        {
+            this.masterVolume = masterVolume;
+            this.sfxVolume = sfxVolume;
+            this.musicVolume = musicVolume;
+        }
+
+        public AudioSettingsValues(AudioSettingsValues audioSettingsValues)
+        {
+            this.masterVolume = audioSettingsValues.masterVolume;
+            this.sfxVolume = audioSettingsValues.sfxVolume;
+            this.musicVolume = audioSettingsValues.musicVolume;
+        }
     }
 }

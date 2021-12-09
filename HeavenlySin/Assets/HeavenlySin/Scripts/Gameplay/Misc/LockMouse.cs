@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Gameplay
 {
     public class LockMouse : MonoBehaviour
     {

@@ -1,8 +1,7 @@
-using System;
 using HeavenlySin.Game;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Gameplay
 {
     public class GameState : MonoBehaviour
     {

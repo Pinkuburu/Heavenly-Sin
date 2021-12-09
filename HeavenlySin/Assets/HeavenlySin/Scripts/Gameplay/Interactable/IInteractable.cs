@@ -1,4 +1,4 @@
-namespace HeavenlySin.Interactable
+namespace HeavenlySin.Gameplay.Interactable
 {
     /// <summary>
     /// This class is a contract that outlines how all
