@@ -20917,10 +20917,11 @@ GameObject:
   - component: {fileID: 2012185916}
   - component: {fileID: 2012185915}
   - component: {fileID: 2012185914}
+  - component: {fileID: 2012185920}
   - component: {fileID: 2012185919}
   - component: {fileID: 2012185918}
   - component: {fileID: 2012185917}
-  - component: {fileID: 2012185920}
+  - component: {fileID: 2012185921}
   m_Layer: 0
   m_Name: puddle_6.002
   m_TagString: Untagged
@@ -21001,6 +21002,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012185913}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7858bc8306e6644f9b2e2c8d09def28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageIndex: 0
+  endHover: {fileID: 11400000, guid: aac5c7d6ddc8c2440ad05cdd13e6c6f1, type: 2}
+  startHover: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
+  onPlaySound: {fileID: 0}
+--- !u!114 &2012185918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012185913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -21060,7 +21077,7 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: e6666c6736b5fd84e84bd17ab05187ea, type: 2}
---- !u!114 &2012185918
+--- !u!114 &2012185919
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21085,7 +21102,7 @@ MonoBehaviour:
     onUse:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &2012185919
+--- !u!114 &2012185920
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21117,22 +21134,19 @@ MonoBehaviour:
     applyColorToPrependedName: 0
     prependActorNameSeparator: ': '
     subtitleColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &2012185920
-MonoBehaviour:
+--- !u!65 &2012185921
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012185913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7858bc8306e6644f9b2e2c8d09def28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageIndex: 0
-  endHover: {fileID: 11400000, guid: aac5c7d6ddc8c2440ad05cdd13e6c6f1, type: 2}
-  startHover: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
-  onPlaySound: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.07791714, y: 0, z: 0.09652998}
+  m_Center: {x: -0.004282202, y: -2.3283064e-10, z: -0.00083484704}
 --- !u!1 &2012767344
 GameObject:
   m_ObjectHideFlags: 0
