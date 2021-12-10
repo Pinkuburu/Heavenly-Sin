@@ -10,6 +10,7 @@ namespace HeavenlySin.Player
 
         public Stats.Stats stats;
         [SerializeField] private VoidEvent onTakeDamage;
+        [SerializeField] private IntEvent playerSounds;
         #endregion
         
         #region PrivateFields
@@ -39,6 +40,8 @@ namespace HeavenlySin.Player
         {
             //hurt animation
             _health -= damage;
+            int randNum = Random.Range(0, 3);
+            playerSounds.Raise(24 + randNum); //Hurt SFX
             stats.currentHealth = _health;
             onTakeDamage.Raise();
             IsDead();

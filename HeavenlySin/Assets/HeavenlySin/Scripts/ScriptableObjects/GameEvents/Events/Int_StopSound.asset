@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4db4194271539e640a3ce8881b5b0bbf, type: 3}
-  m_Name: Sound_Footsteps
+  m_Script: {fileID: 11500000, guid: 263933ef6ae0bd147b796513f1580251, type: 3}
+  m_Name: Int_StopSound
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: ff240a3b422559f419da18cdb8e1f9e3, type: 3}
-  soundType: 2

@@ -283,6 +283,7 @@ MonoBehaviour:
   sprintSpeed: 8
   walkSpeed: 5
   playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  stopSounds: {fileID: 11400000, guid: 5ffe24659b1f92b408a3fe7351fd552d, type: 2}
   direction: {x: 0, y: 0, z: 0}
 --- !u!95 &7993421740242781705
 Animator:
