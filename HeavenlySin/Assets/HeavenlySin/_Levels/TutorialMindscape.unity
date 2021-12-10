@@ -6739,6 +6739,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 7046123091241203615, guid: 5fca524e9d938654a968a7ebadd6347d, type: 3}
       propertyPath: speed
       value: 0
@@ -6751,6 +6752,8 @@ PrefabInstance:
       propertyPath: sprintSpeed
       value: 8
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fca524e9d938654a968a7ebadd6347d, type: 3}
 --- !u!4 &1297507898 stripped
