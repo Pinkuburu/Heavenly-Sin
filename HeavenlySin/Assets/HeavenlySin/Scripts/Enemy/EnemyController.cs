@@ -14,7 +14,8 @@ namespace HeavenlySin.Enemy
 
         public EnemyScript enemyScript;
         public float detectDistance;
-        public float moveSpeed;
+        public float wanderSpeed;
+        public float attackSpeed;
         [SerializeField] private IntEvent enemySounds;
 
         #endregion
@@ -51,7 +52,7 @@ namespace HeavenlySin.Enemy
                     GetComponent<SpriteRenderer>().flipX = false;
                 }
 
-                transform.position += (_playerBody.transform.position - transform.position).normalized * moveSpeed * Time.deltaTime;
+                transform.position += (_playerBody.transform.position - transform.position).normalized * attackSpeed * Time.deltaTime;
             }
             else
             {
@@ -80,7 +81,7 @@ namespace HeavenlySin.Enemy
                 GetComponent<SpriteRenderer>().flipX = false;
             }
 
-            transform.position += randomPos.normalized * moveSpeed * Time.deltaTime;
+            transform.position += randomPos.normalized * wanderSpeed * Time.deltaTime;
         }
 
         private void PlayerDetection()

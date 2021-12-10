@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/HeavenlySin/_Levels/Settings.unity
     guid: 7a4e6afaf872e0a43b71d3d9a36d3a52
   - enabled: 1
-    path: Assets/HeavenlySin/_Levels/Credits.unity
-    guid: 18cd44c22fb25c44cb9e637c7c107fc2
-  - enabled: 1
     path: Assets/HeavenlySin/_Levels/Office.unity
     guid: 0c7b1b0a5984b9841b715ac15301f5f3
   - enabled: 1
@@ -39,6 +36,6 @@ EditorBuildSettings:
     path: Assets/HeavenlySin/_Levels/Overworld_2.unity
     guid: ccad79e7f20cc544ca00c6f7b4310e4d
   - enabled: 1
-    path: Assets/HeavenlySin/_Levels/Ending.unity
-    guid: 58b95fdc79283d64aa7220daec650c82
+    path: Assets/HeavenlySin/_Levels/Credits.unity
+    guid: 18cd44c22fb25c44cb9e637c7c107fc2
   m_configObjects: {}
