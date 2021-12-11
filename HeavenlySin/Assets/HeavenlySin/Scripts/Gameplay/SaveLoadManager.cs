@@ -11,7 +11,7 @@ namespace HeavenlySin.Gameplay
 {
     public class SaveLoadManager : MonoBehaviour
     {
-        public static SaveLoadManager instance;
+        private static SaveLoadManager _Instance;
         public GameStateInfo gameStateInfo;
         private int _gameStage;
         private AudioSettings _audioSettings;
@@ -23,11 +23,11 @@ namespace HeavenlySin.Gameplay
         private void Awake()
         {
             DontDestroyOnLoad(this.gameObject);
-            if (instance != null && instance != this)
+            if (_Instance != null && _Instance != this)
                 Destroy(this.gameObject);
             else
             {
-                instance = this;
+                _Instance = this;
             }
         }
 
@@ -63,6 +63,10 @@ namespace HeavenlySin.Gameplay
                 _audioSettings = new AudioSettings(saveObject.audioSettings);
                 _gameStage = saveObject.gameStage;
                 gameStateInfo.sceneIndex = (Scenes)saveObject.scene;
+                if (saveObject.scene == 0)
+                {
+                    gameStateInfo.sceneIndex = Scenes.OFFICE;
+                }
                 gameStateInfo.playerPos = saveObject.position;
                 inventory.items = saveObject.items;
                 Debug.Log("LOADED");
@@ -71,6 +75,16 @@ namespace HeavenlySin.Gameplay
             {
                 Debug.Log("NO DATA FOUND");
             }
+        }
+
+        public void FreshLoad()
+        {
+            _audioSettings = new AudioSettings();
+            _gameStage = 0;
+            gameStateInfo.sceneIndex = Scenes.OFFICE;
+            gameStateInfo.playerPos = null;
+            inventory.items = new List<Clue>();
+            Debug.Log("LOADED FRESH GAME DATA");
         }
     }
     

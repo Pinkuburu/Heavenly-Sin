@@ -53,5 +53,12 @@ namespace HeavenlySin.Gameplay.AudioManagement
             this.sfxVolume = audioSettings.sfxVolume;
             this.musicVolume = audioSettings.musicVolume;
         }
+
+        public AudioSettings()
+        {
+            this.masterVolume = 0.5f;
+            this.sfxVolume = 0.5f;
+            this.musicVolume = 0.5f;
+        }
     }
 }
