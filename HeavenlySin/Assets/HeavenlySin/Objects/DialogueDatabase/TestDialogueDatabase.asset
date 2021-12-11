@@ -163,7 +163,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 3ad402ad729f9c0478eddb8b03415a41, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -12246,8 +12246,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 47.511505}
-    canvasZoom: 0.4419994
+    canvasScrollPosition: {x: 110.79196, y: 9.389648}
+    canvasZoom: 0.8519998
   - id: 23
     fields:
     - title: Title
@@ -15484,8 +15484,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 7.1276855, y: 2131.1492}
-    canvasZoom: 0.70149946
+    canvasScrollPosition: {x: 57.852585, y: 34.52789}
+    canvasZoom: 0.45099682
   - id: 26
     fields:
     - title: Title
@@ -38859,7 +38859,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: We arrived on scene and saw the victim laying outside with piles of
+        value: I arrived on scene and saw the victim laying outside with piles of
           clothes around her.
         type: 0
         typeString: CustomFieldType_Text
@@ -39387,8 +39387,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 2.0736084, y: 470.7098}
-    canvasZoom: 0.9645006
+    canvasScrollPosition: {x: 0, y: 291.32382}
+    canvasZoom: 0.97850055
   - id: 44
     fields:
     - title: Title
@@ -49904,8 +49904,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 251}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 242.0647}
+    canvasZoom: 0.97299993
   - id: 72
     fields:
     - title: Title
