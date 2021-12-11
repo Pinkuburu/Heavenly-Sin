@@ -97,7 +97,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.3256998, y: 3.0823143, z: 1.6868081}
@@ -250,7 +250,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Esmerelda's house
+  conversation: Random house 6
   conversationConversant: {fileID: 400000}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1

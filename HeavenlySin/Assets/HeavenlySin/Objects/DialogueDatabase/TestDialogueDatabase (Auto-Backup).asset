@@ -163,7 +163,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 3ad402ad729f9c0478eddb8b03415a41, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -12246,8 +12246,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 47.511505}
-    canvasZoom: 0.4419994
+    canvasScrollPosition: {x: 110.79196, y: 9.389648}
+    canvasZoom: 0.8519998
   - id: 23
     fields:
     - title: Title
@@ -15484,8 +15484,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 7.1276855, y: 2131.1492}
-    canvasZoom: 0.70149946
+    canvasScrollPosition: {x: 57.852585, y: 34.52789}
+    canvasZoom: 0.45099682
   - id: 26
     fields:
     - title: Title
@@ -22128,8 +22128,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 433.56494, y: 0}
-    canvasZoom: 0.4290014
+    canvasScrollPosition: {x: 205.00447, y: 239.7141}
+    canvasZoom: 0.18850169
   - id: 28
     fields:
     - title: Title
@@ -37480,7 +37480,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: " A dream-like reality of untold possibilities.  We really don't know
-          that much about it\u2026.. but what we do know for sure are two things."
+          that much about it\u2026.. "
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -37498,7 +37498,7 @@ MonoBehaviour:
       - originConversationID: 42
         originDialogueID: 2
         destinationConversationID: 42
-        destinationDialogueID: 3
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -37563,8 +37563,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28
-        y: 461
+        x: 21.91481
+        y: 536.05084
         width: 160
         height: 30
     - id: 4
@@ -37619,8 +37619,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28
-        y: 511
+        x: 22.929016
+        y: 585.0364
         width: 160
         height: 30
     - id: 5
@@ -37646,7 +37646,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "There\u2019s more on them in the next book."
+        value: "There\u2019s more on them on the next page."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -37664,7 +37664,13 @@ MonoBehaviour:
       - originConversationID: 42
         originDialogueID: 5
         destinationConversationID: 42
-        destinationDialogueID: 8
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      - originConversationID: 42
+        originDialogueID: 5
+        destinationConversationID: 42
+        destinationDialogueID: 17
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -37674,8 +37680,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28
-        y: 561
+        x: 9.113586
+        y: 639.09314
         width: 160
         height: 30
     - id: 6
@@ -37988,7 +37994,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'The shadow creatures, though some of us have called Dream Blights. '
+        value: 'The shadow creatures, though some of us have called them Dream Blights. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -38099,8 +38105,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "If I were to describe their appearance\u2026.well they look like
-          dark ghosts per say, but they\u2019re smiling\u2026"
+        value: "If I were to describe their appearance\u2026."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -38118,7 +38123,7 @@ MonoBehaviour:
       - originConversationID: 42
         originDialogueID: 13
         destinationConversationID: 42
-        destinationDialogueID: 14
+        destinationDialogueID: 19
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -38128,8 +38133,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 284
-        y: 454
+        x: 280.9574
+        y: 456.02832
         width: 160
         height: 30
     - id: 14
@@ -38184,8 +38189,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 284
-        y: 504
+        x: 279.9432
+        y: 588.1786
         width: 160
         height: 30
     - id: 15
@@ -38239,8 +38244,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 284
-        y: 554
+        x: 279.9432
+        y: 638.1786
         width: 160
         height: 30
     - id: 16
@@ -38294,8 +38299,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 284
-        y: 604
+        x: 279.9432
+        y: 688.1786
         width: 160
         height: 30
     - id: 17
@@ -38347,9 +38352,119 @@ MonoBehaviour:
         y: 284.6248
         width: 160
         height: 30
+    - id: 18
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: but what we do know for sure are two things.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 42
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 42
+        originDialogueID: 18
+        destinationConversationID: 42
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 27.999992
+        y: 461.00024
+        width: 160
+        height: 30
+    - id: 19
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "Well they look like dark ghosts per say, but they\u2019re smiling\u2026"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 42
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 42
+        originDialogueID: 19
+        destinationConversationID: 42
+        destinationDialogueID: 14
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 280.9574
+        y: 506.02832
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 9.40152, y: 198.10907}
-    canvasZoom: 0.9859993
+    canvasScrollPosition: {x: 0, y: 287.99475}
+    canvasZoom: 0.949999
   - id: 43
     fields:
     - title: Title
@@ -38859,7 +38974,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: We arrived on scene and saw the victim laying outside with piles of
+        value: I arrived on scene and saw the victim laying outside with piles of
           clothes around her.
         type: 0
         typeString: CustomFieldType_Text
@@ -39387,8 +39502,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 2.0736084, y: 470.7098}
-    canvasZoom: 0.9645006
+    canvasScrollPosition: {x: 0, y: 291.32382}
+    canvasZoom: 0.97850055
   - id: 44
     fields:
     - title: Title
@@ -39566,8 +39681,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: There's nothing on it now because you keep forgetting to hire a secratary
-          and your coat is always on you.
+        value: There's nothing on it now because I keep forgetting to hire a secratary
+          and my coat is always on me.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -42494,7 +42609,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Kenzie wuz here" ihas been scrawled in blood and is covered in sweat
+        value: '"Kenzie wuz here" has been scrawled in blood and is covered in sweat
           and tears.'
         type: 0
         typeString: CustomFieldType_Text
@@ -42578,7 +42693,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.9950007
   - id: 56
     fields:
     - title: Title
@@ -46825,8 +46940,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 19, y: 431}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 350.09088}
+    canvasZoom: 0.68749994
   - id: 69
     fields:
     - title: Title
@@ -47559,7 +47674,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: He was a very skilled sniper and could hit a man from 80 years away
+        value: He was a very skilled sniper and could hit a man from 80 yards away
           without breaking a sweat.
         type: 0
         typeString: CustomFieldType_Text
@@ -47809,8 +47924,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 436.4117}
-    canvasZoom: 0.85
+    canvasScrollPosition: {x: 0.34141228, y: 423.49002}
+    canvasZoom: 0.81450015
   - id: 70
     fields:
     - title: Title
@@ -49904,8 +50019,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 251}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 242.0647}
+    canvasZoom: 0.97299993
   - id: 72
     fields:
     - title: Title
