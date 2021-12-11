@@ -2105,8 +2105,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7200002, y: 1.5800003, z: 0.062959}
-  m_Center: {x: 8.6563856e-18, y: 0, z: 0.002660036}
+  m_Size: {x: 0.7200002, y: 1.5800003, z: 0.19669212}
+  m_Center: {x: -4.9991514e-16, y: 0, z: -0.06420655}
 --- !u!212 &41888427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74729,6 +74729,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversation
+      value: Random house 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &1830551680 stripped
@@ -76326,6 +76330,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4444
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
       propertyPath: m_LocalScale.y
@@ -81620,6 +81628,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversation
+      value: Random house 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &2028143020 stripped

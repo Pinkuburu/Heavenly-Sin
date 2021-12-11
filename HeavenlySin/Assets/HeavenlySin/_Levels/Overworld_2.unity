@@ -7319,6 +7319,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversation
+      value: Random house1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &188145411 stripped
@@ -26542,7 +26546,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
     - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
       propertyPath: conversation
-      value: Car4
+      value: Random House 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
@@ -48116,7 +48120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: Esmerelda
   persistentDataName: Esmerelda
-  portrait: {fileID: 2800000, guid: a2a963cbdf09b3e4ba3bb49a7eb6380c, type: 3}
+  portrait: {fileID: 2800000, guid: 4fc8432fdc8daed4cb0efc101441c95e, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
     barkUI: {fileID: 0}
@@ -74842,6 +74846,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversation
+      value: Random house 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &1830551680 stripped
@@ -76607,6 +76615,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5457
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
       propertyPath: m_LocalScale.y
@@ -81783,6 +81795,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 14ff4667a927d7148a2e8fc65b12c1c3, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversation
+      value: Random house 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &2025925244 stripped
@@ -82037,6 +82053,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversation
+      value: Random house 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &2028143020 stripped
