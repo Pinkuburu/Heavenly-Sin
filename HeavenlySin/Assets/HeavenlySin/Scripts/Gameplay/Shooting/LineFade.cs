@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-namespace Bolt.AdvancedTutorial
+namespace HeavenlySin.Shooting
 {
 	public class LineFade : MonoBehaviour
 	{
