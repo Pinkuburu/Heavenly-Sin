@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace HeavenlySin.Shooting
+namespace HeavenlySin.Gameplay.Shooting
 {
     /// <summary>
     /// This class handles the UI representation of the player's ammo.

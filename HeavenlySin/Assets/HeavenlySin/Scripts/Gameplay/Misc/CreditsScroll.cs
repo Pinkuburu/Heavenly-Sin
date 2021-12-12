@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace HeavenlySin
+namespace HeavenlySin.Gameplay
 {
     public class CreditsScroll : MonoBehaviour
     {

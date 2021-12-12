@@ -2,7 +2,7 @@ using HeavenlySin.GameEvents;
 using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
-namespace HeavenlySin.Interactable
+namespace HeavenlySin.Gameplay.Interactable
 {
     public class DoorInteract : MonoBehaviour, IInteractable
     {

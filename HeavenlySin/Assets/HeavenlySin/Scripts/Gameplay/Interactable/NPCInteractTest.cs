@@ -2,7 +2,7 @@ using HeavenlySin.GameEvents;
 using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
-namespace HeavenlySin.Interactable
+namespace HeavenlySin.Gameplay.Interactable
 {
     /// <summary>
     /// This is a test class to demonstrate the outline of an interactable

@@ -1,10 +1,8 @@
-using System.Collections.Generic;
 using HeavenlySin.Inventory;
-using HeavenlySin.Pages;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace HeavenlySin.UI
+namespace HeavenlySin.Gameplay.UI
 {
     public class JournalController : MonoBehaviour
     {

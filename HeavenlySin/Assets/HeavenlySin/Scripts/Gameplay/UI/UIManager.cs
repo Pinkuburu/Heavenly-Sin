@@ -1,8 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-namespace HeavenlySin.UI
+namespace HeavenlySin.Gameplay.UI
 {
     /// <summary>
     /// This class will Enable and Disable the necessary UI elements

@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using HeavenlySin.GameEvents;
+using UnityEngine;
 
-namespace HeavenlySin.AudioManagement
+namespace HeavenlySin.Gameplay.AudioManagement
 {
     public class MusicControl : MonoBehaviour
     {

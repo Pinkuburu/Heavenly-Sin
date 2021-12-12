@@ -1,4 +1,5 @@
 using System;
+using HeavenlySin.Gameplay;
 using HeavenlySin.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;

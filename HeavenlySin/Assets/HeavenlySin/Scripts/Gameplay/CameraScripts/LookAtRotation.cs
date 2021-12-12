@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HeavenlySin.CameraScripts
+namespace HeavenlySin.Gameplay.CameraScripts
 {
     public class LookAtRotation : MonoBehaviour
     {

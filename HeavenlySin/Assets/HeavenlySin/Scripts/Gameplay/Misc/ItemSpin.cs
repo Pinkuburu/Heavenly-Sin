@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace HeavenlySin
+namespace HeavenlySin.Gameplay
 {
     public class ItemSpin : MonoBehaviour
     {

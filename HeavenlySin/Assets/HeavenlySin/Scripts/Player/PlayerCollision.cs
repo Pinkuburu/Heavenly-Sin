@@ -1,4 +1,4 @@
-using HeavenlySin.Interactable;
+using HeavenlySin.Gameplay.Interactable;
 using UnityEngine;
 
 namespace HeavenlySin.Player
