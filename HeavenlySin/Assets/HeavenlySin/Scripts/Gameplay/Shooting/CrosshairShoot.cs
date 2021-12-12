@@ -3,7 +3,7 @@ using HeavenlySin.Enemy;
 using HeavenlySin.GameEvents;
 using UnityEngine;
 
-namespace HeavenlySin.Shooting
+namespace HeavenlySin.Gameplay.Shooting
 {
     /// <summary>
     /// This class handles the moving of the player's crosshair

@@ -1,3 +1,4 @@
+using HeavenlySin.Scene.Scripts;
 using UnityEngine;
 
 namespace HeavenlySin.Game
@@ -6,5 +7,6 @@ namespace HeavenlySin.Game
     public class GameStateInfo : ScriptableObject
     {
         public Transform playerPos;
+        public Scenes sceneIndex;
     }
 }

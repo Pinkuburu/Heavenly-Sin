@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace HeavenlySin.UI
+namespace HeavenlySin.Gameplay.UI
 {
     public class FullScreenToggle : MonoBehaviour
     {

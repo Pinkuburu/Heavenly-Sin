@@ -1,7 +1,7 @@
 using HeavenlySin.Audio;
 using UnityEngine;
 
-namespace HeavenlySin.AudioManagement
+namespace HeavenlySin.Gameplay.AudioManagement
 {
     /// <summary>
     /// This class will handle all the sound and music in the game.
@@ -15,7 +15,7 @@ namespace HeavenlySin.AudioManagement
         
         public Sound[] sounds;
         public AudioSource[] sources;
-        
+
         #endregion
         
         #region Public Methods

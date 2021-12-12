@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 298777073}
   - component: {fileID: 298777074}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: sfxSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 647595279}
   - component: {fileID: 647595280}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: sensSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -788,6 +788,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96ddc9c2f766b5458e6954cfc9afae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onNewGame: {fileID: 0}
+  onLoadGame: {fileID: 0}
+  gameStateInfo: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +895,7 @@ GameObject:
   - component: {fileID: 798032931}
   - component: {fileID: 798032932}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: musicSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2099,11 +2102,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1243509074}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f128558890d76248a9bcab6dc8f0971, type: 3}
+  m_Script: {fileID: 11500000, guid: 42c7ae4d29215a94b9d5f2d4f7fcf08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundIndex: 5
-  onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  settings: {fileID: 11400000, guid: 318778166be7dff43a2a9d39058c5597, type: 2}
+  masterVolume: {fileID: 1890413302}
+  sfxVolume: {fileID: 298777072}
+  musicVolume: {fileID: 798032930}
+  mouseSens: {fileID: 647595278}
+  fullscreenToggle: {fileID: 860738823}
 --- !u!1 &1325895312
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,7 +3132,7 @@ GameObject:
   - component: {fileID: 1890413303}
   - component: {fileID: 1890413304}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: masterSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

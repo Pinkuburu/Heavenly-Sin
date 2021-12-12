@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HeavenlySin.Shooting
+namespace HeavenlySin.Gameplay.Shooting
 {
     public class MuzzleFlash : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using HeavenlySin.Scene.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace HeavenlySin.Interactable
+namespace HeavenlySin.Gameplay.Interactable
 {
     public class UseDoor : MonoBehaviour, IInteractable
     {

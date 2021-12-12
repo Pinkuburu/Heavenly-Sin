@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HeavenlySin.UI
+namespace HeavenlySin.Gameplay.UI
 {
     public class SkyboxRotate : MonoBehaviour
     {

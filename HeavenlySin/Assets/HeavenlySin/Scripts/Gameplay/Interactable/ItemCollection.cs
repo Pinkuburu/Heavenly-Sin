@@ -3,7 +3,7 @@ using HeavenlySin.Items;
 using HeavenlySin.Player;
 using UnityEngine;
 
-namespace HeavenlySin.Interactable
+namespace HeavenlySin.Gameplay.Interactable
 {
     public class ItemCollection : MonoBehaviour
     {
