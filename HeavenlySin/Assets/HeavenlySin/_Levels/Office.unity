@@ -3883,7 +3883,7 @@ GameObject:
   - component: {fileID: 1438010792}
   - component: {fileID: 1438010791}
   m_Layer: 0
-  m_Name: Wrath
+  m_Name: Wes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3997,7 +3997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actor: 
-  persistentDataName: 
+  persistentDataName: Wes
   portrait: {fileID: 2800000, guid: adc63234dbbdcfc4eac0cceb60931f0d, type: 3}
   spritePortrait: {fileID: 0}
   barkUISettings:
@@ -5412,6 +5412,10 @@ PrefabInstance:
       propertyPath: displaySettings.dialogueUI
       value: 
       objectReference: {fileID: 159120, guid: adc24357fea057a4884a14c87b85b1cd, type: 3}
+    - target: {fileID: 8484489664909375877, guid: ff90754e9e2babd4da29e2c9b9af96ef, type: 3}
+      propertyPath: displaySettings.subtitleSettings.continueButton
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8484489664909375877, guid: ff90754e9e2babd4da29e2c9b9af96ef, type: 3}
       propertyPath: displaySettings.subtitleSettings.showPCSubtitlesDuringLine
       value: 0
