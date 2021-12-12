@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Sound_Footsteps
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: ff240a3b422559f419da18cdb8e1f9e3, type: 3}
-  soundType: 1
+  soundType: 2

@@ -1,5 +1,4 @@
 using HeavenlySin.Audio;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace HeavenlySin.AudioManagement
@@ -21,14 +20,27 @@ namespace HeavenlySin.AudioManagement
         
         #region Public Methods
         
-        public void PlaySound(AudioSource audioSource, AudioClip[] clips, int index)
-        {
-            sources[(int)sounds[index].soundType].PlayOneShot(sounds[index].clip);
-        }
-        
         public void PlaySound(int index)
         {
-            sources[(int)sounds[index].soundType].PlayOneShot(sounds[index].clip);
+            if (sounds[index].soundType == SoundType.MUSIC)
+            {
+                sources[(int)sounds[index].soundType].clip = sounds[index].clip;
+                sources[(int)sounds[index].soundType].Play();
+            }
+            else if(sounds[index].soundType == SoundType.SOUND_EFFECT)
+            {
+                sources[(int)sounds[index].soundType].PlayOneShot(sounds[index].clip);
+            }
+            else
+            {
+                sources[(int)sounds[index].soundType].clip = sounds[index].clip;
+                sources[(int)sounds[index].soundType].Play();
+            }
+        }
+
+        public void StopSound(int index)
+        {
+            sources[(int)sounds[index].soundType].Pause();
         }
         
         #endregion

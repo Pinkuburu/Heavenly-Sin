@@ -17,6 +17,8 @@ namespace HeavenlySin.UI
         public Image[] uiElements;
         public GameObject[] uiMenus;
 
+        // TODO: Handle most of these with the scriptable object, but the mindscape won't use the journal
+        // TODO: so these should not be public variables.
         // Journal variables
         public int pageIndex; // Total amount of pages: 8
         public GameObject frontPageButton;
