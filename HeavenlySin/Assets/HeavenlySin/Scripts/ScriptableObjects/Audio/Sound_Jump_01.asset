@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db4194271539e640a3ce8881b5b0bbf, type: 3}
   m_Name: Sound_Jump_01
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 93f93adffd6586140b58e66d173f155f, type: 3}
+  clip: {fileID: 8300000, guid: c538386bc98c6ab40b447cf3c6505710, type: 3}
   soundType: 1

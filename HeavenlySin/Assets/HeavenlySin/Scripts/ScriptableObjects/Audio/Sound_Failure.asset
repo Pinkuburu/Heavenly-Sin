@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db4194271539e640a3ce8881b5b0bbf, type: 3}
   m_Name: Sound_Failure
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: fdf1ea93dcab22340ad5a0d242a6daa8, type: 3}
+  clip: {fileID: 8300000, guid: 7c0a25dfb06eae54185b2453c2a8ea3a, type: 3}
   soundType: 1
