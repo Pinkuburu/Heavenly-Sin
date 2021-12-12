@@ -343,6 +343,7 @@ MonoBehaviour:
   sprintSpeed: 8
   walkSpeed: 5
   playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  stopSounds: {fileID: 11400000, guid: 5ffe24659b1f92b408a3fe7351fd552d, type: 2}
   direction: {x: 0, y: 0, z: 0}
 --- !u!136 &1518835384
 CapsuleCollider:
@@ -372,6 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 779bd8db266844540bb65ceb289eec42, type: 2}
   onTakeDamage: {fileID: 11400000, guid: 3e1f4461ee01032438b677d282f17f1c, type: 2}
+  playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
 --- !u!1 &7046123092003796143
 GameObject:
   m_ObjectHideFlags: 0
