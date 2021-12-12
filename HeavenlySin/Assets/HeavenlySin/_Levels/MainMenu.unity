@@ -627,7 +627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &662313056
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1502,6 +1502,7 @@ GameObject:
   - component: {fileID: 1243509077}
   - component: {fileID: 1243509076}
   - component: {fileID: 1243509075}
+  - component: {fileID: 1243509079}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1595,6 +1596,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1243509079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243509074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f128558890d76248a9bcab6dc8f0971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundIndex: 5
+  onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
 --- !u!1 &1366174208
 GameObject:
   m_ObjectHideFlags: 0

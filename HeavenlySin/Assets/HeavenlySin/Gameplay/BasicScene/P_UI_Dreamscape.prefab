@@ -3081,6 +3081,16 @@ MonoBehaviour:
   uiMenus:
   - {fileID: 176426384}
   - {fileID: 228087600}
+  pageIndex: 0
+  frontPageButton: {fileID: 0}
+  backPageButton: {fileID: 0}
+  firstPageTitle: {fileID: 0}
+  secondPageTitle: {fileID: 0}
+  secondPageText: {fileID: 0}
+  firstPageTitleOutline: {fileID: 0}
+  secondPageTitleOutline: {fileID: 0}
+  secondPageTextOutline: {fileID: 0}
+  characterPortraits: []
 --- !u!114 &924417426836175976
 MonoBehaviour:
   m_ObjectHideFlags: 0

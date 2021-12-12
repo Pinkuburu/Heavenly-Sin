@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db4194271539e640a3ce8881b5b0bbf, type: 3}
   m_Name: Sound_SlothTheme
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: d1160a3eb6935db46a81c231e599a05b, type: 3}
+  clip: {fileID: 8300000, guid: 4a051d267ae5b6c449bbaa58bd5d97b2, type: 3}
   soundType: 0

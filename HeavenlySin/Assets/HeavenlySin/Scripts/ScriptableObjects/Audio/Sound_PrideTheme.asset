@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db4194271539e640a3ce8881b5b0bbf, type: 3}
   m_Name: Sound_PrideTheme
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: d1fab5cc3290dbd48b35f4ac80cf2a11, type: 3}
+  clip: {fileID: 8300000, guid: 10b45a5250a3d0948a155691245719c9, type: 3}
   soundType: 0

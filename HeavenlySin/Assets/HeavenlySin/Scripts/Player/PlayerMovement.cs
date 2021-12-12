@@ -35,19 +35,21 @@ namespace HeavenlySin.Player
         [Tooltip("How fast the player can walk")]
         public float walkSpeed = 5f;
         [SerializeField] private IntEvent playerSounds;
+        [SerializeField] private IntEvent stopSounds;
+        public Vector3 direction;
 
         #endregion
-        
+
         #region Private Fields
-        
+
         private Camera _camera;
-        private Vector3 _direction;
         private Vector3 _moveDir = Vector3.zero;
         private bool _isJumping;
         private float _speed;
         private float _targetAngle;
         private Vector3 _velocity = Vector3.zero;
         private bool _isSprinting;
+        private bool _isFootstepsPlaying;
         #endregion
 
         #region Life Cycle
@@ -73,7 +75,7 @@ namespace HeavenlySin.Player
             var mainCameraTransformEulerAngles = mainCameraTransform.eulerAngles;
 
             // Makes player move in relation to the direction they are facing.
-            _moveDir = Quaternion.Euler(0f, mainCameraTransformEulerAngles.y, 0f) * _direction;
+            _moveDir = Quaternion.Euler(0f, mainCameraTransformEulerAngles.y, 0f) * direction;
             
             // Lerp angle rotation.
             var angle = Mathf.LerpAngle(transform.eulerAngles.y, _targetAngle, SMOOTH * Time.deltaTime);
@@ -90,18 +92,42 @@ namespace HeavenlySin.Player
             {
                 _velocity.y = Mathf.Sqrt(jumpHeight * -2f * GRAVITY);
                 playerSounds.Raise(10); //Jump SFX
+                int randNum = Random.Range(0, 2);
+                playerSounds.Raise(22 + randNum); //Jump vocal SFX
             }
             _velocity.y += GRAVITY * Time.deltaTime;
             characterController.Move(_velocity * Time.deltaTime);
         
             if (isGrounded)
             {
+                if(direction.magnitude > 0f)
+                {
+                    if(!_isFootstepsPlaying)
+                    {
+                        playerSounds.Raise(16); //Play footsteps SFX
+                        _isFootstepsPlaying = true;
+                    }
+                }
+                else
+                {
+                    if (_isFootstepsPlaying)
+                    {
+                        stopSounds.Raise(16); //Play footsteps SFX
+                        _isFootstepsPlaying = false;
+                    }
+                }
+
                 characterController.stepOffset = 0.3f;
                 characterController.Move(_speed * Time.deltaTime * _moveDir);
             }
             // If not grounded (or most likely jumping), change movement.
             else 
             {
+                if (_isFootstepsPlaying)
+                {
+                    stopSounds.Raise(16); //Play footsteps SFX
+                    _isFootstepsPlaying = false;
+                }
                 characterController.stepOffset = 0f;
                 characterController.Move(JUMP_CONTROL_MODIFIER * _speed * Time.deltaTime * _moveDir);
             }
@@ -111,30 +137,31 @@ namespace HeavenlySin.Player
         {
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
             
-            _direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
+            direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
                 playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
             _isJumping = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
             _isSprinting = playerScript.playerInput.isSprinting;
             CalculateMovement();
         }
 
-        public void TakeDamage(float damage)
+        /*public void TakeDamage(float damage)
         {
             health -= damage;
-            //playerSounds.Raise(); //Hurt SFX
+            int randNum = Random.Range(0, 3);
+            playerSounds.Raise(24 + randNum); //Hurt SFX
             IsDead();
-            // TODO: update UI health bar.
+            Debug.Log("I'M ALIVE");
         }
 
         private void IsDead()
         {
             if (health <= 0)
             {
-                //playerSounds.Raise(); //Death SFX
-                Destroy(gameObject);
-                //TODO: death animation and restart, UI?
+                int randNum = Random.Range(0, 3);
+                playerSounds.Raise(24 + randNum); //Hurt SFX
+                Destroy(gameObject, 1f);
             }
-        }
+        }*/
 
         #endregion
 

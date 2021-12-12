@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db4194271539e640a3ce8881b5b0bbf, type: 3}
   m_Name: Sound_DreamTransition
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 074b22a91cc452c45b8904ef946a26b9, type: 3}
+  clip: {fileID: 8300000, guid: d0608efbf1416ce4ea54ea581c77e5ff, type: 3}
   soundType: 1
