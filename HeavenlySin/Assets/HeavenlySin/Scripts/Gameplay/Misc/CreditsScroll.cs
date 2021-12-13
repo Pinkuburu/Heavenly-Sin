@@ -14,7 +14,7 @@ namespace HeavenlySin.Gameplay
         {
             transform.Translate(0, scrollSpeed, 0);
 
-            if(Input.anyKeyDown)
+            if(Input.GetKeyDown(KeyCode.Escape))
             {
                 SceneManager.LoadScene("MainMenu");
             }

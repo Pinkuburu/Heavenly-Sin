@@ -1517,7 +1517,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 1.1799998
   - id: 3
     fields:
     - title: Title
@@ -3546,7 +3546,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 224.4511}
+    canvasScrollPosition: {x: 112.703125, y: 0}
     canvasZoom: 1.0469985
   - id: 13
     fields:
@@ -31251,7 +31251,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: LoadLevel(Ending);
+        value: LoadLevel(Credits);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 30
@@ -43219,7 +43219,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 20
+        y: 9.609276
         width: 160
         height: 30
     - id: 1
@@ -43432,13 +43432,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 220
+        x: 33.311256
+        y: 221.98676
         width: 160
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 1.4499996
   - id: 52
     fields:
     - title: Title
