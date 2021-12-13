@@ -11,7 +11,7 @@ namespace HeavenlySin.Pages
         public string leftPageTitle;
         public string rightPageTitle;
         public List<string> testimonies = new List<string>();
-        public string[] relations;
+        public List<string> relations = new List<string>();
 
         public void AddTestimony(string testimony)
         {
@@ -20,7 +20,19 @@ namespace HeavenlySin.Pages
 
         public void AddRelations(string relation)
         {
-            relations.AddRange(relation);
+            relations.Add(relation);
+        }
+
+        public void ClearTestimonies()
+        {
+            testimonies.Clear();
+            Debug.Log("Testimonies Cleared");
+        }
+
+        public void ClearRelations()
+        {
+            relations.Clear();
+            Debug.Log("Relations Cleared");
         }
     }
 }

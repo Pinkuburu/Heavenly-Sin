@@ -88260,6 +88260,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: hint
+      value: You faintly remember that Wes' home is in the corner of Peace Lane and
+        Fury Avenue. It has a bright blue door.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: objectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: objectives.Array.data[0]
+      value: '+ FIND WES'' KEYS: Wes seemed to have misplaced his keys. Let''s retrace
+        his steps to his door to see if he may have dropped it. Better yet, let''s
+        just double-check if he was jsut a drunkard and left it open again.'
+      objectReference: {fileID: 0}
     - target: {fileID: 3178538789250423129, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

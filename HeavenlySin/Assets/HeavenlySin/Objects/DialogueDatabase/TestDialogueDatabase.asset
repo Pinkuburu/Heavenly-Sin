@@ -4651,7 +4651,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + We believes his headache must be correlated to
+                the cause of his death.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 13.29821
@@ -4825,8 +4838,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 284.83545}
-    canvasZoom: 0.4880014
+    canvasScrollPosition: {x: 0, y: 306.06818}
+    canvasZoom: 0.75800115
   - id: 15
     fields:
     - title: Title
@@ -7073,8 +7086,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1398.3052
-        y: 99.661026
+        x: 1383.3024
+        y: 110.04764
         width: 160
         height: 30
     - id: 6
@@ -7130,7 +7143,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 184.76935
-        y: 180.6403
+        y: 179.48625
         width: 160
         height: 30
     - id: 7
@@ -7921,8 +7934,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 535.1179
-        y: 1307.9601
+        x: 536.23334
+        y: 1306.8445
         width: 160
         height: 30
     - id: 21
@@ -8367,11 +8380,24 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Penelope and Wes were married before Wes went off
+                to the war.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 915.2777
-        y: 1661.6669
+        x: 940.6671
+        y: 1646.664
         width: 160
         height: 30
     - id: 29
@@ -8655,7 +8681,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ SUSPECTS: Gerardo might have wanted Wes dead because
+                of his debt.'
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 539.7222
@@ -8766,11 +8805,23 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ They then helped Esmerelda set up the buffet. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 294.91522
-        y: 416.61017
+        x: 296.1107
+        y: 414.21927
         width: 160
         height: 30
     - id: 36
@@ -8821,10 +8872,23 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Lance was at the bar drinking and trying to pick
+                up girls. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 300
+        x: 297.6091
         y: 470
         width: 160
         height: 30
@@ -8877,7 +8941,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: "+ Penelope helped Sal sober up so that he didn\u2019t
+                break the ice statue. "
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 166.10168
@@ -9051,7 +9128,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Once the food was done Giana and Gerardo showed
+                up. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 576.2711
@@ -9162,7 +9252,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ She saw Lance talk to Wes and then go talk to
+                Sal. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -9217,7 +9320,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ After the party, she went home with Wes and Lance. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 426.6947
@@ -9279,7 +9394,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Wes left his keys, so he left to get them, and
+                Penelope talked to Lance. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 748.61115
@@ -9335,11 +9463,24 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Penelope and Lance were on a walk before they went
+                looking for Wes and found him in the speakeasy, dead.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 686.1111
-        y: 1545
+        x: 688.4192
+        y: 1543.8458
         width: 160
         height: 30
     - id: 46
@@ -9677,8 +9818,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 159.76936
-        y: 240.36255
+        x: 187.46696
+        y: 226.51373
         width: 160
         height: 30
     - id: 52
@@ -9736,11 +9877,24 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Wes and Penelope woke up and retrieved the ice
+                sculpture.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 168.10263
-        y: 293.14035
+        x: 192.33806
+        y: 287.8131
         width: 160
         height: 30
     - id: 53
@@ -9903,8 +10057,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 36.557434, y: 0}
-    canvasZoom: 0.5365008
+    canvasScrollPosition: {x: 0, y: 1360.0544}
+    canvasZoom: 0.5965008
   - id: 22
     fields:
     - title: Title
@@ -10339,7 +10493,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Gerardo woke up with Giana and went to the speakeasy. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 480
@@ -10837,7 +11003,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Wes was using Penelope to settle his debts. Gerardo
+                would take her to restaurants and woo her but claims it was not sexual.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 885
@@ -10966,7 +11145,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + They went near the speakeasy and went inside when
+                they heard the scream.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 480
@@ -11139,7 +11331,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Gerardo caught up on his mail and his messages
+                and Esmerelda called out sick from the bakery. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 750
@@ -11307,7 +11512,21 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + They saw Esmerelda coming back from somewhere,
+                Gerardo assumed this meant she had gone back to the bakery to close
+                up after calling out.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 750
@@ -11515,7 +11734,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Wes owed him money and was not paying it back in
+                a timely manner.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -11750,7 +11982,20 @@ MonoBehaviour:
       userScript: Variable["GIPath3"] = true
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ SUSPECTS: Penelope and Wes were having marital
+                problems and she might have wanted to hurt him.'
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 480
@@ -12107,7 +12352,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Penelope joined him for drinks at the bar and
+                they talked about the money that Wes owes him. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -12958,8 +13216,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 110.79196, y: 9.389648}
-    canvasZoom: 0.8519998
+    canvasScrollPosition: {x: 0, y: 1101.8887}
+    canvasZoom: 0.82199985
   - id: 23
     fields:
     - title: Title
@@ -13396,7 +13654,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Gerardo and Giana woke up and took a walk. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -13909,7 +14179,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ She got Gerardo a cake and then ate the whole
+                thing to check for poison. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -14316,7 +14599,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ She ate tons of food at the party and then went
+                to the bakery. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -14722,7 +15018,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + After this, she and Gerardo went on another walk
+                and heard a scream from the speakeasy.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 614.1539
@@ -14779,7 +15088,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Giana doesn't like that Wes uses his wife as a
+                bargaining chip with her husband.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -15179,7 +15501,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ SUSPECTS: Giana also thinks that Esmerelda hates
+                everyone except for Wes.'
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 709.37683
@@ -15854,7 +16189,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ She was working in the bakery until the evening
+                when she closed it because Esmerelda called out of the night shift. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 640.6214
@@ -15910,7 +16258,21 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: "+ Giana thinks that Lance and Penelope have been
+                hanging out together a lot especially because Penelope seems to \u201Cwalk
+                into doors a lot\u201D."
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 768.8393
@@ -16196,8 +16558,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 57.852585, y: 34.52789}
-    canvasZoom: 0.45099682
+    canvasScrollPosition: {x: 0, y: 1771.5337}
+    canvasZoom: 0.8709965
   - id: 26
     fields:
     - title: Title
@@ -19222,7 +19584,21 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Lance woke up in the morning with a flapper of
+                no particular name, she made him breakfast and he kicked her out
+                of the house.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 53.561073
@@ -20575,7 +20951,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ He then went to the speakeasy and played his pick-up
+                game for a while before the party. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 747.03296
@@ -20630,7 +21019,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ He saw Penelope come in and then talked to Sal
+                a bit before going home. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 747.03296
@@ -20968,7 +21370,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Lance bumped into Wes at the party.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 536.37103
@@ -21439,7 +21853,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + After he went home, he talked to Penelope but claims
+                they didn't really talk about much.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 721.25916
@@ -21968,7 +22395,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Lance and Wes were friends in the war and then
+                when they came back, they had a bit of a falling out.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1508.3854
@@ -22250,7 +22690,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Lance and Wes were friends in the war and then
+                when they came back, they had a bit of a falling out.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1788.0464
@@ -22654,7 +23107,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ SUSPECTS: Lance knows Esmerelda was in love with
+                Wes and hated Penelope.'
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1955.9814
@@ -22840,8 +23306,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 205.00447, y: 239.7141}
-    canvasZoom: 0.18850169
+    canvasScrollPosition: {x: 648.74664, y: 171.04419}
+    canvasZoom: 0.8185014
   - id: 28
     fields:
     - title: Title
@@ -23506,7 +23972,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6700003
+    canvasZoom: 0.7900002
   - id: 29
     fields:
     - title: Title
@@ -24353,8 +24819,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390
-        y: 120
+        x: 388.4375
+        y: 121.562515
         width: 160
         height: 30
     - id: 93
@@ -24961,7 +25427,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Sal was woken up by a fancy lady.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 472.60895
@@ -25132,7 +25610,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ He then went to the speakeasy and drank some whiskey. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 472.60895
@@ -25187,7 +25677,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: "+ He walked around the party, but someone didn\u2019t
+                want him there and took him outside. "
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 472.60895
@@ -25419,7 +25922,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + He wandered back in and sat down with the fancy
+                lady, but she seemed to be distracted.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 472.60895
@@ -25873,7 +26389,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Sal cannot remember her name but does know that
+                she likes partying, booze, and dresses fancy.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 470.2448
@@ -25940,7 +26469,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + When Sal went to get another drink, she disappeared.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 914.69086
@@ -27573,7 +28114,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Sal couldn't ID the person but he noticed a strong
+                bitter smell that stung his nostrils.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1195.0796
@@ -27976,7 +28530,21 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: "+ Sal doesn\u2019t really know anyone in town by
+                name, but he knows that Wes\u2019 wife comes by to buy cream from
+                him. "
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 2049.5786
@@ -28595,7 +29163,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: "SUSPECTS: Sal knows that the \u201Cskinny man\u201D
+                comes by a lot to try and put him out of business."
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 2167.5664
@@ -28651,7 +29232,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + There's another lady who likes to buy chocolates
+                and the fancy lady is there all the time.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 2167.5664
@@ -28878,7 +29472,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: "+ Sal claims she\u2019s there for the booze and
+                the partying, maybe some of her friends come here."
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 2167.5664
@@ -29063,8 +29670,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 7.4074097, y: 11.111084}
-    canvasZoom: 1.03
+    canvasScrollPosition: {x: 290.62482, y: 210.93741}
+    canvasZoom: 0.64000034
   - id: 30
     fields:
     - title: Title
@@ -31693,7 +32300,20 @@ MonoBehaviour:
       userScript: Variable["EPath3First"] = true
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Esmerelda and Wes are friends and hang out together
+                in a group.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1008.16675
@@ -31920,7 +32540,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Esmerelda and Wes knew each other in the war but
+                she claims their time together was limited.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 905.3189
@@ -31982,7 +32615,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ SUSPECTS: Penelope, Wes'' wife to be someone who
+                would hurt him. Wes would beat her.'
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 875.8079
@@ -32389,7 +33035,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + She instead read magazines and newspapers and then
+                went to the jewelry store.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 486.0816
@@ -32445,7 +33104,19 @@ MonoBehaviour:
       userScript: Variable["EPath2First"] = true
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Esmerelda did not know Wes is dead.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 609.17346
@@ -33360,7 +34031,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: +  Esmerelda was interested in fixing a piece of
+                jewelry but that it was stolen or missing.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 334.75922
@@ -33999,7 +34683,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Esmerelda woke up and felt a bit sick so she decided
+                to just stay at home and read magazines all day. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 511.06378
@@ -34110,7 +34807,21 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Esmerelda claims she was at her house the whole
+                day, she was feeling sick and had a bad feeling about the speakeasy
+                and decided not to go. '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 74.71471
@@ -34118,8 +34829,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.5130002
+    canvasScrollPosition: {x: 218.92696, y: 197.09473}
+    canvasZoom: 0.72300005
   - id: 32
     fields:
     - title: Title
@@ -35834,7 +36545,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Predicted that something heavy prevented Wes from
+                catching his fall, causing the welt on the back of his head.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 252.21204
@@ -35889,7 +36613,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Wes has bruises and cuts all over his body. Surface
+                cuts, not too deep.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 513.0902
@@ -36013,7 +36750,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Predicted something must of fell ontop of Wes
+                that shattered (NOTE: Ice Sculpture?)'
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 506.46198
@@ -36179,7 +36929,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Gash in Eye: Made by a small, sharp object (NOTE:
+                CAUSE OF DEATH! Perhaps an ice shard?) '
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 792.1995
@@ -36368,7 +37131,20 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Wes had fallen backward onto barrels. Bits of wood
+                have dug into his body.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1011.71814
@@ -36423,7 +37199,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddTestimony
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: + Wes does not have his wedding band on.
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1300.5583
@@ -36490,7 +37278,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+            m_TargetAssemblyTypeName: HeavenlySin.Pages.Page, Assembly-CSharp
+            m_MethodName: AddRelations
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: '+ Wes is a married man: SPOUSE: Penelope'
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1361.8021
@@ -36815,8 +37615,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 138.41861, y: 53.07201}
-    canvasZoom: 0.52500015
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.705
   - id: 36
     fields:
     - title: Title
