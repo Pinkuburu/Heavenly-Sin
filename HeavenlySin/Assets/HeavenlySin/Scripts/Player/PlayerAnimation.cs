@@ -15,6 +15,8 @@ namespace HeavenlySin.Player
         public float horizontal, vertical;
         private int _isMoving;
         public bool isMoving;
+        private int _isJumping;
+        public bool isJumping;
         private SpriteRenderer _renderer;
         #endregion
 
@@ -25,6 +27,7 @@ namespace HeavenlySin.Player
             _horizontal = Animator.StringToHash("horizontal");
             _vertical = Animator.StringToHash("vertical");
             _isMoving = Animator.StringToHash("isMoving");
+            _isJumping = Animator.StringToHash("isJumping");
             _renderer = GetComponent<SpriteRenderer>();
         }
 
@@ -34,6 +37,7 @@ namespace HeavenlySin.Player
             horizontal = direction.x;
             vertical = direction.z;
             isMoving = direction.magnitude > 0.1f;
+            isJumping = !playerScript.playerMovement.isGrounded;
             Animate();
         }
 
@@ -42,7 +46,9 @@ namespace HeavenlySin.Player
             anim.SetFloat(_horizontal, horizontal);
             anim.SetFloat(_vertical, vertical);
             anim.SetBool(_isMoving, isMoving);
+            anim.SetBool(_isJumping, isJumping);
 
+            //flip the sprite
             if(horizontal > 0)
             {
                 _renderer.flipX = false;
@@ -51,18 +57,7 @@ namespace HeavenlySin.Player
             {
                 _renderer.flipX = true;
             }
-
         }
-
-        //flip the sprite with direction
-        /*if(_playerBody.transform.position.x > transform.position.x)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        if(_playerBody.transform.position.x<transform.position.x)
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-        }*/
         #endregion
     }
 }

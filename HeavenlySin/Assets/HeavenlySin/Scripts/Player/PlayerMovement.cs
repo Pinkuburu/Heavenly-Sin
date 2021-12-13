@@ -44,7 +44,7 @@ namespace HeavenlySin.Player
 
         private Camera _camera;
         private Vector3 _moveDir = Vector3.zero;
-        private bool _isJumping;
+        public bool isJumping;
         private float _speed;
         private float _targetAngle;
         private Vector3 _velocity = Vector3.zero;
@@ -88,7 +88,7 @@ namespace HeavenlySin.Player
             }
             
             // Jump Calculations.
-            if (_isJumping && isGrounded)
+            if (isJumping && isGrounded)
             {
                 _velocity.y = Mathf.Sqrt(jumpHeight * -2f * GRAVITY);
                 playerSounds.Raise(10); //Jump SFX
@@ -139,7 +139,7 @@ namespace HeavenlySin.Player
             
             direction = new Vector3(playerScript.playerInput.move.ReadValue<Vector2>().x, 0f,
                 playerScript.playerInput.move.ReadValue<Vector2>().y).normalized;
-            _isJumping = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
+            isJumping = playerScript.playerInput.inputManager.InputActions.Overworld.Jump.triggered;
             _isSprinting = playerScript.playerInput.isSprinting;
             CalculateMovement();
         }
