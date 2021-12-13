@@ -2,6 +2,7 @@
 using HeavenlySin.Game;
 using HeavenlySin.Scene.Scripts;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace HeavenlySin.Gameplay
 {

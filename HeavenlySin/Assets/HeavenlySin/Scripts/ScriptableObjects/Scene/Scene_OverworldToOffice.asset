@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Scene_OverworldToOffice
   m_EditorClassIdentifier: 
   playerPos: {fileID: 6395789038277434418, guid: 2cd5f6911ad01bc4180ee660e30dc9d4, type: 3}
-  sceneIndex: 3
+  sceneIndex: 2

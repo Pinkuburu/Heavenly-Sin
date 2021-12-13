@@ -21,6 +21,7 @@ namespace HeavenlySin.Gameplay.UI
         public Text testimonyText;
         //public Text testimonyOutline;
         public UIManager uiManager;
+        public Sprite[] portraits;
         
         #endregion
 
@@ -98,7 +99,7 @@ namespace HeavenlySin.Gameplay.UI
             }
             
             // Update the information in the journal.
-            portrait.GetComponent<Image>().sprite = journal.pages[_pageIndex].portrait;
+            portrait.GetComponent<Image>().sprite = portraits[_pageIndex];
             UpdateFirstPageTitle();
             UpdateSecondPageTitle();
             UpdateTestimonies();

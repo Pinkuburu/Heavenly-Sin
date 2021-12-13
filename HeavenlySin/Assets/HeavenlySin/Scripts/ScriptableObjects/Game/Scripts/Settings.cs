@@ -3,6 +3,7 @@ using UnityEngine;
 namespace HeavenlySin.Game
 {
     [CreateAssetMenu(fileName = "New Settings", menuName = "ScriptableObjects/Settings")]
+    [System.Serializable]
     public class Settings : ScriptableObject
     {
         public AudioSettings audio;

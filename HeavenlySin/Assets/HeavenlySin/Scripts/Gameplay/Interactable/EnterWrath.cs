@@ -1,3 +1,4 @@
+using HeavenlySin.Game;
 using HeavenlySin.GameEvents;
 using HeavenlySin.Scene.Scripts;
 using UnityEngine;
@@ -18,7 +19,8 @@ namespace HeavenlySin.Gameplay.Interactable
         [SerializeField] private IntEvent startHover;
         [SerializeField] private TransformEvent onChangeScene;
         public SceneStats sceneStats;
-
+        public GameStateInfo gameState;
+        
         public GameObject wrath;
         #endregion
     
@@ -70,6 +72,8 @@ namespace HeavenlySin.Gameplay.Interactable
 
         public void TransitionScene()
         {
+            gameState.sceneIndex = sceneStats.sceneIndex;
+            gameState.playerPos = sceneStats.playerPos.transform;
             SceneManager.LoadScene((int)sceneStats.sceneIndex);
         }
         

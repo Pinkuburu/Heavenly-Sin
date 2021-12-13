@@ -13,7 +13,6 @@ namespace HeavenlySin.Scene.Scripts
     {
         MAIN_MENU,
         SETTTINGS,
-        CREDITS,
         OFFICE,
         OVERWORLD,
         TUTORIAL_MINDSCAPE,
@@ -21,6 +20,7 @@ namespace HeavenlySin.Scene.Scripts
         LUST_DREAMSCAPE,
         LUST_CUTSCENE,
         OVERWORLD1,
-        OVERWORLD2
+        OVERWORLD2,
+        CREDITS
     };
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 namespace HeavenlySin.Inventory
 {
     [CreateAssetMenu(fileName = "New Inventory", menuName = "ScriptableObjects/Inventory")]
+    [System.Serializable]
     public class Inventory : ScriptableObject
     {
         [SerializeField] public List<Clue> items = new List<Clue>();

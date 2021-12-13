@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GameState_Player
   m_EditorClassIdentifier: 
   playerPos: {fileID: 0}
+  sceneIndex: 2

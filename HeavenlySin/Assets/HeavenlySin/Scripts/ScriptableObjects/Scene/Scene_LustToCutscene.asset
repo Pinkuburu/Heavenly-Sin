@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Scene_LustToCutscene
   m_EditorClassIdentifier: 
   playerPos: {fileID: 8610585878391651087, guid: 773d85a803d02114490749601d0e3558, type: 3}
-  sceneIndex: 8
+  sceneIndex: 7

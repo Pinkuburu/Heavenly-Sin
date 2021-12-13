@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7875318202616611866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7875318202616611845}
+  - component: {fileID: 7875318202616611844}
+  - component: {fileID: 7875318202745673240}
+  - component: {fileID: 7875318202745673241}
+  m_Layer: 0
+  m_Name: P_PersistantSO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7875318202616611845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875318202616611866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 441.6775, y: 169.7077, z: -8.337997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7875318202616611844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875318202616611866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a880e5711aee4429be6e12a849b0ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistantName: Main
+  objectsToPersist:
+  - {fileID: 11400000, guid: 97311344db77f994a989fefbb056a55b, type: 2}
+  - {fileID: 11400000, guid: 4b6cca1f274ad154c81f7a9ee50a466f, type: 2}
+  - {fileID: 11400000, guid: 7d3e1ead1a446f04d84c85a1f676ed02, type: 2}
+  - {fileID: 11400000, guid: 9dadefa9d07ad16429ba04558e88e8e7, type: 2}
+  - {fileID: 11400000, guid: 88b5a786997f99145bce361453ea152a, type: 2}
+  - {fileID: 11400000, guid: 6cde9cb6c3e99e4468b3aeabeaf28359, type: 2}
+  - {fileID: 11400000, guid: f8747513ac379c3408888fd410620983, type: 2}
+  - {fileID: 11400000, guid: e91cd4e149d05ca43b5c3a4f39f9974a, type: 2}
+  - {fileID: 11400000, guid: 9c1b9d3d38b07b145be849fdaf007fe5, type: 2}
+  - {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
+  - {fileID: 11400000, guid: 318778166be7dff43a2a9d39058c5597, type: 2}
+--- !u!114 &7875318202745673240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875318202616611866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f031b42800f2ef4a9e7d0149f18ce48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 7f7945a8d17aa40478e1fec1557b6a54, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7875318202616611844}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.PersistableSO, Assembly-CSharp
+        m_MethodName: ClearData
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: saved
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7875318202745673241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875318202616611866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f031b42800f2ef4a9e7d0149f18ce48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: c193c780347f98b4cb72efc329baa963, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7875318202616611844}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.PersistableSO, Assembly-CSharp
+        m_MethodName: Load
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: saved
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -35,6 +35,7 @@ namespace HeavenlySin.Gameplay.UI
         {
             //load from save file, see Sprite Knight scripts
             onLoadGame.Raise();
+            Debug.LogWarning("Changed scenes");
             SceneManager.LoadScene((int)gameStateInfo.sceneIndex);
         }
 
