@@ -25,11 +25,13 @@ namespace HeavenlySin.Gameplay.UI
 
         private void Start()
         {
+            masterVolume.GetComponent<Slider>().onValueChanged.AddListener(delegate{UpdateScriptableObject();});
+            sfxVolume.GetComponent<Slider>().onValueChanged.AddListener(delegate{UpdateScriptableObject();});
+            musicVolume.GetComponent<Slider>().onValueChanged.AddListener(delegate{UpdateScriptableObject();});
+            mouseSens.GetComponent<Slider>().onValueChanged.AddListener(delegate{UpdateScriptableObject();});
+            fullscreenToggle.GetComponent<Toggle>().onValueChanged.AddListener(delegate{UpdateScriptableObject();});
         }
- 
-        private void Update()
-        {
-        }
+
         #endregion
 
         #region Public Methods
@@ -41,6 +43,15 @@ namespace HeavenlySin.Gameplay.UI
             musicVolume.GetComponent<Slider>().value = settings.audio.musicVolume;
             mouseSens.GetComponent<Slider>().value = settings.control.mouseSens;
             fullscreenToggle.GetComponent<Toggle>().isOn = settings.control.isFullscreen;
+        }
+
+        public void UpdateScriptableObject()
+        {
+            settings.audio.masterVolume = masterVolume.GetComponent<Slider>().value;
+            settings.audio.sfxVolume = sfxVolume.GetComponent<Slider>().value;
+            settings.audio.musicVolume = musicVolume.GetComponent<Slider>().value;
+            settings.control.mouseSens = mouseSens.GetComponent<Slider>().value;
+            settings.control.isFullscreen = fullscreenToggle.GetComponent<Toggle>().isOn;
         }
         
         #endregion 

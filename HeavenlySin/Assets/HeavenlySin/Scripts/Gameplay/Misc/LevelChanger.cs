@@ -13,6 +13,11 @@ namespace HeavenlySin.Gameplay
         #region Public Methods
 
         // These methods will be triggered by events from other scripts
+
+        public void OnEnable()
+        {
+            Time.timeScale = 1;
+        }
         public void FadeToBlack()
         {
             anim.SetTrigger("FadeOut");

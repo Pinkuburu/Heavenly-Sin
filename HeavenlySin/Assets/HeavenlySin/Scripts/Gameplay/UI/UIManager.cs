@@ -1,3 +1,5 @@
+using System;
+using HeavenlySin.Scene.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -109,10 +111,15 @@ namespace HeavenlySin.Gameplay.UI
                 uiMenus[1].SetActive(false);
             }
         }
-        
+
+        private void OnDisable()
+        {
+            Time.timeScale = 1;
+        }
+
         public void QuitToMenu()
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene((int)Scenes.MAIN_MENU);
         }
 
         public void QuitGame()

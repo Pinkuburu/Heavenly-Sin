@@ -5,7 +5,7 @@ namespace HeavenlySin.Scene.Scripts
     [CreateAssetMenu(fileName = "New SceneStats", menuName = "ScriptableObjects/SceneStats")]
     public class SceneStats : ScriptableObject
     {
-        public GameObject playerPos;
+        public Vector3 playerPos;
         public Scenes sceneIndex;
     }
 
@@ -13,7 +13,6 @@ namespace HeavenlySin.Scene.Scripts
     {
         MAIN_MENU,
         SETTTINGS,
-        CREDITS,
         OFFICE,
         OVERWORLD,
         TUTORIAL_MINDSCAPE,
@@ -21,6 +20,7 @@ namespace HeavenlySin.Scene.Scripts
         LUST_DREAMSCAPE,
         LUST_CUTSCENE,
         OVERWORLD1,
-        OVERWORLD2
+        OVERWORLD2,
+        CREDITS
     };
 }

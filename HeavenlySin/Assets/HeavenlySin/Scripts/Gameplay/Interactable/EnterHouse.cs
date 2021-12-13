@@ -1,3 +1,4 @@
+using HeavenlySin.Game;
 using HeavenlySin.GameEvents;
 using HeavenlySin.Objects;
 using HeavenlySin.Scene.Scripts;
@@ -16,8 +17,10 @@ namespace HeavenlySin.Gameplay.Interactable
         [SerializeField] private IntEvent endHover;
         [SerializeField] private IntEvent startHover;
         [SerializeField] private VoidEvent onFadeStart;
-        [SerializeField] private TransformEvent onChangeScene;
-        public SceneStats[] sceneStats;
+        [SerializeField] private Vector3Event onChangeScene;
+        public SceneStats sceneStats;
+        public GameStateInfo gameState;
+        
         #endregion
     
         #region Private Fields
@@ -36,7 +39,7 @@ namespace HeavenlySin.Gameplay.Interactable
             if (openDoor.isOpen)
             {
                 onFadeStart.Raise();
-                onChangeScene.Raise(sceneStats[0].playerPos.transform);
+                onChangeScene.Raise(sceneStats.playerPos);
                 Invoke(nameof(TransitionScene), 1f);
             }
         }
@@ -59,7 +62,9 @@ namespace HeavenlySin.Gameplay.Interactable
         
         public void TransitionScene()
         {
-            SceneManager.LoadScene((int)sceneStats[0].sceneIndex);
+            gameState.sceneIndex = sceneStats.sceneIndex;
+            gameState.playerPos = sceneStats.playerPos;
+            SceneManager.LoadScene((int)sceneStats.sceneIndex);
         }
         
         #endregion

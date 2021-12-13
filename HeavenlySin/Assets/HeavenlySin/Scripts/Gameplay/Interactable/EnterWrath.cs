@@ -1,3 +1,4 @@
+using HeavenlySin.Game;
 using HeavenlySin.GameEvents;
 using HeavenlySin.Scene.Scripts;
 using UnityEngine;
@@ -16,9 +17,10 @@ namespace HeavenlySin.Gameplay.Interactable
         [SerializeField] private VoidEvent onFadeStart;
         [SerializeField] private VoidEvent onFadeEnd;
         [SerializeField] private IntEvent startHover;
-        [SerializeField] private TransformEvent onChangeScene;
+        [SerializeField] private Vector3Event onChangeScene;
         public SceneStats sceneStats;
-
+        public GameStateInfo gameState;
+        
         public GameObject wrath;
         #endregion
     
@@ -45,7 +47,7 @@ namespace HeavenlySin.Gameplay.Interactable
             else
             {
                 // Set the transform the player should end up a
-                onChangeScene.Raise(sceneStats.playerPos.transform);
+                onChangeScene.Raise(sceneStats.playerPos);
                 Invoke(nameof(TransitionScene), 1f);
             }
             //onPlaySound.Raise(0);
@@ -70,6 +72,8 @@ namespace HeavenlySin.Gameplay.Interactable
 
         public void TransitionScene()
         {
+            gameState.sceneIndex = sceneStats.sceneIndex;
+            gameState.playerPos = sceneStats.playerPos;
             SceneManager.LoadScene((int)sceneStats.sceneIndex);
         }
         

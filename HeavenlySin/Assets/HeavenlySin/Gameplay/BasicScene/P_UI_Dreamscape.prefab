@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 228087603}
   - component: {fileID: 228087602}
   - component: {fileID: 228087601}
+  - component: {fileID: 613221151}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: Untagged
@@ -284,6 +285,24 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &613221151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228087600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c7ae4d29215a94b9d5f2d4f7fcf08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: 318778166be7dff43a2a9d39058c5597, type: 2}
+  masterVolume: {fileID: 9082956819770133471}
+  sfxVolume: {fileID: 5126695347359641878}
+  musicVolume: {fileID: 8363834389250145214}
+  mouseSens: {fileID: 2132314844545628918}
+  fullscreenToggle: {fileID: 913128398431663962}
 --- !u!1 &301546493
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,8 +424,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HeavenlySin.UI.UIManager, Assembly-CSharp
+      - m_Target: {fileID: 924417426836175983}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.UI.UIManager, Assembly-CSharp
         m_MethodName: Settings
         m_Mode: 1
         m_Arguments:
@@ -1020,10 +1039,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HeavenlySin.UI.UIManager, Assembly-CSharp
+      - m_Target: {fileID: 924417426836175983}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.UI.UIManager, Assembly-CSharp
         m_MethodName: PauseResume
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1086,7 +1105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -28.899658}
+  m_AnchoredPosition: {x: 0, y: -28.899963}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1097404619
@@ -1623,10 +1642,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HeavenlySin.UI.UIManager, Assembly-CSharp
-        m_MethodName: Settings
-        m_Mode: 1
+      - m_Target: {fileID: 924417426836175983}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.UI.UIManager, Assembly-CSharp
+        m_MethodName: PauseResume
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2131,7 +2150,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2264,8 +2283,6 @@ GameObject:
   m_Component:
   - component: {fileID: 924417426836175978}
   - component: {fileID: 924417426836175983}
-  - component: {fileID: 924417426836175976}
-  - component: {fileID: 924417426836175977}
   m_Layer: 5
   m_Name: P_UI_Dreamscape
   m_TagString: Untagged
@@ -2307,62 +2324,6 @@ MonoBehaviour:
   uiMenus:
   - {fileID: 176426384}
   - {fileID: 228087600}
---- !u!114 &924417426836175976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924417426836175979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a030edee9b95546a9b4d0d7b95ae47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 924417426836175983}
-        m_TargetAssemblyTypeName: HeavenlySin.UI.UIManager, Assembly-CSharp
-        m_MethodName: EnableImage
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &924417426836175977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924417426836175979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a030edee9b95546a9b4d0d7b95ae47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: aac5c7d6ddc8c2440ad05cdd13e6c6f1, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 924417426836175983}
-        m_TargetAssemblyTypeName: HeavenlySin.UI.UIManager, Assembly-CSharp
-        m_MethodName: DisableImage
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1585559832013659521
 GameObject:
   m_ObjectHideFlags: 0

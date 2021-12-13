@@ -30,7 +30,7 @@ namespace HeavenlySin.Gameplay
         {
             if (playerState.playerPos != null && _player != null)
             {
-                _player.transform.position = playerState.playerPos.position;
+                _player.transform.position = playerState.playerPos;
             }
         }
         
@@ -43,11 +43,11 @@ namespace HeavenlySin.Gameplay
             // When the scene is about to change, we want to save the data.
             // This could be called in the main menu as well which would be undesirable, but the if statement should
             // account for that.
-            if (_player != null)
+            /*if (_player != null)
             {
-                playerState.playerPos = playerPos;
+                playerState.playerPos = playerPos.position;
                 saveLoadManager.Save();
-            }
+            }*/
         }
 
         public void OnSceneLoad()
@@ -55,7 +55,7 @@ namespace HeavenlySin.Gameplay
             _player = GameObject.FindGameObjectWithTag("Player");
             if (playerState.playerPos != null && _player != null)
             {
-                _player.transform.position = playerState.playerPos.position;
+                _player.transform.position = playerState.playerPos;
             }
         }
 
@@ -65,7 +65,7 @@ namespace HeavenlySin.Gameplay
         
         private void OnApplicationQuit()
         {
-            saveLoadManager.Save();
+            //saveLoadManager.Save();
         }
 
         #endregion

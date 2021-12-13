@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1ebe601beb8ca4a868037f6551fdb9, type: 3}
   m_Name: Scene_TutorialToOverworld1
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 7046123091241203612, guid: 5fca524e9d938654a968a7ebadd6347d, type: 3}
-  sceneIndex: 9
+  playerPos: {x: 44, y: 0, z: 28}
+  sceneIndex: 8

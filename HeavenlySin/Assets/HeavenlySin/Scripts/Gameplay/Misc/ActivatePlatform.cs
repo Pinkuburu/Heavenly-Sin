@@ -1,3 +1,4 @@
+using HeavenlySin.Game;
 using HeavenlySin.GameEvents;
 using HeavenlySin.Scene.Scripts;
 using UnityEngine;
@@ -10,8 +11,10 @@ namespace HeavenlySin.Gameplay
         #region Fields
         
         [SerializeField] private VoidEvent onFadeStart;
-        [SerializeField] private TransformEvent onChangeScene;
+        [SerializeField] private Vector3Event onChangeScene;
         public SceneStats sceneStats;
+        public GameStateInfo gameState;
+        
         #endregion
 
         public void EnablePlatform()
@@ -25,16 +28,16 @@ namespace HeavenlySin.Gameplay
             if (other.gameObject.CompareTag("Player"))
             {
                 onFadeStart.Raise();
-                onChangeScene.Raise(sceneStats.playerPos.transform);
+                onChangeScene.Raise(sceneStats.playerPos);
                 Invoke(nameof(TransitionScene), 1f);
             }
         }
         
         public void TransitionScene()
         {
+            gameState.sceneIndex = sceneStats.sceneIndex;
+            gameState.playerPos = sceneStats.playerPos;
             SceneManager.LoadScene((int)sceneStats.sceneIndex);
         }
-
-        
     }
 }
