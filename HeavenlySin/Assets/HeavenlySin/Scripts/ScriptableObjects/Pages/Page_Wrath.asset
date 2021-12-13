@@ -15,8 +15,5 @@ MonoBehaviour:
   portrait: {fileID: 21300000, guid: adc63234dbbdcfc4eac0cceb60931f0d, type: 3}
   leftPageTitle: VICTIM
   rightPageTitle: WES
-  testimonies:
-  - Thing One
-  - Thing Two
-  relations:
-  - Most People
+  testimonies: []
+  relations: []

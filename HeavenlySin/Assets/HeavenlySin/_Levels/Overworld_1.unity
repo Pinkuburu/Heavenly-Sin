@@ -80091,6 +80091,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdc54050e23842b1b301c4ddd46e7, type: 3}
+--- !u!1 &1987064560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8126007134704324798, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+  m_PrefabInstance: {fileID: 5356781189885081692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1988873469
 GameObject:
   m_ObjectHideFlags: 0
@@ -87662,6 +87667,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 323962701, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1017991978, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657966575, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766878498, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2006044553, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_Camera
       value: 
@@ -87670,6 +87691,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6245221604289602763}
+    - target: {fileID: 3178538789250423129, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479460726167596950, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967556451382833869, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5080954129197281026, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -87722,6 +87755,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6245221604289602763}
+    - target: {fileID: 8223541778659226911, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290949703985713534, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480534081366683935, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: portraitBorder
+      value: 
+      objectReference: {fileID: 1987064560}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
 --- !u!4 &5633073882352620923 stripped
