@@ -5,6 +5,7 @@ namespace HeavenlySin.Enemy
     public class BossController : MonoBehaviour
     {
         #region Fields
+        public BossStats bossStats;
         public float detectDistance, moveSpeed, minTravel, maxTravel, minDelay, maxDelay, spawnAmount, wanderDistance;
         public GameObject projectile;
         public GameObject enemy;
@@ -30,7 +31,7 @@ namespace HeavenlySin.Enemy
         private void Update()
         {
             Movement();
-            if(isAttacking)
+            if(isAttacking && bossStats.health > 0)
             {
                 Attack();
             }            
