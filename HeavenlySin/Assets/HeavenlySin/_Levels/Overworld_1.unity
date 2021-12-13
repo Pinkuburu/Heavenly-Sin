@@ -51942,6 +51942,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6259421b97e73e246bc5aa00d31d5a8f, type: 2}
     - target: {fileID: 560209967, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: onChangeScene
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fc267e96b0e6ce4ba3f7041f4ce8010, type: 2}
+    - target: {fileID: 560209967, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
       propertyPath: sceneStats.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 6259421b97e73e246bc5aa00d31d5a8f, type: 2}
