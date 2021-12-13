@@ -17,14 +17,14 @@ namespace HeavenlySin.Enemy
 
         #region
 
-        private float _health;
+        public float health;
         
         #endregion
  
         #region LifeCycle
         private void Awake()
         {
-            _health = statistics.maxHealth;
+            health = statistics.maxHealth;
         }
         
         #endregion
@@ -33,8 +33,8 @@ namespace HeavenlySin.Enemy
 
         public void TakeDamage(float damage)
         {
-            _health -= damage;
-            healthSlider.value = (_health / statistics.maxHealth);
+            health -= damage;
+            healthSlider.value = (health / statistics.maxHealth);
             anim.SetTrigger("isHurt");
             //enemySounds.Raise(); //Hurt SFX
             IsDead();
@@ -46,7 +46,7 @@ namespace HeavenlySin.Enemy
 
         private void IsDead()
         {
-            if (_health <= 0)
+            if (health <= 0)
             {
                 anim.SetTrigger("isDead");
                 //enemySounds.Raise(); //Death SFX

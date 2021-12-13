@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7359739430351303136}
   - component: {fileID: 5876308635734867525}
   - component: {fileID: 8532105606635031183}
+  - component: {fileID: 8404250589188719320}
   m_Layer: 0
   m_Name: P_Sign_Stop
   m_TagString: Untagged
@@ -82,3 +83,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8404250589188719320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7883793762549640026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01847759, y: 0.0024959154, z: 0.069983974}
+  m_Center: {x: -0.00005758554, y: -0.00028477111, z: 0.0034200784}
