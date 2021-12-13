@@ -324,6 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd69c2a20013c464198361ca23f8f19e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossStats: {fileID: 8260030241586706434}
   detectDistance: 30
   moveSpeed: 2
   minTravel: -0.5
@@ -381,6 +382,7 @@ MonoBehaviour:
   enemySounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
   onLevelComplete: {fileID: 11400000, guid: b1d22ba0fc4864845bf2ea0a8ba0801c, type: 2}
   healthSlider: {fileID: 8260030241063801082}
+  health: 100
 --- !u!1 &8260030241601934490
 GameObject:
   m_ObjectHideFlags: 0

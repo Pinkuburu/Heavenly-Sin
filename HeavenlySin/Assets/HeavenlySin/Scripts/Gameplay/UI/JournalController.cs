@@ -13,6 +13,7 @@ namespace HeavenlySin.Gameplay.UI
         public Text firstPageTitleOutline;
         public Journal journal;
         public GameObject nextButton;
+        public GameObject portraitBorder;
         public GameObject portrait;
         public Text relationsText;
         //public Text relationsOutline;
@@ -66,17 +67,33 @@ namespace HeavenlySin.Gameplay.UI
         // TODO: Can make a check if _pageIndex == 0 probably.
         private void UpdateTestimonies()
         {
-            testimonyText.text = "TESTIMONIES: ";
+            if (_pageIndex == 0)
+            {
+                testimonyText.text = "TO DO LIST: ";
+            }
+            else
+            {
+                testimonyText.text = "TESTIMONIES: ";
+            }
+            
             foreach (var t in journal.pages[_pageIndex].testimonies)
             {
                 // TODO: Might want to do some sort of formatting. I'm not sure how you could get bullet points here.
-                testimonyText.text += "\n" + t;
+                testimonyText.text += "\n" + t + "\n";
             }
         }
 
         private void UpdateRelations()
         {
-            relationsText.text = "RELATIONS: ";
+            if (_pageIndex == 0)
+            {
+                relationsText.text = "HINTS: ";
+            }
+            else
+            {
+                relationsText.text = "RELATIONS: ";
+            }
+
             foreach (var t in journal.pages[_pageIndex].relations)
             {
                 // TODO: Might want to do some sort of formatting. I'm not sure how you could get bullet points here.
@@ -89,9 +106,13 @@ namespace HeavenlySin.Gameplay.UI
             // Show the relevant buttons on the journal.
             backButton.SetActive(true);
             nextButton.SetActive(true);
+            // Show portrait outline o nthe journal.
+            portraitBorder.SetActive(true);
             if (_pageIndex == 0)
             {
                 backButton.SetActive(false);
+                portraitBorder.SetActive(false);
+
             }
             if (_pageIndex == journal.pages.Length - 1)
             {

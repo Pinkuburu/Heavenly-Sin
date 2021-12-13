@@ -21,7 +21,19 @@ namespace HeavenlySin.Pages
 
         public void AddRelations(string relation)
         {
-            relations.AddRange(relation);
+            relations.Add(relation);
+        }
+
+        public void ClearTestimonies()
+        {
+            testimonies.Clear();
+            Debug.Log("Testimonies Cleared");
+        }
+
+        public void ClearRelations()
+        {
+            relations.Clear();
+            Debug.Log("Relations Cleared");
         }
     }
 }
