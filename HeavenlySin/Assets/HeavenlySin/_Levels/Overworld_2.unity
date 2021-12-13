@@ -88034,6 +88034,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 323962701, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1017991978, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657966575, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766878498, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2006044549, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -88046,6 +88062,27 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6245221604289602763}
+    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: objectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: objectives.Array.data[0]
+      value: '+ CONTINUE INVESTIGATION: If there has been some suspects you have
+        missed, they may be loitering about the town. Be sure to get their statments.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: objectives.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3178538789250423129, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967556451382833869, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5080954129197281026, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -88098,6 +88135,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6245221604289602763}
+    - target: {fileID: 8223541778659226911, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290949703985713534, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
 --- !u!4 &5633073882352620923 stripped
