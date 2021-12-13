@@ -2072,7 +2072,6 @@ GameObject:
   - component: {fileID: 41888426}
   - component: {fileID: 41888429}
   - component: {fileID: 41888428}
-  - component: {fileID: 41888430}
   m_Layer: 6
   m_Name: SpeakeasyDoor
   m_TagString: Untagged
@@ -2176,9 +2175,9 @@ MonoBehaviour:
   endHover: {fileID: 11400000, guid: aac5c7d6ddc8c2440ad05cdd13e6c6f1, type: 2}
   startHover: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
   onFadeStart: {fileID: 11400000, guid: 251c4aff03a1cc040956827a123edd19, type: 2}
-  onChangeScene: {fileID: 0}
-  sceneStats: {fileID: 0}
-  gameState: {fileID: 0}
+  onChangeScene: {fileID: 11400000, guid: 1fc267e96b0e6ce4ba3f7041f4ce8010, type: 2}
+  sceneStats: {fileID: 11400000, guid: 5140dc68c607ad447a29b6818bc8c0fa, type: 2}
+  gameState: {fileID: 11400000, guid: 4b6cca1f274ad154c81f7a9ee50a466f, type: 2}
 --- !u!114 &41888429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2193,31 +2192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: b3f02a0fb805f7b4f861410f64a06534, type: 3}
   isOpen: 1
---- !u!114 &41888430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41888424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overrideName: 
-  overrideUseMessage: 
-  maxUseDistance: 500
-  events:
-    onSelect:
-      m_PersistentCalls:
-        m_Calls: []
-    onDeselect:
-      m_PersistentCalls:
-        m_Calls: []
-    onUse:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1001 &42713743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51874,7 +51848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7389438543200041940, guid: 45901004b239c8949821c1376cdb27ae, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45901004b239c8949821c1376cdb27ae, type: 3}
@@ -74226,11 +74200,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369740339584971957, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5910079903329891068, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
       propertyPath: conversation
       value: Speakeasy door
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7369488590180045170, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060177680277248796, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6480216848294493431, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1794760706 stripped
 Transform:

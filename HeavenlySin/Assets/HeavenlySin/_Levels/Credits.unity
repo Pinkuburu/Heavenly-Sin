@@ -265,6 +265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96ddc9c2f766b5458e6954cfc9afae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onNewGame: {fileID: 0}
+  onLoadGame: {fileID: 0}
+  onFadeStart: {fileID: 0}
+  gameState: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da7faecbf46f6d84a8b11dd2a5ca7d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.15
+  scrollSpeed: 0.4
 --- !u!114 &1647181741
 MonoBehaviour:
   m_ObjectHideFlags: 0
