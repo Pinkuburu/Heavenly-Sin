@@ -51332,6 +51332,10 @@ PrefabInstance:
       propertyPath: sceneStats
       value: 
       objectReference: {fileID: 11400000, guid: 417b7748bcc939b4ab8afb49c0697c4a, type: 2}
+    - target: {fileID: 560209967, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: onChangeScene
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fc267e96b0e6ce4ba3f7041f4ce8010, type: 2}
     - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
       propertyPath: conversation
       value: Utility store
