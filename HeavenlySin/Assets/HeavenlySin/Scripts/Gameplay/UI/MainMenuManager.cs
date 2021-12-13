@@ -14,7 +14,8 @@ namespace HeavenlySin.Gameplay.UI
 
         [SerializeField] private VoidEvent onNewGame;
         [SerializeField] private VoidEvent onLoadGame;
-        public GameStateInfo gameStateInfo;
+        [SerializeField] private VoidEvent onFadeStart;
+        public GameStateInfo gameState;
         #endregion
 
         #region Public Methods
@@ -26,19 +27,23 @@ namespace HeavenlySin.Gameplay.UI
 
         public void StartNewGame()
         {
-            //SceneManager.LoadScene("Office");
             onNewGame.Raise();
-            SceneManager.LoadScene((int)gameStateInfo.sceneIndex);
+            onFadeStart.Raise();
+            Invoke(nameof(TransitionScene), 1f);
         }
 
         public void LoadSavedGame()
         {
-            //load from save file, see Sprite Knight scripts
             onLoadGame.Raise();
-            Debug.LogWarning("Changed scenes");
-            SceneManager.LoadScene((int)gameStateInfo.sceneIndex);
+            onFadeStart.Raise();
+            Invoke(nameof(TransitionScene), 1f);
         }
 
+        public void TransitionScene()
+        {
+            SceneManager.LoadScene((int)gameState.sceneIndex);
+        }
+        
         public void Settings()
         {
             SceneManager.LoadScene("Settings");
@@ -53,9 +58,6 @@ namespace HeavenlySin.Gameplay.UI
         {
             Application.Quit();
         }
-        #endregion
-
-        #region Private Methods
         #endregion
     }
 }

@@ -7,7 +7,7 @@ namespace HeavenlySin.Game
     [System.Serializable]
     public class GameStateInfo : ScriptableObject
     {
-        public Transform playerPos;
+        public Vector3 playerPos;
         public Scenes sceneIndex;
     }
 }

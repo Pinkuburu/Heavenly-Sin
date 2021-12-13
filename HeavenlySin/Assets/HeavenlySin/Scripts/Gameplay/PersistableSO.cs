@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using HeavenlySin.Game;
 using UnityEngine;
 
 namespace HeavenlySin.Gameplay
@@ -9,11 +10,12 @@ namespace HeavenlySin.Gameplay
     {
         [Header("Meta")] public string persistantName;
         [Header("Scriptable Objects")] public List<ScriptableObject> objectsToPersist;
+        private GameObject _player;
+        public GameStateInfo playerState;
 
         protected void Awake()
         {
-            //ClearData("default");
-            //ClearData("saved");
+            _player = GameObject.FindGameObjectWithTag("Player");
             const string suffix = "default";
             if (!File.Exists(Application.persistentDataPath + $"/{persistantName}_{0}_{suffix}.pso"))
             {
@@ -25,6 +27,13 @@ namespace HeavenlySin.Gameplay
             Load("saved");
         }
 
+        private void Start()
+        {
+            if (playerState.playerPos != null && _player != null)
+            {
+                //_player.transform.position = playerState.playerPos;
+            }
+        }
         protected void OnDisable()
         {
             Save("saved");

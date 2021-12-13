@@ -2,13 +2,12 @@
 using HeavenlySin.Game;
 using HeavenlySin.Scene.Scripts;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace HeavenlySin.Gameplay
 {
     public class SaveLoadManager : MonoBehaviour
     {
-        private static SaveLoadManager _Instance;
+        /*private static SaveLoadManager _Instance;
         public GameStateInfo gameStateInfo;
         private int _gameStage;
 
@@ -74,7 +73,7 @@ namespace HeavenlySin.Gameplay
             gameStateInfo.sceneIndex = Scenes.OFFICE;
             gameStateInfo.playerPos = null;
             Debug.Log("LOADED FRESH GAME DATA");
-        }
+        }*/
     }
     
     public class SaveObject

@@ -12,7 +12,7 @@ namespace HeavenlySin.Pages
         public string leftPageTitle;
         public string rightPageTitle;
         public List<string> testimonies = new List<string>();
-        public string[] relations;
+        public List<string> relations = new List<string>();
 
         public void AddTestimony(string testimony)
         {

@@ -5,7 +5,7 @@ namespace HeavenlySin.Scene.Scripts
     [CreateAssetMenu(fileName = "New SceneStats", menuName = "ScriptableObjects/SceneStats")]
     public class SceneStats : ScriptableObject
     {
-        public GameObject playerPos;
+        public Vector3 playerPos;
         public Scenes sceneIndex;
     }
 

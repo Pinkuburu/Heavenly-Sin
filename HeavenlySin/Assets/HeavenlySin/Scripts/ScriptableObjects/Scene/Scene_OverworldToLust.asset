@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1ebe601beb8ca4a868037f6551fdb9, type: 3}
   m_Name: Scene_OverworldToLust
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 917995149800886919, guid: 04d44a7e9ba332d4db6e6d07dc252bba, type: 3}
+  playerPos: {x: -7.19, y: 8.81, z: -34}
   sceneIndex: 6

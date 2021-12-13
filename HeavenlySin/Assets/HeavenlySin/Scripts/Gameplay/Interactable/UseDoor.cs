@@ -14,7 +14,7 @@ namespace HeavenlySin.Gameplay.Interactable
         [SerializeField] private IntEvent endHover;
         [SerializeField] private IntEvent startHover;
         [SerializeField] private VoidEvent onFadeStart;
-        [SerializeField] private TransformEvent onChangeScene;
+        [SerializeField] private Vector3Event onChangeScene;
         public SceneStats sceneStats;
         #endregion
     
@@ -32,7 +32,7 @@ namespace HeavenlySin.Gameplay.Interactable
         public void Interact()
         {
             onFadeStart.Raise();
-            onChangeScene.Raise(sceneStats.playerPos.transform);
+            onChangeScene.Raise(sceneStats.playerPos);
             Invoke(nameof(TransitionScene), 1f);
         }
 

@@ -1926,7 +1926,7 @@ MonoBehaviour:
   onFadeStart: {fileID: 11400000, guid: 251c4aff03a1cc040956827a123edd19, type: 2}
   onFadeEnd: {fileID: 11400000, guid: a61a40c183decc34eb4d41ee51363557, type: 2}
   startHover: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
-  onChangeScene: {fileID: 11400000, guid: c71767c4a604b9245a13e610cb69a627, type: 2}
+  onChangeScene: {fileID: 11400000, guid: 1fc267e96b0e6ce4ba3f7041f4ce8010, type: 2}
   sceneStats: {fileID: 11400000, guid: edaa08fefead16546b1e4167675585c2, type: 2}
   gameState: {fileID: 11400000, guid: 4b6cca1f274ad154c81f7a9ee50a466f, type: 2}
   wrath: {fileID: 1438010786}
@@ -2623,7 +2623,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 933537741190364264, guid: 8960524fcdc86304abbcea3e6877e51a, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2310403847600810628, guid: 8960524fcdc86304abbcea3e6877e51a, type: 3}
       propertyPath: m_Name
@@ -2801,20 +2801,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1090946153
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090946149}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1090946154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3753,7 +3739,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2734983088514238825, guid: 8a705a82fc5c11449bc903ab19e5a2b8, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6239118138093296263, guid: 8a705a82fc5c11449bc903ab19e5a2b8, type: 3}
       propertyPath: m_RootOrder
