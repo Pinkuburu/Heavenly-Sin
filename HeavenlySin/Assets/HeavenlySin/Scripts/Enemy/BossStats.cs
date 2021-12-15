@@ -7,7 +7,6 @@ namespace HeavenlySin.Enemy
     public class BossStats : MonoBehaviour
     {
         #region Public Fields
-        
         public Animator anim;
         public Stats.Stats statistics;
         [SerializeField] private IntEvent enemySounds;
@@ -16,9 +15,7 @@ namespace HeavenlySin.Enemy
         #endregion
 
         #region
-
-        public float health;
-        
+        public float health;        
         #endregion
  
         #region LifeCycle
@@ -26,11 +23,9 @@ namespace HeavenlySin.Enemy
         {
             health = statistics.maxHealth;
         }
-        
         #endregion
 
         #region Public Methods
-
         public void TakeDamage(float damage)
         {
             health -= damage;
@@ -39,11 +34,9 @@ namespace HeavenlySin.Enemy
             //enemySounds.Raise(); //Hurt SFX
             IsDead();
         }
-        
         #endregion 
 
         #region Private Methods
-
         private void IsDead()
         {
             if (health <= 0)
