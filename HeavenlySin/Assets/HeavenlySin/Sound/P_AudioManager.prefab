@@ -77,6 +77,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 58a3213f28b9ddb4eb4c6ad1129e57c3, type: 2}
   - {fileID: 11400000, guid: c7a93dcbef8e4b242b6c9a0e388c17a1, type: 2}
   - {fileID: 11400000, guid: 1b417f050844a9e42ba3da20fbea5ab1, type: 2}
+  - {fileID: 11400000, guid: 0f599de99aabee745b0cefde5fdc2c8d, type: 2}
+  - {fileID: 11400000, guid: ac38ec3d130866c44b4045ead881051a, type: 2}
   sources:
   - {fileID: 51557933945738709}
   - {fileID: 51557933945738705}
