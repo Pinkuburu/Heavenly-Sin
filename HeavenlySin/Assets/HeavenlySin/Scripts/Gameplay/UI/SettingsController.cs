@@ -1,4 +1,5 @@
 using HeavenlySin.Game;
+using HeavenlySin.GameEvents;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,7 @@ namespace HeavenlySin.Gameplay.UI
         public GameObject musicVolume;
         public GameObject mouseSens;
         public GameObject fullscreenToggle;
+        [SerializeField] private VoidEvent onSettingsChanged;
 
         #endregion
  
@@ -52,6 +54,7 @@ namespace HeavenlySin.Gameplay.UI
             settings.audio.musicVolume = musicVolume.GetComponent<Slider>().value;
             settings.control.mouseSens = mouseSens.GetComponent<Slider>().value;
             settings.control.isFullscreen = fullscreenToggle.GetComponent<Toggle>().isOn;
+            onSettingsChanged.Raise();
         }
         
         #endregion 

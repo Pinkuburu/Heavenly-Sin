@@ -12,6 +12,7 @@ namespace HeavenlySin.Gameplay
         [Header("Scriptable Objects")] public List<ScriptableObject> objectsToPersist;
         private GameObject _player;
         public GameStateInfo playerState;
+        public Settings settings;
 
         protected void Awake()
         {
@@ -19,12 +20,13 @@ namespace HeavenlySin.Gameplay
             const string suffix = "default";
             if (!File.Exists(Application.persistentDataPath + $"/{persistantName}_{0}_{suffix}.pso"))
             {
-                Save("default");
+                Save(suffix);
             }
         }
         protected void OnEnable()
         {
             Load("saved");
+            Screen.fullScreen = settings.control.isFullscreen;
         }
 
         private void Start()

@@ -76,6 +76,7 @@ MonoBehaviour:
   clampAngle: 80
   horizontalSpeed: 10
   verticalSpeed: 10
+  settings: {fileID: 11400000, guid: 318778166be7dff43a2a9d39058c5597, type: 2}
   inputManager: {fileID: 11400000, guid: a9f309578fab7c241933c3a1f5907e8d, type: 2}
 --- !u!1 &72763172438997609
 GameObject:
@@ -166,7 +167,7 @@ SpriteRenderer:
   m_Size: {x: 5.01, y: 7.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!143 &72763172438997601
@@ -220,6 +221,7 @@ MonoBehaviour:
   horizontal: 0
   vertical: 0
   isMoving: 0
+  isJumping: 0
 --- !u!114 &72763172438997604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +287,7 @@ MonoBehaviour:
   playerSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
   stopSounds: {fileID: 11400000, guid: 5ffe24659b1f92b408a3fe7351fd552d, type: 2}
   direction: {x: 0, y: 0, z: 0}
+  isJumping: 0
 --- !u!95 &7993421740242781705
 Animator:
   serializedVersion: 3

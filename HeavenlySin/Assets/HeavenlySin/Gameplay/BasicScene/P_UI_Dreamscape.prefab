@@ -303,6 +303,7 @@ MonoBehaviour:
   musicVolume: {fileID: 8363834389250145214}
   mouseSens: {fileID: 2132314844545628918}
   fullscreenToggle: {fileID: 913128398431663962}
+  onSettingsChanged: {fileID: 11400000, guid: c7d628802d0ef0b48bf514a77d38d210, type: 2}
 --- !u!1 &301546493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,7 +1994,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf350074ad28bc048b43e226c972ae14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullscreenToggle: {fileID: 4278129693119979108}
 --- !u!1 &924417424778818163
 GameObject:
   m_ObjectHideFlags: 0

@@ -70,7 +70,7 @@ namespace HeavenlySin.Player
         private void CalculateMovement()
         {
             _speed = _isSprinting ? sprintSpeed : walkSpeed;
-                // Variables to optimize code.
+            // Variables to optimize code.
             var mainCameraTransform = _camera.transform;
             var mainCameraTransformEulerAngles = mainCameraTransform.eulerAngles;
 
@@ -92,7 +92,7 @@ namespace HeavenlySin.Player
             {
                 _velocity.y = Mathf.Sqrt(jumpHeight * -2f * GRAVITY);
                 playerSounds.Raise(10); //Jump SFX
-                int randNum = Random.Range(0, 2);
+                var randNum = Random.Range(0, 2);
                 playerSounds.Raise(22 + randNum); //Jump vocal SFX
             }
             _velocity.y += GRAVITY * Time.deltaTime;
@@ -143,25 +143,6 @@ namespace HeavenlySin.Player
             _isSprinting = playerScript.playerInput.isSprinting;
             CalculateMovement();
         }
-
-        /*public void TakeDamage(float damage)
-        {
-            health -= damage;
-            int randNum = Random.Range(0, 3);
-            playerSounds.Raise(24 + randNum); //Hurt SFX
-            IsDead();
-            Debug.Log("I'M ALIVE");
-        }
-
-        private void IsDead()
-        {
-            if (health <= 0)
-            {
-                int randNum = Random.Range(0, 3);
-                playerSounds.Raise(24 + randNum); //Hurt SFX
-                Destroy(gameObject, 1f);
-            }
-        }*/
 
         #endregion
 
