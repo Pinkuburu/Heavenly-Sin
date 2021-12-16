@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 51557933945738704}
   - component: {fileID: 51557933945738711}
   - component: {fileID: 1467757517}
+  - component: {fileID: 2027987079}
   m_Layer: 0
   m_Name: P_AudioManager
   m_TagString: Untagged
@@ -70,6 +71,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d83349374060ae54da0af2aa391a892f, type: 2}
   - {fileID: 11400000, guid: 5fc6e6843220f5341a739fe9429abacc, type: 2}
   - {fileID: 11400000, guid: 9f24a44b5d03b9f4986550aca33c1678, type: 2}
+  - {fileID: 11400000, guid: 9adebfc4fefc0fc44ab8f67603670104, type: 2}
+  - {fileID: 11400000, guid: 75c4d6e886331374eb18dd24803e586e, type: 2}
+  - {fileID: 11400000, guid: b126911b50ef9a346bac0a69742b28a3, type: 2}
+  - {fileID: 11400000, guid: 58a3213f28b9ddb4eb4c6ad1129e57c3, type: 2}
+  - {fileID: 11400000, guid: c7a93dcbef8e4b242b6c9a0e388c17a1, type: 2}
+  - {fileID: 11400000, guid: 1b417f050844a9e42ba3da20fbea5ab1, type: 2}
   sources:
   - {fileID: 51557933945738709}
   - {fileID: 51557933945738705}
@@ -89,7 +96,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -161,7 +168,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.003
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -182,7 +189,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
@@ -278,10 +285,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -412,6 +419,35 @@ MonoBehaviour:
           Assembly-CSharp
         m_MethodName: UpdateVolume
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2027987079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51557933945738667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a030edee9b95546a9b4d0d7b95ae47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 5ffe24659b1f92b408a3fe7351fd552d, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 51557933945738710}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.AudioManagement.AudioManager,
+          Assembly-CSharp
+        m_MethodName: StopSound
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

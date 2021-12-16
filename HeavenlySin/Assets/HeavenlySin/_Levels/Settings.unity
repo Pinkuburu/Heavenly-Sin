@@ -810,6 +810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 654279974}
+  - component: {fileID: 654279975}
   m_Layer: 0
   m_Name: Management
   m_TagString: Untagged
@@ -832,6 +833,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &654279975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654279973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f96ddc9c2f766b5458e6954cfc9afae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onNewGame: {fileID: 11400000, guid: 7f7945a8d17aa40478e1fec1557b6a54, type: 2}
+  onLoadGame: {fileID: 11400000, guid: c193c780347f98b4cb72efc329baa963, type: 2}
+  onFadeStart: {fileID: 11400000, guid: 251c4aff03a1cc040956827a123edd19, type: 2}
+  gameState: {fileID: 11400000, guid: 4b6cca1f274ad154c81f7a9ee50a466f, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2925,8 +2942,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HeavenlySin.MainMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 654279975}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.UI.MainMenuManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
