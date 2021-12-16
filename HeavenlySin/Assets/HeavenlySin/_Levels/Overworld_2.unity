@@ -14230,6 +14230,7 @@ GameObject:
   - component: {fileID: 337251281}
   - component: {fileID: 337251280}
   - component: {fileID: 337251279}
+  - component: {fileID: 337251283}
   m_Layer: 0
   m_Name: T_Greed
   m_TagString: Untagged
@@ -14457,6 +14458,18 @@ MonoBehaviour:
   endHover: {fileID: 11400000, guid: aac5c7d6ddc8c2440ad05cdd13e6c6f1, type: 2}
   startHover: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
   onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+--- !u!114 &337251283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337251275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12abb89654d469b43bfb9d8df7f5e2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &338231247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35288,6 +35301,7 @@ GameObject:
   - component: {fileID: 892393398}
   - component: {fileID: 892393397}
   - component: {fileID: 892393396}
+  - component: {fileID: 892393401}
   m_Layer: 0
   m_Name: T_Lust
   m_TagString: Untagged
@@ -35515,6 +35529,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.366308, y: 10.295102, z: 2.4581783}
   m_Center: {x: 0.5147396, y: 6.98833, z: 0.26992297}
+--- !u!114 &892393401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892393393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12abb89654d469b43bfb9d8df7f5e2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &892950179
 GameObject:
   m_ObjectHideFlags: 0
@@ -44704,6 +44730,7 @@ GameObject:
   - component: {fileID: 1129795853}
   - component: {fileID: 1129795852}
   - component: {fileID: 1129795851}
+  - component: {fileID: 1129795857}
   m_Layer: 0
   m_Name: T_Sloth
   m_TagString: Untagged
@@ -44931,6 +44958,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1129795857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129795849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12abb89654d469b43bfb9d8df7f5e2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1130209199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47708,6 +47747,7 @@ GameObject:
   - component: {fileID: 1175786435}
   - component: {fileID: 1175786434}
   - component: {fileID: 1175786433}
+  - component: {fileID: 1175786438}
   m_Layer: 0
   m_Name: T_Pride
   m_TagString: Untagged
@@ -47935,6 +47975,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20.480001, y: 27.324453, z: 0.20000064}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1175786438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175786430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12abb89654d469b43bfb9d8df7f5e2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1176743008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48416,6 +48468,7 @@ GameObject:
   - component: {fileID: 1181342827}
   - component: {fileID: 1181342826}
   - component: {fileID: 1181342825}
+  - component: {fileID: 1181342830}
   m_Layer: 0
   m_Name: Envy_V2
   m_TagString: Untagged
@@ -48643,6 +48696,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.41749, y: 10.886889, z: 1.345897}
   m_Center: {x: 0.3552134, y: 5.278836, z: 0.031879634}
+--- !u!114 &1181342830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181342822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12abb89654d469b43bfb9d8df7f5e2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1183491508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60791,6 +60856,7 @@ GameObject:
   - component: {fileID: 1485407611}
   - component: {fileID: 1485407610}
   - component: {fileID: 1485407609}
+  - component: {fileID: 1485407615}
   m_Layer: 0
   m_Name: Ghost_Take1
   m_TagString: Untagged
@@ -61018,6 +61084,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1485407615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485407607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12abb89654d469b43bfb9d8df7f5e2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1488149361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85086,6 +85164,7 @@ GameObject:
   - component: {fileID: 2075463014}
   - component: {fileID: 2075463013}
   - component: {fileID: 2075463012}
+  - component: {fileID: 2075463016}
   m_Layer: 0
   m_Name: T_Gluttony
   m_TagString: Untagged
@@ -85313,6 +85392,18 @@ MonoBehaviour:
   endHover: {fileID: 11400000, guid: aac5c7d6ddc8c2440ad05cdd13e6c6f1, type: 2}
   startHover: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
   onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+--- !u!114 &2075463016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075463008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12abb89654d469b43bfb9d8df7f5e2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2075848888
 PrefabInstance:
   m_ObjectHideFlags: 0
