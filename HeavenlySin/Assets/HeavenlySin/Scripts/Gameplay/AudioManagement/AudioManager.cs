@@ -1,4 +1,7 @@
+using System;
 using HeavenlySin.Audio;
+using HeavenlySin.Game;
+using HeavenlySin.Scene.Scripts;
 using UnityEngine;
 
 namespace HeavenlySin.Gameplay.AudioManagement
@@ -12,13 +15,41 @@ namespace HeavenlySin.Gameplay.AudioManagement
     public class AudioManager : MonoBehaviour
     {
         #region Public Fields
-        
+        private static AudioManager _Instance;
         public Sound[] sounds;
         public AudioSource[] sources;
+        public Settings settings;
+
+        #endregion
+
+        #region LifeCycle
+
+        private void Awake()
+        {
+            DontDestroyOnLoad(this.gameObject);
+            if (_Instance != null && _Instance != this)
+                Destroy(this.gameObject);
+            else
+            {
+                _Instance = this;
+            }
+        }
+
+        private void Start()
+        {
+            UpdateVolume();
+        }
 
         #endregion
         
         #region Public Methods
+
+        public void UpdateVolume()
+        {
+            sources[(int)SoundType.MUSIC].volume = settings.audio.musicVolume * settings.audio.masterVolume;
+            sources[(int)SoundType.SOUND_EFFECT].volume = settings.audio.sfxVolume * settings.audio.masterVolume;
+            sources[(int)SoundType.ENVIRONMENT].volume = settings.audio.sfxVolume * settings.audio.masterVolume;
+        }
         
         public void PlaySound(int index)
         {

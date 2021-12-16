@@ -810,7 +810,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 654279974}
-  - component: {fileID: 654279975}
   m_Layer: 0
   m_Name: Management
   m_TagString: Untagged
@@ -833,21 +832,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &654279975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654279973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f96ddc9c2f766b5458e6954cfc9afae1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onNewGame: {fileID: 0}
-  onLoadGame: {fileID: 0}
-  gameStateInfo: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +1141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf350074ad28bc048b43e226c972ae14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullscreenToggle: {fileID: 860738829}
 --- !u!114 &860738829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2168,6 +2151,7 @@ MonoBehaviour:
   musicVolume: {fileID: 798032930}
   mouseSens: {fileID: 647595278}
   fullscreenToggle: {fileID: 860738823}
+  onSettingsChanged: {fileID: 11400000, guid: c7d628802d0ef0b48bf514a77d38d210, type: 2}
 --- !u!1 &1325895312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2941,7 +2925,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 654279975}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HeavenlySin.MainMenuManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1

@@ -1987,6 +1987,7 @@ MonoBehaviour:
   musicVolume: {fileID: 1625198326}
   mouseSens: {fileID: 7479284209223605936}
   fullscreenToggle: {fileID: 343806634447118584}
+  onSettingsChanged: {fileID: 11400000, guid: c7d628802d0ef0b48bf514a77d38d210, type: 2}
 --- !u!1 &343806634447118584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,7 +2158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf350074ad28bc048b43e226c972ae14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullscreenToggle: {fileID: 1296590868357191083}
 --- !u!1 &3176848836879841559
 GameObject:
   m_ObjectHideFlags: 0
@@ -3671,11 +3671,11 @@ PrefabInstance:
     - target: {fileID: 393370898246299563, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
       propertyPath: relationsOutline
       value: 
-      objectReference: {fileID: 126487007847534892}
+      objectReference: {fileID: 0}
     - target: {fileID: 393370898246299563, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
       propertyPath: testimonyOutline
       value: 
-      objectReference: {fileID: 5356781188401243005}
+      objectReference: {fileID: 0}
     - target: {fileID: 393370898246299563, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
       propertyPath: portraits.Array.size
       value: 8
@@ -3731,6 +3731,21 @@ PrefabInstance:
     - target: {fileID: 4651347016383885602, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
       propertyPath: m_Text
       value: 'Relations:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867402822227780821, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+      propertyPath: hint
+      value: You faintly remember that Wes' home is in the corner of Peace Lane and
+        Fury Avenue. It has a bright blue door.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867402822227780821, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+      propertyPath: objectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867402822227780821, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+      propertyPath: objectives.Array.data[0]
+      value: '+ FIND WES'' KEYS: Wes seemed to have misplaced his keys. Let''s retrace
+        his steps to his door to see if he may have dropped it. Better yet, let''s
+        just double-check if he was jsut a drunkard and left it open again.'
       objectReference: {fileID: 0}
     - target: {fileID: 7370620158353713230, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
       propertyPath: m_Name
@@ -3834,36 +3849,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+--- !u!224 &1557406217 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8126007134720769213, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+  m_PrefabInstance: {fileID: 8126007136267673268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5356781188891477706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4220572637398112382, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
   m_PrefabInstance: {fileID: 8126007136267673268}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5356781188401243005 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4220572637880958409, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
-  m_PrefabInstance: {fileID: 8126007136267673268}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5356781189973818257 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4220572636316706085, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
-  m_PrefabInstance: {fileID: 8126007136267673268}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &126487007847534892 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8143703487305371544, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
   m_PrefabInstance: {fileID: 8126007136267673268}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -3883,11 +3881,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &1557406217 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8126007134720769213, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
-  m_PrefabInstance: {fileID: 8126007136267673268}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8233026798136479568
 PrefabInstance:
   m_ObjectHideFlags: 0

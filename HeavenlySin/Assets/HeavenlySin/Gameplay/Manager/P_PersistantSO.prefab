@@ -59,6 +59,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a1c12cc117df0ae40a842c39cf4864da, type: 2}
   - {fileID: 11400000, guid: 318778166be7dff43a2a9d39058c5597, type: 2}
   playerState: {fileID: 11400000, guid: 4b6cca1f274ad154c81f7a9ee50a466f, type: 2}
+  settings: {fileID: 11400000, guid: 318778166be7dff43a2a9d39058c5597, type: 2}
 --- !u!114 &7875318202745673240
 MonoBehaviour:
   m_ObjectHideFlags: 0

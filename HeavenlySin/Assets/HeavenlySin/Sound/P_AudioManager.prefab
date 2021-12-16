@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 51557933945738705}
   - component: {fileID: 51557933945738704}
   - component: {fileID: 51557933945738711}
+  - component: {fileID: 1467757517}
   m_Layer: 0
   m_Name: P_AudioManager
   m_TagString: Untagged
@@ -72,7 +73,8 @@ MonoBehaviour:
   sources:
   - {fileID: 51557933945738709}
   - {fileID: 51557933945738705}
-  - {fileID: 51557933945738709}
+  - {fileID: 51557933945738704}
+  settings: {fileID: 11400000, guid: 318778166be7dff43a2a9d39058c5597, type: 2}
 --- !u!82 &51557933945738709
 AudioSource:
   m_ObjectHideFlags: 0
@@ -381,6 +383,35 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: HeavenlySin.AudioManagement.AudioManager, Assembly-CSharp
         m_MethodName: PlaySound
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1467757517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51557933945738667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f031b42800f2ef4a9e7d0149f18ce48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: c7d628802d0ef0b48bf514a77d38d210, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 51557933945738710}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.AudioManagement.AudioManager,
+          Assembly-CSharp
+        m_MethodName: UpdateVolume
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
