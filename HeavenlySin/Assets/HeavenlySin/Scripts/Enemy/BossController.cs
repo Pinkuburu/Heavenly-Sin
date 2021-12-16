@@ -19,6 +19,7 @@ namespace HeavenlySin.Enemy
         private Vector3 _startPos;
         private bool _outOfBounds;
         public bool isAttacking;
+        private bool isSpawning;
         #endregion
 
         #region LifeCycle
@@ -34,7 +35,23 @@ namespace HeavenlySin.Enemy
             if(isAttacking && bossStats.health > 0)
             {
                 Attack();
-            }            
+            }    
+            
+            if(bossStats.health <= 250)
+            {
+                if(!isSpawning)
+                {
+                    SpawnEnemies();
+                    isSpawning = true;
+                }
+                
+                //shoot faster
+                maxDelay = 0.5f;
+
+                //move faster
+                maxTravel = 1f;
+                moveSpeed = 4f;
+            }
         }
 
         public void IsAttacking()
@@ -51,7 +68,6 @@ namespace HeavenlySin.Enemy
                 _moveTimer = 0f;
                 _timeTilNextMove = Random.Range(1f, 4f);
             }
-
             if (_outOfBounds)
             {
                 transform.position = Vector3.Lerp(transform.position, _startPos, Time.deltaTime * moveSpeed);
@@ -62,7 +78,6 @@ namespace HeavenlySin.Enemy
                 var position = transform.position;
                 position = Vector3.Lerp(position, position - _randomPos, Time.deltaTime * moveSpeed);
                 transform.position = position;
-
                 if (Vector3.Distance(_startPos, transform.position) > wanderDistance)
                 {
                     _outOfBounds = true;
@@ -93,7 +108,7 @@ namespace HeavenlySin.Enemy
 
         private void SpawnEnemies()
         {
-            for(var i = 0; i < spawnAmount; i++)
+            for (int i = 0; i < spawnAmount; i++)
             {
                 var enemyClone = Instantiate(enemy, transform.position, transform.rotation);
             }

@@ -4309,11 +4309,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1413810771784026193, guid: f656245019a3f324f9e7acb2344e621f, type: 3}
   m_PrefabInstance: {fileID: 1459993262}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1469068066 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8126007134704324798, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
-  m_PrefabInstance: {fileID: 5356781189885081692}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1479540471 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8522320571144042595, guid: a78258c473709fb4ab86364ea282ecea, type: 3}
@@ -6234,28 +6229,9 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7253450625287258734}
-    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
-      propertyPath: hint
-      value: Use the "E" key to interact, talk to people, and examine objects! You
-        may just learn some important information.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
-      propertyPath: objectives.Array.data[0]
-      value: '+ EXIT THE OFFICE: Time to mingle with the locals and fish up some
-        new work!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2425280382279940705, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
-      propertyPath: objectives.Array.data[1]
-      value: '+  EXAMINE SURROUNDINGS: There''s some paperwork and mail that''s been
-        strewn around the place. Might be good to tidy up before customers come in.'
-      objectReference: {fileID: 0}
     - target: {fileID: 3178538789250423129, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3479460726167596950, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4967556451382833869, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6309,10 +6285,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 5080954129511155609, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8223541778659226911, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6321,10 +6293,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8480534081366683935, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
-      propertyPath: portraitBorder
-      value: 
-      objectReference: {fileID: 1469068066}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
 --- !u!1001 &7253450625287258733

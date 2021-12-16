@@ -19,7 +19,6 @@ namespace HeavenlySin.Enemy
         #endregion
 
         #region
-
         private float _health;
         
         #endregion
@@ -39,7 +38,7 @@ namespace HeavenlySin.Enemy
             _health -= damage;
             healthSlider.value = (_health / statistics.maxHealth);
             anim.SetTrigger("isHurt");
-            //enemySounds.Raise(); //Hurt SFX
+            enemySounds.Raise(27); //Hurt SFX
             IsDead();
             // TODO: update UI health bar.
         }
@@ -52,7 +51,7 @@ namespace HeavenlySin.Enemy
         {
             if (_health <= 0)
             {
-                //enemySounds.Raise(); //Death SFX
+                enemySounds.Raise(28); //Death SFX
                 Destroy(gameObject, 0.25f);
             }
         }
