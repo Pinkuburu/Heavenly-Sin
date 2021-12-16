@@ -73398,34 +73398,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1778098275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778098276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f031b42800f2ef4a9e7d0149f18ce48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 151a1277a60a95e48b56722927a3a0eb, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 560209968, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
-        m_TargetAssemblyTypeName: HeavenlySin.OpenDoor, Assembly-CSharp
-        m_MethodName: OpenDoorSprite
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1778098276
 GameObject:
   m_ObjectHideFlags: 0
@@ -73437,7 +73409,6 @@ GameObject:
   - component: {fileID: 1778098277}
   - component: {fileID: 1778098274}
   - component: {fileID: 1778098272}
-  - component: {fileID: 1778098275}
   m_Layer: 0
   m_Name: T_Door_Red
   m_TagString: Untagged
