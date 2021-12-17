@@ -40,7 +40,6 @@ namespace HeavenlySin.Enemy
             healthSlider.value = (_health / statistics.maxHealth);
             anim.SetTrigger("isHurt");
             IsDead();
-            // TODO: update UI health bar.
         }
         
         #endregion 

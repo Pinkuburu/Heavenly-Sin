@@ -62,7 +62,6 @@ namespace HeavenlySin.Enemy
 
         private void Wander()
         {
-            //enemySounds.Raise(); //Enemy idling SFX
             moveTimer += Time.deltaTime;
             if (moveTimer >= timeTilNextMove)
             {
@@ -94,7 +93,6 @@ namespace HeavenlySin.Enemy
                     if (Physics.Raycast(transform.position, (hitCollider.gameObject.transform.position - transform.position), out var enemyRay, detectDistance))
                     {
                         isDetected = true;
-                        //enemySounds.Raise(); //Detected SFX
                     }
                 }
             }

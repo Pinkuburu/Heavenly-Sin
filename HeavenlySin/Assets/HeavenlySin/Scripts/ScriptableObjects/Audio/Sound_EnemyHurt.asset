@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db4194271539e640a3ce8881b5b0bbf, type: 3}
   m_Name: Sound_EnemyHurt
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: f845bd321abf2754696b22e2b9473ebc, type: 3}
+  clip: {fileID: 8300000, guid: 005887bd5b4261845a010d9c72747db8, type: 3}
   soundType: 1

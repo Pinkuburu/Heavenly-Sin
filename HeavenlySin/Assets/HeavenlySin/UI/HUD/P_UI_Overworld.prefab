@@ -3870,6 +3870,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestimonyText
       objectReference: {fileID: 0}
+    - target: {fileID: 4220572636316706084, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1045.978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220572636316706084, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -72.729
+      objectReference: {fileID: 0}
     - target: {fileID: 4220572636316706085, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
       propertyPath: m_Text
       value: 'Testimonies:'
@@ -3905,6 +3913,14 @@ PrefabInstance:
       propertyPath: objectives.Array.data[1]
       value: '+  EXAMINE SURROUNDINGS: There''s some paperwork and mail that''s been
         strewn around the place. Might be good to tidy up before customers come in.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052984741612785178, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 500.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052984741612785178, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 200.12994
       objectReference: {fileID: 0}
     - target: {fileID: 7370620158353713230, guid: e78223de8d0ff7f489baaf2747c626c7, type: 3}
       propertyPath: m_Name

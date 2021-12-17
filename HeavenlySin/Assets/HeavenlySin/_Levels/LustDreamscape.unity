@@ -4870,6 +4870,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6456881903449829961, guid: 71a5b205d9d99c34db27d3f20ffcd4ca, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 8607862628932409674, guid: 71a5b205d9d99c34db27d3f20ffcd4ca, type: 3}
       propertyPath: platformSpeed
       value: 0
@@ -7021,7 +7025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6131851370446810821, guid: ea9c44549659cac4db9e0685ebff0315, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.897
+      value: 10.641
       objectReference: {fileID: 0}
     - target: {fileID: 6131851370446810821, guid: ea9c44549659cac4db9e0685ebff0315, type: 3}
       propertyPath: m_LocalPosition.z
