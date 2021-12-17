@@ -20,6 +20,7 @@ namespace HeavenlySin.Gameplay.Interactable
         [SerializeField] private Vector3Event onChangeScene;
         public SceneStats sceneStats;
         public GameStateInfo gameState;
+        public int soundIndex;
         
         public GameObject wrath;
         #endregion
@@ -41,6 +42,7 @@ namespace HeavenlySin.Gameplay.Interactable
             onFadeStart.Raise();
             if (!_enterWrath)
             {
+                onPlaySound.Raise(soundIndex);
                 _enterWrath = true;
                 Invoke(nameof(EnableWrath), 1f);
             }
@@ -72,6 +74,7 @@ namespace HeavenlySin.Gameplay.Interactable
 
         public void TransitionScene()
         {
+            onPlaySound.Raise(soundIndex);
             gameState.sceneIndex = sceneStats.sceneIndex;
             gameState.playerPos = sceneStats.playerPos;
             SceneManager.LoadScene((int)sceneStats.sceneIndex);

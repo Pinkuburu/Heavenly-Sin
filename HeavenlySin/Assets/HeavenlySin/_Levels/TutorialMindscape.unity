@@ -10602,6 +10602,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2077886772
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 51557933945738667, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_Name
+      value: P_AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 51557933945738708, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
 --- !u!1 &2088059832
 GameObject:
   m_ObjectHideFlags: 0
@@ -10712,6 +10769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8449e8485e2234a43a953e68f4cf6454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundIndex: 17
+  onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
 --- !u!1 &2141649074
 GameObject:
   m_ObjectHideFlags: 0
@@ -10835,7 +10894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4968c214393e34aad59420195aac06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  soundIndex: 11
+  onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
   clue: {fileID: 11400000, guid: 43e1bfc90f14aa44094f77de999bee6f, type: 2}
 --- !u!1001 &5441170291908624152
 PrefabInstance:
@@ -10962,9 +11022,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 3dac12c1152317a419f6730dbece49fa, type: 2}
     - target: {fileID: 5574489507687006501, guid: c68e5cc9f4d567542973b86fc89895bf, type: 3}
+      propertyPath: soundIndex
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574489507687006501, guid: c68e5cc9f4d567542973b86fc89895bf, type: 3}
       propertyPath: onFadeStart
       value: 
       objectReference: {fileID: 11400000, guid: 251c4aff03a1cc040956827a123edd19, type: 2}
+    - target: {fileID: 5574489507687006501, guid: c68e5cc9f4d567542973b86fc89895bf, type: 3}
+      propertyPath: onPlaySound
+      value: 
+      objectReference: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
     - target: {fileID: 5574489507687006501, guid: c68e5cc9f4d567542973b86fc89895bf, type: 3}
       propertyPath: onChangeScene
       value: 

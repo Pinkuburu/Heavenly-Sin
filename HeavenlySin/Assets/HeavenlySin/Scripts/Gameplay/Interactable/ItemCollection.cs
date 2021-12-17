@@ -8,7 +8,8 @@ namespace HeavenlySin.Gameplay.Interactable
     public class ItemCollection : MonoBehaviour
     {
         #region Fields
-        [SerializeField] private IntEvent itemSounds;
+        public int soundIndex;
+        [SerializeField] private IntEvent onPlaySound;
         #endregion
  
         #region LifeCycle
@@ -36,7 +37,7 @@ namespace HeavenlySin.Gameplay.Interactable
         private void OnTriggerEnter(Collider other)
         {
             other.gameObject.GetComponent<PlayerScript>().inventory.AddItem(clue);
-            //itemSounds.Raise(11);
+            onPlaySound.Raise(soundIndex);
             Destroy(gameObject);
         }
 

@@ -12,6 +12,8 @@ namespace HeavenlySin.Objects
     {
         #region Public Fields
 
+        public int soundIndex;
+        [SerializeField] private IntEvent onPlaySound;
         [SerializeField] private VoidEvent onFadeStart;
         [SerializeField] private Vector3Event onChangeScene;
         public SceneStats sceneStats;
@@ -23,6 +25,7 @@ namespace HeavenlySin.Objects
         
         public void TransitionScene()
         {
+            onPlaySound.Raise(soundIndex);
             gameState.sceneIndex = sceneStats.sceneIndex;
             gameState.playerPos = sceneStats.playerPos;
             SceneManager.LoadScene((int)sceneStats.sceneIndex);

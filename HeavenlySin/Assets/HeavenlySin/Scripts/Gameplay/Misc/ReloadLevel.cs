@@ -1,4 +1,5 @@
 using UnityEngine;
+using HeavenlySin.GameEvents;
 using UnityEngine.SceneManagement;
 
 namespace HeavenlySin.Gameplay
@@ -6,6 +7,8 @@ namespace HeavenlySin.Gameplay
     public class ReloadLevel : MonoBehaviour
     {
         #region Fields
+        public int soundIndex;
+        [SerializeField] private IntEvent onPlaySound;
         #endregion
  
         #region LifeCycle
@@ -31,6 +34,7 @@ namespace HeavenlySin.Gameplay
         {
             if(other.gameObject.CompareTag("Player"))
             {
+                onPlaySound.Raise(soundIndex);
                 ReloadScene();
             }
         }

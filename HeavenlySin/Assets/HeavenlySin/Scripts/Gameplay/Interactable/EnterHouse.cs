@@ -14,6 +14,8 @@ namespace HeavenlySin.Gameplay.Interactable
         [Tooltip("The index number of the image displayed when hovering over an interactable object.")]
         public int imageIndex;
         public OpenDoor openDoor;
+        public int soundIndex;
+        [SerializeField] private IntEvent onPlaySound;
         [SerializeField] private IntEvent endHover;
         [SerializeField] private IntEvent startHover;
         [SerializeField] private VoidEvent onFadeStart;
@@ -62,6 +64,7 @@ namespace HeavenlySin.Gameplay.Interactable
         
         public void TransitionScene()
         {
+            onPlaySound.Raise(soundIndex);
             gameState.sceneIndex = sceneStats.sceneIndex;
             gameState.playerPos = sceneStats.playerPos;
             SceneManager.LoadScene((int)sceneStats.sceneIndex);
