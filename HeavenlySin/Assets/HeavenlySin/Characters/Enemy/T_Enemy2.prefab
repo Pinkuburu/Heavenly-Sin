@@ -411,9 +411,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyScript: {fileID: 1943795847640842228}
-  detectDistance: 3
+  detectDistance: 5
   wanderSpeed: 0.125
-  attackSpeed: 0.25
+  attackSpeed: 1.5
   enemySounds: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
 --- !u!114 &6280652929260418270
 MonoBehaviour:
