@@ -14505,7 +14505,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Gerardo Interrogation
+  conversation: Gerardo Interrogation - Overworld
   conversationConversant: {fileID: 337251277}
   conversationActor: {fileID: 1083953527}
   startConversationEntryID: -1
@@ -35691,7 +35691,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Lance Interrogation
+  conversation: Lance Interrogation - Overworld
   conversationConversant: {fileID: 892393394}
   conversationActor: {fileID: 1083953527}
   startConversationEntryID: -1
@@ -85860,7 +85860,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Giana Interrogation
+  conversation: Giana Interrogation - Overworld
   conversationConversant: {fileID: 2075463010}
   conversationActor: {fileID: 1083953527}
   startConversationEntryID: -1
