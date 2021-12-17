@@ -3868,6 +3868,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21ef585c1eaf0c40ba0f564d9e393e8, type: 3}
+--- !u!1 &1357090585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1357090587}
+  - component: {fileID: 1357090586}
+  m_Layer: 0
+  m_Name: Dialogue System Scene Events
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1357090586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357090585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca55201633b97d3408f439eb84ecb249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueEntrySceneEvents:
+  - guid: 89ae6739-894d-42ab-a927-173435ae280e
+    onExecute:
+      m_PersistentCalls:
+        m_Calls: []
+  - guid: fa312003-7c6a-4ce4-bba7-7850c05d1c6d
+    onExecute:
+      m_PersistentCalls:
+        m_Calls: []
+  - guid: 7989ccd5-65d6-40c9-91d8-f8cefffd88ff
+    onExecute:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!4 &1357090587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357090585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1363182354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8522320571144042595, guid: a78258c473709fb4ab86364ea282ecea, type: 3}
@@ -6309,6 +6365,14 @@ PrefabInstance:
     - target: {fileID: 8290949703985713534, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480534081366683935, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: onPlaySound
+      value: 
+      objectReference: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+    - target: {fileID: 8480534081366683935, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}
+      propertyPath: soundIndexOpen
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cad9f8e283801a143ba337541fcc26f0, type: 3}

@@ -52171,6 +52171,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
   m_PrefabInstance: {fileID: 1257132267}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1257132269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 560209962, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+  m_PrefabInstance: {fileID: 1257132267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1257132270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257132269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a030edee9b95546a9b4d0d7b95ae47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 51557933945738710, guid: 2a497c55b98579147aae1900ec99d03e, type: 3}
+        m_TargetAssemblyTypeName: HeavenlySin.Gameplay.AudioManagement.AudioManager,
+          Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1258740526
 PrefabInstance:
   m_ObjectHideFlags: 0
