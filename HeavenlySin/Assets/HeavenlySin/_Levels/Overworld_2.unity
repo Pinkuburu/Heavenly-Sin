@@ -295,6 +295,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1934477 stripped
@@ -724,6 +728,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &16387871 stripped
@@ -894,6 +902,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &17454090 stripped
@@ -1114,6 +1126,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Office
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &24839458 stripped
@@ -1327,6 +1343,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Car2
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (6)
@@ -1553,6 +1573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car_1 (9)
@@ -4602,6 +4626,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 2 (11)
@@ -5096,6 +5124,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Car 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (19)
@@ -5856,6 +5888,10 @@ PrefabInstance:
       propertyPath: conversation
       value: 'Car 8 '
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (12)
@@ -6361,6 +6397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 2 (9)
@@ -7061,6 +7101,10 @@ PrefabInstance:
       propertyPath: conversation
       value: car3
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (4)
@@ -7332,6 +7376,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house1
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &188145411 stripped
@@ -7755,6 +7803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &192989664 stripped
@@ -8950,6 +9002,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 552662310, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
       propertyPath: m_Name
       value: P_Car_5 (7)
@@ -9534,6 +9590,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.53
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &227359342 stripped
@@ -10140,6 +10200,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &246699241 stripped
@@ -10608,6 +10672,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 3
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &256935184 stripped
@@ -12003,6 +12071,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &286332732 stripped
@@ -12491,6 +12563,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 14ff4667a927d7148a2e8fc65b12c1c3, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &295455605 stripped
@@ -13551,6 +13627,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &318199246 stripped
@@ -13569,6 +13649,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Car2
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (17)
@@ -14545,6 +14629,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &338231248 stripped
@@ -15264,6 +15352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2015655834}
     m_Modifications:
+    - target: {fileID: 345655376, guid: 36de6d47d0f8143429c54ef09d593dad, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 6974904474474538270, guid: 36de6d47d0f8143429c54ef09d593dad, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -16325,6 +16417,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 2 (15)
@@ -16565,6 +16661,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house1
       objectReference: {fileID: 0}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &385166321 stripped
@@ -18465,6 +18565,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &431105396 stripped
@@ -19158,6 +19262,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &445429662 stripped
@@ -19416,6 +19524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 552662310, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
       propertyPath: m_Name
       value: P_Car_5 (1)
@@ -20476,6 +20588,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &473213365 stripped
@@ -20724,6 +20840,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random House 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &480769618 stripped
@@ -21160,6 +21280,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &501296796 stripped
@@ -21828,6 +21952,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &529897560 stripped
@@ -22014,6 +22142,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1865155542293265975, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
 --- !u!4 &534267587 stripped
@@ -22163,6 +22295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car_1 (3)
@@ -22292,6 +22428,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &538716866 stripped
@@ -22522,6 +22662,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 552662310, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
       propertyPath: m_Name
       value: P_Car_5
@@ -23241,6 +23385,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car_1 (13)
@@ -23704,6 +23852,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &582978556 stripped
@@ -24820,6 +24972,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Esmerelda's house
       objectReference: {fileID: 0}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &629786083 stripped
@@ -25283,6 +25439,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &639777227 stripped
@@ -26069,6 +26229,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 552662310, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
       propertyPath: m_Name
       value: P_Car_5
@@ -26194,6 +26358,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &662930263 stripped
@@ -26720,6 +26888,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random House 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &670654763 stripped
@@ -29070,6 +29242,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car_1 (2)
@@ -30310,6 +30486,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random House 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &759823963 stripped
@@ -30758,6 +30938,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &773908562 stripped
@@ -31965,6 +32149,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &796385121 stripped
@@ -32043,6 +32231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &796432415 stripped
@@ -32999,6 +33191,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &827263463 stripped
@@ -33129,6 +33325,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random House 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1865155542293265975, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
 --- !u!4 &830232024 stripped
@@ -33259,6 +33459,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.535
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &835816665 stripped
@@ -34427,6 +34631,10 @@ PrefabInstance:
       propertyPath: conversation
       value: 'Car 8 '
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (18)
@@ -35084,6 +35292,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1865155542293265975, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
 --- !u!4 &886112729 stripped
@@ -36601,6 +36813,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &914188652 stripped
@@ -36797,6 +37013,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random House 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &918603958 stripped
@@ -38313,6 +38533,10 @@ PrefabInstance:
       propertyPath: conversation
       value: car3
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (16)
@@ -38682,6 +38906,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &960715978 stripped
@@ -38926,6 +39154,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.544
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &963235881 stripped
@@ -39485,6 +39717,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &973881609 stripped
@@ -39573,6 +39809,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Car5
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (7)
@@ -40195,6 +40435,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1865155542293265975, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
 --- !u!4 &993621361 stripped
@@ -42785,6 +43029,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1060913687 stripped
@@ -43235,6 +43483,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.555
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1070820414 stripped
@@ -43906,7 +44158,7 @@ MonoBehaviour:
   cacheBarkLines: 0
   conversation: Sal's house
   conversationConversant: {fileID: 1106254848}
-  conversationActor: {fileID: 0}
+  conversationActor: {fileID: 1083953527}
   startConversationEntryID: -1
   exclusive: 0
   replace: 0
@@ -45033,6 +45285,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1130209200 stripped
@@ -46814,6 +47070,10 @@ PrefabInstance:
       propertyPath: conversation
       value: 'Car 8 '
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (1)
@@ -49044,6 +49304,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &1190136557 stripped
@@ -49397,6 +49661,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1198050449 stripped
@@ -49630,6 +49898,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1203796163 stripped
@@ -50360,6 +50632,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1218412623 stripped
@@ -51286,6 +51562,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 552662310, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
       propertyPath: m_Name
       value: P_Car_5 (6)
@@ -51852,6 +52132,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Utility store
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 835816669, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -52514,6 +52798,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car_1
@@ -53662,6 +53950,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1303920727 stripped
@@ -53969,6 +54261,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 3 (1)
@@ -54787,6 +55083,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1328429277 stripped
@@ -55159,6 +55459,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!1001 &1348334572
@@ -55837,6 +56141,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random House 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1865155542293265975, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01c6bfd39decf144d8b54fa326e2a660, type: 3}
 --- !u!4 &1359903361 stripped
@@ -55995,6 +56303,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1360179092 stripped
@@ -57694,6 +58006,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 552662310, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c1ba0e2884d4cdd47ac76ce1b5c8b4d7, type: 3}
       propertyPath: m_Name
       value: P_Car_5 (2)
@@ -58236,6 +58552,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1402621669 stripped
@@ -58679,6 +58999,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 14ff4667a927d7148a2e8fc65b12c1c3, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1412214500 stripped
@@ -58928,7 +59252,7 @@ MonoBehaviour:
   cacheBarkLines: 0
   conversation: Sal's house
   conversationConversant: {fileID: 1424586993}
-  conversationActor: {fileID: 0}
+  conversationActor: {fileID: 1083953527}
   startConversationEntryID: -1
   exclusive: 0
   replace: 0
@@ -61251,6 +61575,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Lance's House
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1488149362 stripped
@@ -61691,6 +62019,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 2 (1)
@@ -62296,6 +62628,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Jewelry store
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1509991103 stripped
@@ -63412,6 +63748,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1538903036 stripped
@@ -63538,6 +63878,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.53
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1540021442 stripped
@@ -64172,6 +64516,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Car5
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3 (3)
@@ -65728,6 +66076,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1595201663 stripped
@@ -66969,6 +67321,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1625927006 stripped
@@ -67193,6 +67549,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1636734033 stripped
@@ -68284,6 +68644,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &1654741330 stripped
@@ -68669,6 +69033,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1657480379 stripped
@@ -69546,6 +69914,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1675642276 stripped
@@ -69638,6 +70010,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car_1 (5)
@@ -69811,7 +70187,7 @@ MonoBehaviour:
   cacheBarkLines: 0
   conversation: Sal's house
   conversationConversant: {fileID: 1683017106}
-  conversationActor: {fileID: 0}
+  conversationActor: {fileID: 1083953527}
   startConversationEntryID: -1
   exclusive: 0
   replace: 0
@@ -70917,6 +71293,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1707886443 stripped
@@ -70995,6 +71375,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &1708655460 stripped
@@ -71489,6 +71873,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 6
       objectReference: {fileID: 0}
+    - target: {fileID: 835816668, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b22952f928df9d4ea2c811fb4fafeea, type: 3}
 --- !u!4 &1717163087 stripped
@@ -72337,6 +72725,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1734547034 stripped
@@ -72425,6 +72817,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 2 (12)
@@ -73877,6 +74273,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &1783420167 stripped
@@ -74239,6 +74639,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1786966894 stripped
@@ -74458,6 +74862,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Speakeasy door
       objectReference: {fileID: 0}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1794760706 stripped
@@ -74792,6 +75200,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1799689559 stripped
@@ -75628,7 +76040,6 @@ GameObject:
   - component: {fileID: 1829896337}
   - component: {fileID: 1829896339}
   - component: {fileID: 1829896338}
-  - component: {fileID: 1829896340}
   m_Layer: 0
   m_Name: T_Door
   m_TagString: Untagged
@@ -75715,22 +76126,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1829896340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829896336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 014b275850931694198ad13fab77e747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageIndex: 0
-  endHover: {fileID: 11400000, guid: aac5c7d6ddc8c2440ad05cdd13e6c6f1, type: 2}
-  startHover: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
-  onOpenAttempt: {fileID: 11400000, guid: 151a1277a60a95e48b56722927a3a0eb, type: 2}
 --- !u!1001 &1830551679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75834,6 +76229,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &1830551680 stripped
@@ -75956,6 +76355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 2
@@ -76307,6 +76710,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &1846569977 stripped
@@ -76852,6 +77259,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house1
       objectReference: {fileID: 0}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1856068030 stripped
@@ -77208,6 +77619,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 3
@@ -77496,6 +77911,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e499a670c4b5a614194b7159cd40ae6c, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1878513328 stripped
@@ -77656,6 +78075,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &1886433327 stripped
@@ -78867,6 +79290,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &1913516634 stripped
@@ -79504,6 +79931,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random House 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &1924475686 stripped
@@ -79744,6 +80175,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &1931493454 stripped
@@ -80264,6 +80699,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car_1
@@ -80886,6 +81325,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random House 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &1967003602 stripped
@@ -81401,6 +81844,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b9a0ff32a204634ca8b9ff6edf08fd5, type: 2}
+    - target: {fileID: 1708655462, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8503e1c326728bd48b824e2a63dbed5d, type: 3}
 --- !u!4 &1986381553 stripped
@@ -82795,6 +83242,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &2025925244 stripped
@@ -83053,6 +83504,10 @@ PrefabInstance:
       propertyPath: conversation
       value: Random house 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1967003605, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6d4075e8d4ea24a8351a965929d7ab, type: 3}
 --- !u!4 &2028143020 stripped
@@ -83559,6 +84014,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 14ff4667a927d7148a2e8fc65b12c1c3, type: 2}
+    - target: {fileID: 5442800469766459623, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b6e73a6670fc47468e823e3caa5c2b2, type: 3}
 --- !u!4 &2037412024 stripped
@@ -84061,6 +84520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 2 (6)
@@ -85475,6 +85938,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef494ddf52705bd48a06fd0f5a311942, type: 2}
+    - target: {fileID: 6608284069413594972, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65dbd5d9957265c4aa2a81c651ae3c53, type: 3}
 --- !u!4 &2075848889 stripped
@@ -85901,6 +86368,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1241272334}
     m_Modifications:
+    - target: {fileID: 611088552, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: 1c0f442409fa0d2419c2395324f11f3a, type: 3}
       propertyPath: m_Name
       value: P_Car 2 (10)
@@ -88261,6 +88732,10 @@ PrefabInstance:
       propertyPath: conversation
       value: 'Car 8 '
       objectReference: {fileID: 0}
+    - target: {fileID: 1390501926, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 1083953527}
     - target: {fileID: 22264310607447312, guid: c3cba9ed7cfa43447a2fa49fbf138c44, type: 3}
       propertyPath: m_Name
       value: P_Car_3
