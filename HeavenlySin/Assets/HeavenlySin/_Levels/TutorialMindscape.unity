@@ -361,7 +361,7 @@ PrefabInstance:
     - target: {fileID: 4949114216686874566, guid: 7ff22d7d503827e4b85cb6804f0464df, type: 3}
       propertyPath: displaySettings.dialogueUI
       value: 
-      objectReference: {fileID: 159120, guid: adc24357fea057a4884a14c87b85b1cd, type: 3}
+      objectReference: {fileID: 159120, guid: 1f221270fa5cee848a3e56e3235725b9, type: 3}
     - target: {fileID: 4949114216686874566, guid: 7ff22d7d503827e4b85cb6804f0464df, type: 3}
       propertyPath: displaySettings.subtitleSettings.continueButton
       value: 0
@@ -7787,6 +7787,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1097404617, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.900024
+      objectReference: {fileID: 0}
     - target: {fileID: 213350077972272338, guid: 0c636ada0dc2aed4c9caf89227c0a1eb, type: 3}
       propertyPath: UICamera
       value: 
