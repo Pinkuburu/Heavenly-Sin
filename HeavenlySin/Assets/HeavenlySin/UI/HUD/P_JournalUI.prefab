@@ -2073,6 +2073,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4430d0b4794c2042aca44b86b7dbe6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundIndexOpen: 13
+  soundIndexPageFlip: 12
+  onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
   backButton: {fileID: 4220572638194545541}
   firstPageTitle: {fileID: 4220572637605908259}
   firstPageTitleOutline: {fileID: 4220572637203641899}
@@ -2085,3 +2088,4 @@ MonoBehaviour:
   secondPageTitleOutline: {fileID: 4220572637003022915}
   testimonyText: {fileID: 0}
   uiManager: {fileID: 0}
+  portraits: []

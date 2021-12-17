@@ -1,4 +1,5 @@
 using HeavenlySin.Inventory;
+using HeavenlySin.GameEvents;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,9 @@ namespace HeavenlySin.Gameplay.UI
     {
         #region Public Fields
         
+        public int soundIndexOpen;
+        public int soundIndexPageFlip;
+        [SerializeField] private IntEvent onPlaySound;
         public GameObject backButton;
         public Text firstPageTitle;
         public Text firstPageTitleOutline;
@@ -44,6 +48,7 @@ namespace HeavenlySin.Gameplay.UI
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
+                onPlaySound.Raise(soundIndexOpen);
                 uiManager.PauseResume(3);
             } 
         }
@@ -129,12 +134,14 @@ namespace HeavenlySin.Gameplay.UI
         
         public void PageBack()
         {
+            onPlaySound.Raise(soundIndexPageFlip);
             _pageIndex--;
             Journal();
         }
 
         public void PackNext()
         {
+            onPlaySound.Raise(soundIndexPageFlip);
             _pageIndex++;
             Journal();
         }

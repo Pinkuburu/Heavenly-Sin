@@ -3856,7 +3856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f128558890d76248a9bcab6dc8f0971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundIndex: 19
+  soundIndex: 64
   onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
 --- !u!1 &379898340
 GameObject:

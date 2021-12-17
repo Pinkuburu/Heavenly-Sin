@@ -1,5 +1,6 @@
 using System;
 using HeavenlySin.Scene.Scripts;
+using HeavenlySin.GameEvents;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,6 +14,9 @@ namespace HeavenlySin.Gameplay.UI
     public class UIManager : MonoBehaviour
     {
         #region Public Fields
+
+        public int soundIndex;
+        [SerializeField] private IntEvent onPlaySound;
 
         public Image[] uiElements;
         public GameObject[] uiMenus;
@@ -40,6 +44,7 @@ namespace HeavenlySin.Gameplay.UI
             // Map
             if (Input.GetKeyDown(KeyCode.M))
             {
+                onPlaySound.Raise(soundIndex);
                 PauseResume(2);
             }
         }
