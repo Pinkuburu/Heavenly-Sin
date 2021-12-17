@@ -6294,7 +6294,7 @@ MonoBehaviour:
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 8
+              m_IntArgument: 66
               m_FloatArgument: 0
               m_StringArgument: 
               m_BoolArgument: 0
@@ -8342,7 +8342,7 @@ MonoBehaviour:
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 8
+              m_IntArgument: 66
               m_FloatArgument: 0
               m_StringArgument: 
               m_BoolArgument: 0
@@ -8477,8 +8477,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 854.8064}
-    canvasZoom: 0.8065006
+    canvasScrollPosition: {x: 0, y: 764.0209}
+    canvasZoom: 0.5300014
   - id: 22
     fields:
     - title: Title
