@@ -2783,6 +2783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a296d5c1b4ed47c48b296adf30f12fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundIndex: 12
+  onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
   uiElements:
   - {fileID: 5080954129015431449}
   uiMenus:
