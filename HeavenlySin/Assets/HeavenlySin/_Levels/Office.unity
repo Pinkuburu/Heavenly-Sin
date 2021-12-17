@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f128558890d76248a9bcab6dc8f0971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundIndex: 5
+  soundIndex: 65
   onPlaySound: {fileID: 11400000, guid: b1f2445c34bc3ef43a469ab689d62996, type: 2}
 --- !u!4 &375298325 stripped
 Transform:
@@ -1868,6 +1868,7 @@ MonoBehaviour:
   onChangeScene: {fileID: 11400000, guid: 1fc267e96b0e6ce4ba3f7041f4ce8010, type: 2}
   sceneStats: {fileID: 11400000, guid: edaa08fefead16546b1e4167675585c2, type: 2}
   gameState: {fileID: 11400000, guid: 4b6cca1f274ad154c81f7a9ee50a466f, type: 2}
+  soundIndex: 67
   wrath: {fileID: 1438010786}
 --- !u!1001 &616163184
 PrefabInstance:
