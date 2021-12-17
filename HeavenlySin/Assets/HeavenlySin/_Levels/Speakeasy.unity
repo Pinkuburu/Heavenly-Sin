@@ -2698,6 +2698,91 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - guid: b693c5c0-ad5f-46e2-b440-0a78d88d1a87
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 371235315}
+          m_TargetAssemblyTypeName: HeavenlySin.Gameplay.AudioManagement.MusicControl,
+            Assembly-CSharp
+          m_MethodName: ResumeMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 33689d36-e5b7-4887-9455-3d9f714c920e
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 371235315}
+          m_TargetAssemblyTypeName: HeavenlySin.Gameplay.AudioManagement.MusicControl,
+            Assembly-CSharp
+          m_MethodName: ResumeMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: bea43cc8-cb8d-43a5-ac35-f30af62927fe
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 371235315}
+          m_TargetAssemblyTypeName: HeavenlySin.Gameplay.AudioManagement.MusicControl,
+            Assembly-CSharp
+          m_MethodName: ResumeMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 070ff015-7b80-4d15-9d48-d37cdb775976
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 371235315}
+          m_TargetAssemblyTypeName: HeavenlySin.Gameplay.AudioManagement.MusicControl,
+            Assembly-CSharp
+          m_MethodName: ResumeMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: ff528193-00c1-4113-8a51-eef925ee6a7c
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 371235315}
+          m_TargetAssemblyTypeName: HeavenlySin.Gameplay.AudioManagement.MusicControl,
+            Assembly-CSharp
+          m_MethodName: ResumeMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &212524357
 Transform:
   m_ObjectHideFlags: 0
