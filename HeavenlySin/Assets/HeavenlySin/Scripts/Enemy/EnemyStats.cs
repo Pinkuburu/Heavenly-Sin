@@ -35,10 +35,10 @@ namespace HeavenlySin.Enemy
 
         public void TakeDamage(float damage)
         {
+            enemySounds.Raise(27); //Hurt SFX
             _health -= damage;
             healthSlider.value = (_health / statistics.maxHealth);
             anim.SetTrigger("isHurt");
-            enemySounds.Raise(27); //Hurt SFX
             IsDead();
             // TODO: update UI health bar.
         }
