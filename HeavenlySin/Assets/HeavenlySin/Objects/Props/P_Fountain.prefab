@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 345655377}
   - component: {fileID: 345655378}
   - component: {fileID: 345655379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: P_Fountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,6 +517,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 009dfeea4e56e094ab34796fd67d3fe3, type: 3}
       propertyPath: m_Name
       value: SM_Fountain_Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 009dfeea4e56e094ab34796fd67d3fe3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 009dfeea4e56e094ab34796fd67d3fe3, type: 3}
