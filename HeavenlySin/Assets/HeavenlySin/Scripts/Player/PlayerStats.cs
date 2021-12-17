@@ -55,7 +55,7 @@ namespace HeavenlySin.Player
         {
             if (_health <= 0)
             {
-                //death animation
+                playerSounds.Raise(17);
                 Destroy(this.gameObject, 3f);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
