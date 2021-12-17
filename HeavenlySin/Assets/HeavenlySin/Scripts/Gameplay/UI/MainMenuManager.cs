@@ -1,5 +1,6 @@
 using HeavenlySin.Game;
 using HeavenlySin.GameEvents;
+using HeavenlySin.Scene.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,7 +23,7 @@ namespace HeavenlySin.Gameplay.UI
 
         public void MainMenu()
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene((int)Scenes.MAIN_MENU);
         }
 
         public void StartNewGame()
@@ -46,12 +47,12 @@ namespace HeavenlySin.Gameplay.UI
         
         public void Settings()
         {
-            SceneManager.LoadScene("Settings");
+            SceneManager.LoadScene((int)Scenes.SETTTINGS);
         }
 
         public void Credits()
         {
-            SceneManager.LoadScene("Credits");
+            SceneManager.LoadScene((int)Scenes.CREDITS);
         }
 
         public void QuitGame()

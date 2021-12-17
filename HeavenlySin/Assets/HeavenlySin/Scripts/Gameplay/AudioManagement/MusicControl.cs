@@ -13,6 +13,13 @@ namespace HeavenlySin.Gameplay.AudioManagement
         #region LifeCycle
         private void Start()
         {
+            ResumeMusic();
+        }
+        #endregion
+
+        #region ResumeMusic
+        public void ResumeMusic()
+        {
             onPlaySound.Raise(soundIndex);
         }
         #endregion

@@ -1562,7 +1562,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continue (R)
+  m_Text: Continue (F)
 --- !u!114 &11466534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,7 +2238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f62120d7385ae41b003e28625fba63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 114
+  key: 102
   buttonName: 
   anyKeyOrButton: 0
   skipIfBeingClickedBySubmit: 1

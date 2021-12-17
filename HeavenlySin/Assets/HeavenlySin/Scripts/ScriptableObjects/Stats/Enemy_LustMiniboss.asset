@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Enemy_LustMiniboss
   m_EditorClassIdentifier: 
   strength: 25
-  currentHealth: 140
-  maxHealth: 140
+  currentHealth: 500
+  maxHealth: 500

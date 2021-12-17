@@ -1,3 +1,4 @@
+using HeavenlySin.Game;
 using UnityEngine;
 
 namespace HeavenlySin.Gameplay.CameraScripts
@@ -14,13 +15,14 @@ namespace HeavenlySin.Gameplay.CameraScripts
         [Tooltip("How far the player can look up/down before being stopped")]
         [SerializeField] private float clampAngle = 80f;
         [Tooltip("Horizontal mouse sensitivity")]
-        [SerializeField] private float horizontalSpeed = 10f;
+        [SerializeField] private float horizontalSpeed = 20f;
         [Tooltip("Vertical mouse sensitivity")]
-        [SerializeField] private float verticalSpeed = 10f;
+        [SerializeField] private float verticalSpeed = 20f;
         
+        public Settings settings;
         public InputManager inputManager;
         private Vector3 _startingRotation;
-        
+        private float _mouseSens;
         #endregion
  
         #region LifeCycle
@@ -31,10 +33,11 @@ namespace HeavenlySin.Gameplay.CameraScripts
  
         private void Update()
         {
+            _mouseSens = settings.control.mouseSens;
             // Get values from input system.
             var deltaInput = inputManager.InputActions.Overworld.Look.ReadValue<Vector2>();
-            _startingRotation.x += deltaInput.x * verticalSpeed * Time.deltaTime;
-            _startingRotation.y += deltaInput.y * horizontalSpeed * Time.deltaTime;
+            _startingRotation.x += deltaInput.x * verticalSpeed * _mouseSens * Time.deltaTime;
+            _startingRotation.y += deltaInput.y * horizontalSpeed * _mouseSens * Time.deltaTime;
             // Clamp the y rotation so the camera doesn't wrap around when looking up or down.
             _startingRotation.y = Mathf.Clamp(_startingRotation.y, -clampAngle, clampAngle);
             // Change object's rotation.

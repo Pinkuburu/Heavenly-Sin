@@ -1184,10 +1184,9 @@ MonoBehaviour:
   endHover: {fileID: 11400000, guid: aac5c7d6ddc8c2440ad05cdd13e6c6f1, type: 2}
   startHover: {fileID: 11400000, guid: 8db11e61b09a1404ca33cec3c949feb0, type: 2}
   onFadeStart: {fileID: 11400000, guid: 251c4aff03a1cc040956827a123edd19, type: 2}
-  onChangeScene: {fileID: 11400000, guid: c71767c4a604b9245a13e610cb69a627, type: 2}
-  sceneStats:
-  - {fileID: 11400000, guid: 417b7748bcc939b4ab8afb49c0697c4a, type: 2}
-  - {fileID: 11400000, guid: 6259421b97e73e246bc5aa00d31d5a8f, type: 2}
+  onChangeScene: {fileID: 0}
+  sceneStats: {fileID: 0}
+  gameState: {fileID: 0}
 --- !u!65 &560209966
 BoxCollider:
   m_ObjectHideFlags: 0
