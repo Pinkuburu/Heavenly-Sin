@@ -41687,7 +41687,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -41742,7 +41742,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -44964,7 +44964,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 64
@@ -50936,8 +50936,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 3.1483147}
+    canvasZoom: 0.6700003
   - id: 73
     fields:
     - title: Title
