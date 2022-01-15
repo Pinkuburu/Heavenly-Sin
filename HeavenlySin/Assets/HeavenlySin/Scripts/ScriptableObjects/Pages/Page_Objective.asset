@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1623a1af5465e6642b777db016eadaef, type: 3}
   m_Name: Page_Objective
   m_EditorClassIdentifier: 
-  portrait: {fileID: 0}
   leftPageTitle: 
   rightPageTitle: OBJECTIVE
-  testimonies: []
-  relations: []
+  testimonies:
+  - '+ FIND WES'' KEYS: Wes seemed to have misplaced his keys. Let''s retrace his
+    steps to his door to see if he may have dropped it. Better yet, let''s just double-check
+    if he was just a drunkard and left it open again.'
+  relations:
+  - You faintly remember that Wes' home is in the corner of Peace Lane and Fury Avenue.
+    It has a bright blue door.
