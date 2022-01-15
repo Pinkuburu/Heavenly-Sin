@@ -36,9 +36,12 @@ namespace HeavenlySin.Gameplay.Interactable
 
         private void OnTriggerEnter(Collider other)
         {
-            other.gameObject.GetComponent<PlayerScript>().inventory.AddItem(clue);
-            onPlaySound.Raise(soundIndex);
-            Destroy(gameObject);
+            if (other.gameObject.CompareTag("Player"))
+            {
+                other.gameObject.GetComponent<PlayerScript>().inventory.AddItem(clue);
+                onPlaySound.Raise(soundIndex);
+                Destroy(gameObject);
+            }
         }
 
         #endregion

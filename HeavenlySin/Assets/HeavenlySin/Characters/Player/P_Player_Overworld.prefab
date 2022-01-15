@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 72763171709860181}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72763171883129893}
   - component: {fileID: 72763171883129892}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera LookAt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 72763172438997605}
   - component: {fileID: 72763172438997610}
   - component: {fileID: 7993421740242781705}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: P_Player_Overworld
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.001
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 3.4, z: 0}
+  m_Center: {x: 0, y: 3.1, z: 0}
 --- !u!114 &72763172438997606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 72763172438997601}
   groundCheck: {fileID: 72763171709860181}
-  groundDistance: 0.245
+  groundDistance: 0.29
   groundMask:
     serializedVersion: 2
     m_Bits: 64

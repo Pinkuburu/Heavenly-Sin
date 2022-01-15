@@ -19,7 +19,12 @@ namespace HeavenlySin.Enemy
         private Vector3 _startPos;
         private bool _outOfBounds;
         public bool isAttacking;
+        public GameObject healthUI;
+        
         private bool isSpawning;
+
+        private SpriteRenderer[] _sprites;
+        private BoxCollider _collider;
         #endregion
 
         #region LifeCycle
@@ -27,6 +32,15 @@ namespace HeavenlySin.Enemy
         {
             _timeTilNextShoot = Random.Range(minDelay, maxDelay);
             _startPos = transform.position;
+            _sprites = GetComponentsInChildren<SpriteRenderer>();
+            _collider = GetComponent<BoxCollider>();
+            healthUI.SetActive(false);
+            foreach (var s in _sprites)
+            {
+                s.enabled = false;
+            }
+
+            _collider.enabled = false;
         }
 
         private void Update()
@@ -56,7 +70,14 @@ namespace HeavenlySin.Enemy
 
         public void IsAttacking()
         {
-            isAttacking = !isAttacking;
+            isAttacking = true;
+            foreach (var s in _sprites)
+            {
+                s.enabled = true;
+            }
+
+            _collider.enabled = true;
+            healthUI.SetActive(true);
         }
 
         private void Movement()
@@ -92,7 +113,8 @@ namespace HeavenlySin.Enemy
             {
                 if (hitCollider.gameObject.CompareTag("Player"))
                 {
-                    if (Physics.Raycast(transform.position, (hitCollider.gameObject.transform.position - transform.position), out _enemyRay, Mathf.Infinity))
+                    LayerMask playerMask = LayerMask.GetMask("Player");
+                    if (Physics.Raycast(transform.position, (hitCollider.gameObject.transform.position - transform.position), out _enemyRay, Mathf.Infinity, playerMask))
                     {
                         _shootTimer += Time.deltaTime;
                         if(_shootTimer >= _timeTilNextShoot)
