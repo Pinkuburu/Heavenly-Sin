@@ -15,6 +15,8 @@ namespace HeavenlySin.Gameplay.Shooting
         #region Public Fields
         
         public float damage;
+        [Tooltip("How far away the player can shoot enemies from.")]
+        [Range(1, 100)] public float fireDistance;
         [Tooltip("How many times the player can fire per second.")]
         [Range(1, 5)]public float fireRate;
         public int maxAmmo = 6;
@@ -27,7 +29,6 @@ namespace HeavenlySin.Gameplay.Shooting
         [SerializeField] private GameObject muzzleFlash;
         [SerializeField] private GameObject bulletTrail;
         [SerializeField] private GameObject hitFX;
-        
         #endregion
 
         #region Private Fields
@@ -37,7 +38,7 @@ namespace HeavenlySin.Gameplay.Shooting
         private bool _isReloading;
         private Vector3 _targetPos;
         private RaycastHit _rayHit;
-        
+        private RaycastHit _hit;
         #endregion
 
         #region LifeCycle
@@ -50,8 +51,9 @@ namespace HeavenlySin.Gameplay.Shooting
         
         private void Update()
         {
+            // Debug.DrawRay(firePoint.transform.position, _hit.point - firePoint.transform.position, Color.blue);
             Cursor.lockState = CursorLockMode.None;
-            /*Cursor.visible = false;*/
+            // Cursor.visible = false;
             var position = transform.position;
             var distance = position.z + UICamera.transform.position.z;
             _targetPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
@@ -102,33 +104,49 @@ namespace HeavenlySin.Gameplay.Shooting
             var muzzleFlashClone = Instantiate(muzzleFlash, firePoint.transform.position, firePoint.transform.rotation);
             muzzleFlashClone.transform.SetParent(firePoint);
             Destroy(muzzleFlashClone, 0.025f);
-
+            
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            
+            // Ray from the camera to the cursor.
             if(Physics.Raycast(ray.origin, ray.direction, out _rayHit, Mathf.Infinity))
             {
-                //bullet trail FX
+                //Debug.DrawRay(ray.origin, ray.direction * Mathf.Infinity, Color.red);
+                
+                // Ray from the player to the point the camera raycast hit, with a maximum distance.
+                LayerMask playerMask = LayerMask.GetMask("Player");
+                if (Physics.Raycast(firePoint.transform.position, _rayHit.point - firePoint.transform.position, out _hit,
+                    fireDistance, ~playerMask))
+                {
+                    if (_hit.collider.gameObject.CompareTag("Enemy"))
+                    {
+                        _hit.collider.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
+                    }
+                    if (_hit.collider.gameObject.CompareTag("Boss"))
+                    {
+                        _hit.collider.gameObject.GetComponent<BossStats>().TakeDamage(damage);
+                    }
+                    // Ricochet FX
+                    if (_hit.collider.gameObject.CompareTag("Object"))
+                    {
+                        var hitFXClone = Instantiate(hitFX, _hit.point, transform.rotation);
+                        Destroy(hitFXClone, 0.5f);
+                    }
+                }
+                
+                // Bullet trail FX.
                 var bulletTrailClone = Instantiate(bulletTrail, firePoint.transform.position, firePoint.transform.rotation);
-                LineRenderer lineR = bulletTrailClone.GetComponent<LineRenderer>();
+                var lineR = bulletTrailClone.GetComponent<LineRenderer>();
                 lineR.SetPosition(0, firePoint.transform.position);
-                lineR.SetPosition(1, _rayHit.point);
+                
+                var hitPoint = _hit.point;
+                // If the object was too far away to be hit
+                if (hitPoint == Vector3.zero)
+                    hitPoint = (_rayHit.point - firePoint.transform.position).normalized * fireDistance + firePoint.transform.position;
+                lineR.SetPosition(1, hitPoint);
                 Destroy(bulletTrailClone, 1f);
-
-                if (_rayHit.collider.gameObject.CompareTag("Enemy"))
-                {
-                    _rayHit.collider.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
-                }
-                if (_rayHit.collider.gameObject.CompareTag("Boss"))
-                {
-                    _rayHit.collider.gameObject.GetComponent<BossStats>().TakeDamage(damage);
-                }
-
-                //ricochet FX
-                if (_rayHit.collider.gameObject.CompareTag("Object"))
-                {
-                    var hitFXClone = Instantiate(hitFX, _rayHit.point, transform.rotation);
-                    Destroy(hitFXClone, 0.5f);
-                }
             }
+            
+            
 
             Invoke(nameof(AllowFire), 1/fireRate);
         }
